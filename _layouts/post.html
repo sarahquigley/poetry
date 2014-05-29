@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<section class="post">
+
+  <div class="post-wrapper">
+
+    <header class="post-header">
+      <h1>{{ page.title | newline_to_br }}</h1>
+    </header>
+
+    <article class="post-content">
+      {{ content }}
+    </article>
+
+  </div>
+
+</section>
+
+
+{% if page.previous %}
+<a class="previous" href="{{ page.previous.url | prepend: site.baseurl }}"><i class="fa fa-chevron-left"></i><span>Previous</span></a>
+{% endif %}
+
+{% if page.next %}
+<a class="next" href="{{ page.next.url | prepend: site.baseurl }}"><i class="fa fa-chevron-right"></i><span>Next</span></a>
+{% endif %}

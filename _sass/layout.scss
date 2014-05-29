@@ -1,0 +1,35 @@
+body{
+  background: url("/assets/images/bg.png") center center repeat;
+}
+
+.post{
+  text-align: center;
+  padding-top: 7vw;
+
+  > div{
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+.previous{
+  left: 5vw;
+}
+
+.next{
+  right: 5vw;
+}
+
+.next, .previous{  
+  position: fixed;
+  top: 50vh;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 4vw;
+
+  span{
+    display: none;
+  }
+}

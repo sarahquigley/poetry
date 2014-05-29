@@ -1,0 +1,15 @@
+# Site settings
+title: Poetry - by Sarah Quigley 
+email: sarah@sarahquigley.net
+description: "Poetry as it happens."
+baseurl: ""
+url: "http://yourdomain.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Sass
+sass:
+    sass_dir: _sass
+    style: :compressed

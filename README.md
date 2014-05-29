@@ -1,4 +1,4 @@
 poetry
 ======
 
-Poetry, not code. (Poetry needs version control too.)
+Poetry, and code. (Poetry needs version control too.)

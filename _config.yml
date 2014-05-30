@@ -1,7 +1,13 @@
 # Site settings
-title: Poetry - by Sarah Quigley 
-email: sarah@sarahquigley.net
+title: Sarah writes poems 
 description: "Poetry as it happens."
+
+author:
+    name: Sarah Quigley
+    first_name: Sarah
+    surname: Quigley
+email: sarah@sarahquigley.net
+
 baseurl: ""
 url: "http://yourdomain.com"
 

@@ -6,7 +6,9 @@ layout: default
 
   <div class="post-wrapper">
 
-    {% if page.title %}
+    {% capture page_title_length %}{{ page.title | size }}{% endcapture %}
+
+    {% if page_title_length != "0" %}
     <header class="post-header">
       <h1>{{ page.title | newline_to_br }}</h1>
     </header>

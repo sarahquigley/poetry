@@ -1,0 +1,29 @@
+---
+layout: post
+title: |
+date:   2014-05-30 15:32:11
+categories: 
+---
+
+Each day is a   
+                plump  
+                     green   
+               grape  
+to be plucked  
+         and pressed  
+                between lips  
+            to be  
+    rolled   
+on the tongue  
+     popped   
+          between teeth  
+        inhaled   
+like a good woman
+
+(sometimes it will be messy)  
+celebrate the sweet juice  
+slipping down your chin  
+
+lick it  
+     celebrate  
+           and take another grape.  

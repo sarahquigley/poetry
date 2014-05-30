@@ -8,9 +8,17 @@ layout: default
 
     {% capture page_title_length %}{{ page.title | size }}{% endcapture %}
 
-    {% if page_title_length != "0" %}
+    {% if page_title_length != "0" && page.subtitle %}
     <header class="post-header">
+
+      {% if page_title_length != "0" %}
       <h1>{{ page.title | newline_to_br }}</h1>
+      {% endif %}
+      
+      {% if page.subtitle %}
+      <h2>{{ page.subtitle | newline_to_br }}</h2>
+      {% endif %}
+
     </header>
     {% endif %}
 

@@ -2,21 +2,28 @@
 layout: default
 ---
 
+{% if page.name == "index.html" %}
+  {% assign current_post = site.posts[0] %}
+  {% assign content = site.posts[0].content %}
+{% else %}
+  {% assign current_post = page %}
+{% endif %}
+
 <section class="post">
 
   <div class="post-wrapper">
 
-    {% capture page_title_length %}{{ page.title | size }}{% endcapture %}
+    {% capture current_post_title_length %}{{ current_post.title | size }}{% endcapture %}
 
-    {% if page_title_length != "0" && page.subtitle %}
+    {% if current_post_title_length != "0" && current_post.subtitle %}
     <header class="post-header">
 
-      {% if page_title_length != "0" %}
-      <h1>{{ page.title | newline_to_br }}</h1>
+      {% if current_post_title_length != "0" %}
+      <h1>{{ current_post.title | newline_to_br }}</h1>
       {% endif %}
       
-      {% if page.subtitle %}
-      <h2>{{ page.subtitle | newline_to_br }}</h2>
+      {% if current_post.subtitle %}
+      <h2>{{ current_post.subtitle | newline_to_br }}</h2>
       {% endif %}
 
     </header>
@@ -31,10 +38,10 @@ layout: default
 </section>
 
 
-{% if page.previous %}
-<a class="previous" href="{{ page.previous.url | prepend: site.baseurl }}"><i class="fa fa-chevron-left"></i><span>Previous</span></a>
+{% if current_post.previous %}
+<a class="previous" href="{{ current_post.previous.url | prepend: site.baseurl }}"><i class="fa fa-chevron-left"></i><span>Previous</span></a>
 {% endif %}
 
-{% if page.next %}
-<a class="next" href="{{ page.next.url | prepend: site.baseurl }}"><i class="fa fa-chevron-right"></i><span>Next</span></a>
+{% if current_post.next %}
+<a class="next" href="{{ current_post.next.url | prepend: site.baseurl }}"><i class="fa fa-chevron-right"></i><span>Next</span></a>
 {% endif %}

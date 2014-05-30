@@ -2,10 +2,57 @@ body{
   background: url("/assets/images/bg.png") center center repeat;
 }
 
+
+
+/* Header and footer
+***********************************/
+
 #site-header{
-  position: fixed;
-  left: 0;
-  top: 3.5vw;
+  @include position(fixed, 3.5vw null null 0);
+  font-family: $font-display;
+
+  nav{
+    @include clearfix;
+    font-size: 1vw;
+    font-weight: 500;
+
+    > a {
+      float: left;
+      clear: both;
+      background: $color-dark;
+      margin: 0.2vw 0 0 0;
+      padding: 0.5vw 0.7vw;
+      opacity: 0;
+      @include transition(margin-left 0.325s linear, opacity 0.1s linear 0.225s);
+
+      &:first-child{
+        text-transform: uppercase;
+        font-size: 1.3vw;
+        margin-left: -14.6vw;
+        opacity: 1;
+      }
+
+      > i{
+        padding-left: 0.5vw;
+      }
+
+      > i, > span{
+        color: $color-lightest;
+        font-weight: 700;
+      }
+    }
+
+    &:hover{
+      > a:first-child{
+        margin-left: 0;
+      }
+
+      > a{
+        opacity: 1;
+      }
+    }
+  }
+
 }
 
 #site-footer{
@@ -18,7 +65,10 @@ body{
   }
 }
 
-// Post
+
+
+/* Post styles
+***********************************/
 
 .post{
   min-height: 100vh;
@@ -27,6 +77,7 @@ body{
 
   > div{
     padding: 7vw 0;
+    max-width: 60vw;
     @include align-self(center);
   }
 
@@ -35,26 +86,44 @@ body{
   }
 }
 
-// Next and previous links
+
+
+/* Next and Previous links
+***********************************/
 
 .previous{
-  left: 5vw;
+  left: 0;
+  margin-left: -10vw;
+  @include border-right-radius(0.7vw);
+
+  i{
+    padding-left: 1vw;
+  }
 }
 
 .next{
-  right: 5vw;
+  right: 0;
+  margin-right: -7.85vw;
+  @include border-left-radius(0.7vw);
+
+  i{
+    padding-right: 1vw;
+  }
 }
 
 .next, .previous{  
+  font-family: $font-display;
+  background: $color-light;
+  color: $color-lightest;
   position: fixed;
+  padding: 1vw 1vw;
   top: 50vh;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  font-size: 4vw;
+  font-size: 1.5vw;
+  @include transform(translateY(-50%));
+  @include transition(margin-left 0.25s linear, margin-right 0.195s linear);
 
-  span{
-    display: none;
+  &:hover{
+    margin-left: 0;
+    margin-right: 0;
   }
 }

@@ -90,8 +90,6 @@ body{
 /* Next and Previous links
 ***********************************/
 
-$transition-speed: 40; //40vh/s
-
 @each $nav, $dir, $odir, $width in (previous, left, right, 10), (next, right, left, 7.85){
   .#{$nav}{
     #{$dir}: 0;

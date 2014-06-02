@@ -2,6 +2,11 @@ body{
   background: url("/assets/images/bg.png") center center repeat;
 }
 
+#content{
+  min-height: 100vh;
+  @include display(flex);
+  @include justify-content(center);
+}
 
 
 /* Header and footer
@@ -71,15 +76,9 @@ body{
 ***********************************/
 
 .post{
-  min-height: 100vh;
-  @include display(flex);
-  @include justify-content(center);
-
-  > div{
-    padding: 7vw 0;
-    max-width: 60vw;
-    @include align-self(center);
-  }
+  padding: 7vw 0;
+  max-width: 60vw;
+  @include align-self(center);
 
   header{
     margin-bottom: 2.2vw;
@@ -91,36 +90,29 @@ body{
 /* Next and Previous links
 ***********************************/
 
-.previous{
-  left: 0;
-  margin-left: -10vw;
-  @include border-right-radius(0.7vw);
+$transition-speed: 40; //40vh/s
 
-  i{
-    padding-left: 1vw;
-  }
-}
+@each $nav, $dir, $odir, $width in (previous, left, right, 10), (next, right, left, 7.85){
+  .#{$nav}{
+    #{$dir}: 0;
+    margin-#{$dir}: -#{$width}vw;
+    @include border-#{$odir}-radius(0.7vw);
+    @include transition(margin-#{$dir} #{$width / $transition-speed}s linear);
 
-.next{
-  right: 0;
-  margin-right: -7.85vw;
-  @include border-left-radius(0.7vw);
-
-  i{
-    padding-right: 1vw;
+    i{
+      padding-#{$dir}: 1vw;
+    }
   }
 }
 
 .next, .previous{  
+  @include position(fixed, 50vh null null null);
+  @include transform(translateY(-50%));
   font-family: $font-display;
   background: $color-light;
   color: $color-lightest;
-  position: fixed;
   padding: 1vw 1vw;
-  top: 50vh;
   font-size: 1.5vw;
-  @include transform(translateY(-50%));
-  @include transition(margin-left 0.25s linear, margin-right 0.195s linear);
 
   &:hover{
     margin-left: 0;

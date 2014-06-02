@@ -11,29 +11,26 @@ layout: default
 
 <section class="post">
 
-  <div class="post-wrapper">
+  {% capture current_post_title_length %}{{ current_post.title | size }}{% endcapture %}
 
-    {% capture current_post_title_length %}{{ current_post.title | size }}{% endcapture %}
+  {% if current_post_title_length != "0" && current_post.subtitle %}
+  <header class="post-header">
 
-    {% if current_post_title_length != "0" && current_post.subtitle %}
-    <header class="post-header">
-
-      {% if current_post_title_length != "0" %}
-      <h1>{{ current_post.title | newline_to_br }}</h1>
-      {% endif %}
-      
-      {% if current_post.subtitle %}
-      <h2>{{ current_post.subtitle | newline_to_br }}</h2>
-      {% endif %}
-
-    </header>
+    {% if current_post_title_length != "0" %}
+    <h1>{{ current_post.title | newline_to_br }}</h1>
     {% endif %}
 
-    <article class="post-content">
-      {{ content }}
-    </article>
+    {% if current_post.subtitle %}
+    <h2>{{ current_post.subtitle | newline_to_br }}</h2>
+    {% endif %}
 
-  </div>
+  </header>
+  {% endif %}
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
 
 </section>
 

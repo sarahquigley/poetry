@@ -3,6 +3,7 @@ body{
 }
 
 #content{
+  min-height: 100%;
   min-height: 100vh;
   @include display(flex);
   @include justify-content(center);
@@ -12,33 +13,62 @@ body{
 /* Header
 ***********************************/
 
+// Mixins
+
+@mixin site-header($scaling-factor){
+  #site-header{
+    @include position(fixed, 2.7 * $scaling-factor null null 0);
+    font-size: 0.76 * $scaling-factor;
+
+    nav{
+      > a {
+        margin-top: 0.16 * $scaling-factor;
+        padding: 0.39 * $scaling-factor 0.55 * $scaling-factor;
+
+        @each $i, $width in (1, 11.45 * $scaling-factor), (2, 3.15 * $scaling-factor), (3, 4.0 * $scaling-factor), (4, 6.75 * $scaling-factor){
+          &:nth-child(#{$i}){
+            margin-left: -$width;
+            @include transition(margin-left transition-time($width) linear 0.05s);
+          }
+        }
+
+        &:first-child{
+          font-size: 1.0 * $scaling-factor;
+        }
+
+        > i{
+          padding-left: 0.75 * $scaling-factor;
+        }
+      }
+
+      &:hover > a{
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
+// Styles
+
+@include site-header(4vw);
+
 #site-header{
-  @include position(fixed, 3.5vw null null 0);
   font-family: $font-display;
+  font-weight: 500;
 
   nav{
-    @include clearfix;
-    font-size: 1vw;
-    font-weight: 500;
-
     > a {
       float: left;
       clear: both;
       background: $color-dark;
-      margin: 0.2vw 0 0 0;
-      padding: 0.5vw 0.7vw;
-      opacity: 0;
-      @include transition(margin-left 0.325s linear, opacity 0.1s linear 0.225s);
 
       &:first-child{
         text-transform: uppercase;
-        font-size: 1.3vw;
-        margin-left: -14.6vw;
-        opacity: 1;
       }
 
       > i{
-        padding-left: 0.5vw;
+        padding-left: 8px;
       }
 
       > i, > span{
@@ -47,65 +77,103 @@ body{
       }
     }
 
-    &:hover{
-      > a:first-child{
-        margin-left: 0;
-      }
-
-      > a{
-        opacity: 1;
-      }
+    &:hover > a{
+      margin-left: 0;
     }
   }
+}
 
+
+// Media Queries
+
+@media screen and (min-width: 500px){
+  @include site-header(rem(20));
 }
 
 
 /* Footer
 ***********************************/
 
+// Mixin
+@mixin site-footer($scaling-factor){
+  #site-footer{
+    margin-bottom: 2.3 * $scaling-factor;
+    font-size: 0.6 * $scaling-factor;
+  }
+}
+
+// Styles
+@include site-footer(5vw);
+
 #site-footer{
-  margin: 0 0 3vw 0;
   text-align: center;
-  font-size: 0.8vw;
 
   ul{
     list-style-type: none;
   }
 }
 
+// Media Queries
+@media screen and (min-width: 400px){
+  @include site-footer(rem(20));
+}
 
 
 /* Post styles
 ***********************************/
 
-.post{
-  padding: 7vw 0;
-  max-width: 60vw;
-  @include align-self(center);
+@mixin post($scaling-factor){
+  .post{
+    padding: 2.7 * $scaling-factor 0;
+    max-width: 22.5 * $scaling-factor;
 
-  header{
-    margin-bottom: 2.2vw;
+    header{
+      margin-bottom: 1.7 * $scaling-factor;
+    }
   }
 }
 
+@include post(4vw);
+
+.post{
+  @include align-self(center);
+}
+
+@media screen and (min-width: 500px){
+  @include post(rem(20));
+}
 
 
 /* Next and Previous links
 ***********************************/
 
-@each $nav, $dir, $odir, $width in (previous, left, right, 10), (next, right, left, 7.85){
-  .#{$nav}{
-    #{$dir}: 0;
-    margin-#{$dir}: -#{$width}vw;
-    @include border-#{$odir}-radius(0.7vw);
-    @include transition(margin-#{$dir} #{$width / $transition-speed}s linear);
+// Mixin
 
-    i{
-      padding-#{$dir}: 1vw;
+@mixin nav-buttons($scaling-factor){
+  @each $nav, $dir, $odir, $width in (previous, left, right, 7.7 * $scaling-factor), (next, right, left, 6.0 * $scaling-factor){
+    .#{$nav}{
+      #{$dir}: 0;
+      margin-#{$dir}: -#{$width};
+      border-top-#{$odir}-radius: 0.55 * $scaling-factor;
+      border-bottom-#{$odir}-radius: 0.55 * $scaling-factor;
+      @include transition(margin-#{$dir} transition-time($width) linear);
+
+      i{
+        padding-#{$dir}: 0.75 * $scaling-factor;
+      }
     }
   }
+
+  .next, .previous{  
+    padding: 0.75 * $scaling-factor;
+    font-size: 1.15 * $scaling-factor;
+  }
 }
+
+
+// Styles
+
+@include nav-buttons(4vw);
 
 .next, .previous{  
   @include position(fixed, 50vh null null null);
@@ -113,11 +181,16 @@ body{
   font-family: $font-display;
   background: $color-light;
   color: $color-lightest;
-  padding: 1vw 1vw;
-  font-size: 1.5vw;
 
   &:hover{
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+
+// Media Queries
+
+@media screen and (min-width: 500px){
+  @include nav-buttons(rem(20));
 }

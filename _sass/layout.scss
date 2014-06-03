@@ -13,67 +13,44 @@ body{
 /* Header
 ***********************************/
 
-// Mixins
-
-@mixin site-header($scaling-factor){
-  #site-header{
-    font-size: 0.76 * $scaling-factor;
-
-    nav{
-      > a {
-        margin-bottom: 0.16 * $scaling-factor;
-        padding: 0.39 * $scaling-factor 0.55 * $scaling-factor;
-
-        @each $i, $width in (1, 11.3 * $scaling-factor), (2, 3.15 * $scaling-factor), (3, 4.0 * $scaling-factor), (4, 6.75 * $scaling-factor){
-          &:nth-child(#{$i}){
-            margin-left: -$width;
-            @include transition(margin-left transition-time($width) linear 0.05s);
-          }
-        }
-
-        &:first-child{
-          font-size: 1.0 * $scaling-factor;
-        }
-
-        > i{
-          padding-left: 0.55 * $scaling-factor;
-        }
-      }
-
-      &:hover > a{
-        margin-left: 0;
-      }
-    }
-  }
-}
-
-
 // Styles
 
-@include site-header(rem(20));
-
 #site-header{
-  @include position(absolute, 0.5 * rem(20) null null 0);
+  @include position(absolute, 0.8em null null 0);
+  font-size: rem(20);
+
   font-family: $font-display;
   font-weight: 500;
+  z-index: 1;
 
   nav{
     > a {
+      font-size: 0.75em;
+      margin-bottom: 0.16em;
+      padding: 0.39em 0.55em;
       float: left;
       clear: both;
       background: $color-dark;
 
       &:first-child{
+        font-size: 1em;
         text-transform: uppercase;
       }
 
-      > i{
-        padding-left: 8px;
+      @each $i, $width in (1, 11.3em), (2, 3.7em), (3, 4.9em), (4, 8.4em){
+        &:nth-child(#{$i}){
+          margin-left: -$width;
+          //@include transition(margin-left transition-time($width) linear 0.05s);
+        }
       }
 
       > i, > span{
         color: $color-lightest;
         font-weight: 700;
+      }
+
+      > i{
+        padding-left: 0.55em;
       }
     }
 
@@ -88,7 +65,7 @@ body{
 
 @media screen and (min-width: 650px){
   #site-header{
-    @include position(fixed, 3.5 * rem(20) null null 0);
+    top: 3.5em;
   }
 }
 
@@ -98,112 +75,87 @@ body{
   }
 }
 
-/* Footer
-***********************************/
-
-// Mixin
-@mixin site-footer($scaling-factor){
-  #site-footer{
-    margin-bottom: 2.3 * $scaling-factor;
-    font-size: 0.6 * $scaling-factor;
-  }
-}
-
-// Styles
-@include site-footer(5vw);
-
-#site-footer{
-  text-align: center;
-
-  ul{
-    list-style-type: none;
-  }
-}
-
-// Media Queries
-@media screen and (min-width: 400px){
-  @include site-footer(rem(20));
-}
-
 
 /* Post styles
 ***********************************/
 
-@mixin post($scaling-factor){
-  .post{
-    max-width: 22.5 * $scaling-factor;
-
-    header{
-      margin-bottom: 1.7 * $scaling-factor;
-    }
-  }
-}
-
-@include post(4vw);
-
 .post{
-  padding: 3.5 * rem(20) 0;
   @include align-self(center);
-}
+  padding: rem(70) 0;
+  max-width: 22.5em;
 
-@media screen and (min-width: 500px){
-  @include post(rem(20));
+  header{
+    margin-bottom: 1.7em;
+  }
+
+  footer > p{
+    font-size: 0.6em;
+  }
 }
 
 
 /* Next and Previous links
 ***********************************/
 
-// Mixin
+// Styles
 
-@mixin nav-buttons($scaling-factor){
-  @each $nav, $dir, $odir, $width in (previous, left, right, 7.7 * $scaling-factor), (next, right, left, 6.0 * $scaling-factor){
-    .#{$nav}{
-      #{$dir}: 0;
-      margin-#{$dir}: -#{$width};
-      border-top-#{$odir}-radius: 0.55 * $scaling-factor;
-      border-bottom-#{$odir}-radius: 0.55 * $scaling-factor;
-      @include transition(margin-#{$dir} transition-time($width) linear);
+.next, .previous{  
+  @include position(auto, 100% null null null);
+  font-family: $font-display;
+  font-size: 1.15em;
 
-      i{
-        padding-#{$dir}: 0.75 * $scaling-factor;
-      }
-    }
-  }
-
-  .next, .previous{  
-    padding: 0.75 * $scaling-factor;
-    font-size: 1.15 * $scaling-factor;
+  i{
+    display: none;
   }
 }
 
+.previous{
+  border-right: 1px solid $color-dark;
+  padding-right: 0.75em;
 
-// Styles
-
-@include nav-buttons(4vw);
-
-.next, .previous{  
-  @include position(fixed, 50vh null null null);
-  @include transform(translateY(-50%));
-  font-family: $font-display;
-  background: $color-light;
-  color: $color-lightest;
-
-  &:hover{
-    margin-left: 0;
-    margin-right: 0;
+  &:last-child{
+    border-right: none;
+    padding-right: 0;
   }
+}
+
+.next:nth-child(2){
+  padding-left: 0.75em;
 }
 
 
 // Media Queries
 
-@media screen and (min-width: 500px){
-  @include nav-buttons(rem(20));
+@media screen and (min-width: 650px){
   
   .next, .previous{  
-    //@include position(fixed, 50vh null null null);
-    //@include transform(translateY(-50%));
+    @include position(fixed, 50vh null null null);
+    @include transform(translateY(-50%));
+    background-color: $color-light;
+    color: $color-lightest;
+    padding: 0.75em;
+    border-right: none;
+
+    i{
+      display: initial;
+    }
   }
 
+  @each $nav, $dir, $odir, $width in (previous, left, right, 6.5em), (next, right, left, 5.1em){
+    .#{$nav}{
+      #{$dir}: 0;
+      margin-#{$dir}: -#{$width};
+      border-top-#{$odir}-radius: 0.55em;
+      border-bottom-#{$odir}-radius: 0.55em;
+      //@include transition(margin-#{$dir} transition-time($width) linear);
+
+      &:hover{
+        margin-#{$dir}: 0;
+      }
+
+      i{
+        padding-#{$dir}: 0.75em;
+      }
+    }
+  }
 }

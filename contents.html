@@ -3,3 +3,18 @@ layout: page
 title: Contents 
 permalink: /contents/
 ---
+
+{% for post in site.posts %}
+
+{% capture post_title_length %}{{ post.title | size }}{% endcapture %}
+
+{% if post_title_length != "0" %}
+<h2><a href="{{ post.url | prepend: site.baseurl }}" >{{ post.title }}</a></h2>
+{% else %}
+<h2><a href="{{ post.url | prepend: site.baseurl }}" >Untitled ({{ post.excerpt | strip_newlines |  strip_html }})</a></h2>
+{% endif %}
+
+<p>Posted on the {{ post.date | date: "%-d %b, %Y" }}</p>
+
+
+{% endfor %}

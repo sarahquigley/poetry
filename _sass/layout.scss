@@ -37,10 +37,10 @@ body{
         text-transform: uppercase;
       }
 
-      @each $i, $width in (1, 11.3em), (2, 3.7em), (3, 4.9em), (4, 8.4em){
+      @each $i, $width in (1, 11.3em), (2, 3.7em), (3, 4.9em), (4, 8.5em){
         &:nth-child(#{$i}){
           margin-left: -$width;
-          //@include transition(margin-left transition-time($width) linear 0.05s);
+          @include transition(margin-left transition-time($width) linear 0.05s);
         }
       }
 
@@ -100,7 +100,7 @@ body{
 // Styles
 
 .next, .previous{  
-  @include position(auto, 100% null null null);
+  position: static;
   font-family: $font-display;
   font-size: 1.15em;
 
@@ -147,7 +147,7 @@ body{
       margin-#{$dir}: -#{$width};
       border-top-#{$odir}-radius: 0.55em;
       border-bottom-#{$odir}-radius: 0.55em;
-      //@include transition(margin-#{$dir} transition-time($width) linear);
+      @include transition(margin-#{$dir} transition-time($width) linear);
 
       &:hover{
         margin-#{$dir}: 0;

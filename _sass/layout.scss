@@ -17,15 +17,14 @@ body{
 
 @mixin site-header($scaling-factor){
   #site-header{
-    @include position(fixed, 2.7 * $scaling-factor null null 0);
     font-size: 0.76 * $scaling-factor;
 
     nav{
       > a {
-        margin-top: 0.16 * $scaling-factor;
+        margin-bottom: 0.16 * $scaling-factor;
         padding: 0.39 * $scaling-factor 0.55 * $scaling-factor;
 
-        @each $i, $width in (1, 11.45 * $scaling-factor), (2, 3.15 * $scaling-factor), (3, 4.0 * $scaling-factor), (4, 6.75 * $scaling-factor){
+        @each $i, $width in (1, 11.3 * $scaling-factor), (2, 3.15 * $scaling-factor), (3, 4.0 * $scaling-factor), (4, 6.75 * $scaling-factor){
           &:nth-child(#{$i}){
             margin-left: -$width;
             @include transition(margin-left transition-time($width) linear 0.05s);
@@ -37,7 +36,7 @@ body{
         }
 
         > i{
-          padding-left: 0.75 * $scaling-factor;
+          padding-left: 0.55 * $scaling-factor;
         }
       }
 
@@ -51,9 +50,10 @@ body{
 
 // Styles
 
-@include site-header(4vw);
+@include site-header(rem(20));
 
 #site-header{
+  @include position(absolute, 0.5 * rem(20) null null 0);
   font-family: $font-display;
   font-weight: 500;
 
@@ -86,10 +86,17 @@ body{
 
 // Media Queries
 
-@media screen and (min-width: 500px){
-  @include site-header(rem(20));
+@media screen and (min-width: 650px){
+  #site-header{
+    @include position(fixed, 3.5 * rem(20) null null 0);
+  }
 }
 
+@media screen and (min-width: 550px){
+  #site-header{
+    position: fixed;
+  }
+}
 
 /* Footer
 ***********************************/
@@ -124,7 +131,6 @@ body{
 
 @mixin post($scaling-factor){
   .post{
-    padding: 2.7 * $scaling-factor 0;
     max-width: 22.5 * $scaling-factor;
 
     header{
@@ -136,6 +142,7 @@ body{
 @include post(4vw);
 
 .post{
+  padding: 3.5 * rem(20) 0;
   @include align-self(center);
 }
 
@@ -193,4 +200,10 @@ body{
 
 @media screen and (min-width: 500px){
   @include nav-buttons(rem(20));
+  
+  .next, .previous{  
+    //@include position(fixed, 50vh null null null);
+    //@include transform(translateY(-50%));
+  }
+
 }

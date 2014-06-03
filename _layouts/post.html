@@ -30,15 +30,22 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
+  
+  <footer>
+    <p>Written by {{ site.author.name }}<br/>
+    Posted on the {{ current_post.date | date: "%-d %b, %Y" }}</p>
+  </footer>
+
+  <nav class="nav-buttons">
+    {% if current_post.previous %}
+    <a class="previous" href="{{ current_post.previous.url | prepend: site.baseurl }}"><span>Previous Poem</span><i class="fa fa-angle-left"></i></a>
+    {% endif %}
+
+    {% if current_post.next %}
+    <a class="next" href="{{ current_post.next.url | prepend: site.baseurl }}"><i class="fa fa-angle-right"></i><span>Next Poem</span></a>
+    {% endif %}
+  </nav>
 
 
 </section>
 
-
-{% if current_post.previous %}
-<a class="previous" href="{{ current_post.previous.url | prepend: site.baseurl }}"><span>Previous Poem</span><i class="fa fa-angle-left"></i></a>
-{% endif %}
-
-{% if current_post.next %}
-<a class="next" href="{{ current_post.next.url | prepend: site.baseurl }}"><i class="fa fa-angle-right"></i><span>Next Poem</span></a>
-{% endif %}

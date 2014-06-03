@@ -10,6 +10,7 @@ email: sarah@sarahquigley.net
 
 baseurl: ""
 url: "http://yourdomain.com"
+excerpt_separator: "  "
 
 # Build settings
 markdown: kramdown

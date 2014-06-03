@@ -1,14 +1,34 @@
+/* Base mixin 
+***********************************/
+
+@mixin base($scaling-factor){
+  h1{
+    font-size: 1.82 * $scaling-factor;
+  }
+
+  h2{
+    font-size: 1.15 * $scaling-factor;
+  }
+
+  p{
+    font-size: 1 * $scaling-factor;
+    margin-bottom: 1.15 * $scaling-factor;
+    line-height: 1.46 * $scaling-factor; 
+  }
+}
+
+
 /* Base styles
 ***********************************/
 
+@include base(4vw);
+
 body{
   font-family: $font-text;
-  font-size: 1.3vw;
   font-weight: 300;
   color: $color-mid;
   position: relative;
 }
-
 
 // Headers
 
@@ -19,25 +39,14 @@ h1, h2{
 }
 
 h1{
-  font-size: 2.3vw;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 h2{
-  font-size: 1.5vw;
   font-weight: 400;
   font-style: italic;
 }
-
-
-// Paragraphs
-
-p{
-  margin-bottom: 1.5vw;
-  line-height: 1.9vw;
-}
-
 
 // Links
 
@@ -45,3 +54,9 @@ a{
   color: $color-light;
   text-decoration: none;
 }
+
+// Screen > 500px
+@media screen and (min-width: 500px){
+  @include base(rem(20));  
+}
+

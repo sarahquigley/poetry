@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% if page.name == "index.html" %}
+{% if page.id == "home" %}
   {% assign current_post = site.posts[0] %}
   {% assign content = site.posts[0].content %}
 {% else %}

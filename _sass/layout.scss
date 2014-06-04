@@ -123,12 +123,17 @@ body{
 // Styles
 
 .next, .previous{  
+  color: $color-dark;
   position: static;
   font-family: $font-display;
   font-size: 1.15em;
 
   i{
     display: none;
+  }
+
+  &:hover{
+    color: $color-light;
   }
 }
 

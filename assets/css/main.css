@@ -57,13 +57,13 @@ p {
   line-height: 1.5em; }
 
 a {
-  text-decoration: none; }
-
-h1 a, h2 a, h3 a, h4 a, p a {
-  color: #111111;
+  text-decoration: none;
   -webkit-transition: color 0.2s linear;
   -moz-transition: color 0.2s linear;
   transition: color 0.2s linear; }
+
+h1 a, h2 a, h3 a, h4 a, p a {
+  color: #111111; }
   h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, p a:hover {
     color: #aaaaaa; }
 
@@ -188,11 +188,14 @@ body {
 /* Next and Previous links
 ***********************************/
 .next, .previous {
+  color: #111111;
   position: static;
   font-family: Josefin Sans, Helvetica, Arial, sans-serif;
   font-size: 1.15em; }
   .next i, .previous i {
     display: none; }
+  .next:hover, .previous:hover {
+    color: #aaaaaa; }
 
 .previous {
   border-right: 1px solid #111111;

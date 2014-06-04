@@ -11,22 +11,38 @@ body{
 
 // Headers
 
-h1, h2{
+h1, h2, h3{
   font-family: $font-display;
   letter-spacing: 0.1em;
   color: $color-dark;
 }
 
-h1{
+h1, h2{
   font-size: 1.82em;
   font-weight: 700;
   text-transform: uppercase;
 }
 
+h1{
+  font-size: 1.82em;
+}
+
 h2{
+  font-size: 1.3em;
+}
+
+h3, h4{
+  font-style: italic;
+}
+
+h3{
   font-size: 1.15em;
   font-weight: 400;
-  font-style: italic;
+}
+
+h4{
+  font-weight: 200;
+  font-size: 0.8em;
 }
 
 // Paragraphs
@@ -40,8 +56,14 @@ p{
 // Links
 
 a{
-  color: $color-light;
+  color: $color-dark;
   text-decoration: none;
+
+  @include transition(color 0.2s linear);
+
+  &:hover{
+    color: $color-light;
+  }
 }
 
 // Screen > 500px

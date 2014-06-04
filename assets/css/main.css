@@ -21,6 +21,7 @@ body {
   font-weight: 300;
   color: #444444;
   position: relative;
+  font-size: 1em;
   font-size: 4vw; }
 
 h1, h2, h3 {
@@ -69,6 +70,14 @@ h1 a, h2 a, h3 a, h4 a, p a {
 @media screen and (min-width: 500px) {
   body {
     font-size: 1.25rem; } }
+@media screen and (max-width: 300px) {
+  body {
+    font-size: 0.75em;
+    font-size: 4vw; } }
+@media screen and (max-width: 200px) {
+  body {
+    font-size: 0.5em;
+    font-size: 4vw; } }
 body {
   background: url("../images/bg.png") center center repeat; }
 
@@ -159,7 +168,8 @@ body {
   align-self: center;
   -ms-flex-item-align: center;
   padding: 4.375rem 0;
-  max-width: 22.5em; }
+  max-width: 90%;
+  max-width: 90vw; }
   .post header {
     margin-bottom: 1.7em; }
   .post footer > p {

@@ -6,6 +6,7 @@ body{
   font-weight: 300;
   color: $color-mid;
   position: relative;
+  font-size: 1em;
   font-size: 4vw;
 }
 
@@ -75,6 +76,20 @@ h1, h2, h3, h4, p{
 @media screen and (min-width: 500px){
   body{
     font-size: rem(20);
+  }
+}
+
+@media screen and (max-width: 300px){
+  body{
+    font-size: 0.75em;
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 200px){
+  body{
+    font-size: 0.5em;
+    font-size: 4vw;
   }
 }
 

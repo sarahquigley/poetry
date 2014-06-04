@@ -88,7 +88,8 @@ body{
 .post{
   @include align-self(center);
   padding: rem(70) 0;
-  max-width: 22.5em;
+  max-width: 90%;
+  max-width: 90vw;
 
   header{
     margin-bottom: 1.7em;

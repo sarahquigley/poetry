@@ -56,13 +56,18 @@ p{
 // Links
 
 a{
-  color: $color-dark;
   text-decoration: none;
+}
 
-  @include transition(color 0.2s linear);
+h1, h2, h3, h4, p{
+  a{
+    color: $color-dark;
 
-  &:hover{
-    color: $color-light;
+    @include transition(color 0.2s linear);
+
+    &:hover{
+      color: $color-light;
+    }
   }
 }
 

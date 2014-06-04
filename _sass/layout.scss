@@ -55,7 +55,6 @@ body{
       }
 
       &:hover{
-        color: $color-light;
         background: $color-mid;
       }
     }
@@ -159,10 +158,6 @@ body{
 
     i{
       display: initial;
-    }
-
-    &:hover{
-      color: $color-lightest;
     }
   }
 

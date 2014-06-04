@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Contents 
+id: contents
+class: page
 permalink: /contents/
 ---
 
@@ -9,11 +11,11 @@ permalink: /contents/
 {% capture post_title_length %}{{ post.title | size }}{% endcapture %}
 
 {% if post_title_length != "0" %}
-<h2><a href="{{ post.url | prepend: site.baseurl }}" >{{ post.title }}</a></h2>
+<h2><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.excerpt | strip_newlines |  strip_html }}">{{ post.title }}</a></h2>
 {% else %}
-<h2><a href="{{ post.url | prepend: site.baseurl }}" >Untitled ({{ post.excerpt | strip_newlines |  strip_html }})</a></h2>
+<h2><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.excerpt | strip_newlines |  strip_html }}">Untitled</a></h2>
 {% endif %}
-
+<h4>{{ post.excerpt | strip_newlines |  strip_html }}</h4>
 <p>Posted on the {{ post.date | date: "%-d %b, %Y" }}</p>
 
 

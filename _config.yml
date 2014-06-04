@@ -10,8 +10,8 @@ email: sarah@sarahquigley.net
 
 exclude: [Gemfile, Rakefile, Gemfile.lock]
 
-baseurl: ""
-url: "http://yourdomain.com"
+baseurl: "http://sarahquigley.github.io/poetry"
+url: "http://sarahquigley.github.io/poetry"
 excerpt_separator: "  "
 
 # Build settings

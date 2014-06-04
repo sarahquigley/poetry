@@ -3,7 +3,6 @@ layout: post
 title: |
     The House
     on the Hill
-date: 
 categories: 
 ---
 

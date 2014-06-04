@@ -3,7 +3,6 @@ layout: post
 title: |
     love like
     a hurricane
-date:
 categories: 
 ---
 

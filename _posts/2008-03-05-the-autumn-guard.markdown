@@ -3,7 +3,6 @@ layout: post
 title: |
     The Autumn
     Guard
-date:
 categories: 
 ---
 

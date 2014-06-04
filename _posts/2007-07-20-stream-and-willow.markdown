@@ -4,7 +4,6 @@ title: |
     Stream 
     and Willow
 subtitle: for Joanna Newsom
-date:
 categories: 
 ---
 

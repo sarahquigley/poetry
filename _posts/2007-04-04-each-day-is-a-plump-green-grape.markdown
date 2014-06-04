@@ -1,7 +1,6 @@
 ---
 layout: post
 title: |
-date:
 ---
 
 Each day is a  

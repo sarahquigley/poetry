@@ -206,7 +206,7 @@ body {
     padding: 0.75em;
     border-right: none; }
     .next i, .previous i, .previous:last-child i {
-      display: initial; }
+      display: inline; }
 
   .previous {
     left: 0;

@@ -176,7 +176,8 @@ body {
     font-size: 0.6em; }
 
 .page {
-  max-width: 20em; }
+  max-width: 90%;
+  max-width: 90vw; }
 
 @media screen and (min-width: 650px) {
   .post, .page {

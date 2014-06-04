@@ -99,18 +99,18 @@ body{
   }
 }
 
-#contents{
+.page{
   max-width: 20em;
 }
 
 @media screen and (min-width: 650px){
-  .post, #contents{
+  .post, .page{
     max-width: 69%;
   }
 }
 
 @media screen and (min-width: 900px){
-  .post, #contents{
+  .post, .page{
     max-width: rem(600);
   }
 }

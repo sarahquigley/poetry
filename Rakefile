@@ -2,7 +2,7 @@ desc "compile and run the site"
 task :default do
   pids = [
     spawn("jekyll serve --watch"),
-    spawn("scss --watch _sass/main.scss:css/main.css")
+    spawn("scss --watch _sass/main.scss:assets/css/main.css")
   ]
 
   trap "INT" do

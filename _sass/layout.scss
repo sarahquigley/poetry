@@ -18,13 +18,13 @@ body{
 #site-header{
   @include position(absolute, 0.8em null null 0);
   font-size: rem(20);
-
   font-family: $font-display;
   font-weight: 500;
   z-index: 1;
 
   nav{
     > a {
+      color: $color-light;
       font-size: 0.75em;
       margin-bottom: 0.16em;
       padding: 0.39em 0.55em;
@@ -35,12 +35,13 @@ body{
       &:first-child{
         font-size: 1em;
         text-transform: uppercase;
+        display: visible;
       }
 
-      @each $i, $width in (1, 11.3em), (2, 3.7em), (3, 4.9em), (4, 8.5em){
+      @each $i, $width in (1, 11.5em), (2, 4.0em), (3, 5.0em), (4, 9.0em){
         &:nth-child(#{$i}){
           margin-left: -$width;
-          @include transition(margin-left transition-time($width) linear 0.05s);
+          @include transition(margin-left transition-time($width) linear 0.05s, background-color 0.2s linear);
         }
       }
 
@@ -50,7 +51,12 @@ body{
       }
 
       > i{
-        padding-left: 0.55em;
+        padding-left: 0.65em;
+      }
+
+      &:hover{
+        color: $color-light;
+        background: $color-mid;
       }
     }
 
@@ -93,6 +99,21 @@ body{
   }
 }
 
+#contents{
+  max-width: 20em;
+}
+
+@media screen and (min-width: 650px){
+  .post, #contents{
+    max-width: 69%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .post, #contents{
+    max-width: rem(600);
+  }
+}
 
 /* Next and Previous links
 ***********************************/
@@ -128,7 +149,7 @@ body{
 
 @media screen and (min-width: 650px){
   
-  .next, .previous{  
+  .next, .previous, .previous:last-child{  
     @include position(fixed, 50vh null null null);
     @include transform(translateY(-50%));
     background-color: $color-light;
@@ -138,6 +159,10 @@ body{
 
     i{
       display: initial;
+    }
+
+    &:hover{
+      color: $color-lightest;
     }
   }
 

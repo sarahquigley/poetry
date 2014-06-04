@@ -75,6 +75,7 @@ body {
 #content {
   min-height: 100%;
   min-height: 100vh;
+  display: relative;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -194,6 +195,7 @@ body {
 
 @media screen and (min-width: 650px) {
   .next, .previous, .previous:last-child {
+    top: 50%;
     position: fixed;
     top: 50vh;
     -webkit-transform: translateY(-50%);

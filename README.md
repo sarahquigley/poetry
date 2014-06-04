@@ -7,7 +7,7 @@ View live version: [Read my poetry.](http://sarahquigley.github.io/poetry/)
 
 ## What is this project?
 
-This project creates a simple website where I display poetry that I have written.
+I enjoy writing poetry. This project creates a simple website where my poetry is displayed.
 
 ## Any features worth noting?
 

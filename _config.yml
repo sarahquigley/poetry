@@ -8,6 +8,8 @@ author:
     surname: Quigley
 email: sarah@sarahquigley.net
 
+exclude: [Gemfile, Rakefile, Gemfile.lock]
+
 baseurl: ""
 url: "http://yourdomain.com"
 excerpt_separator: "  "

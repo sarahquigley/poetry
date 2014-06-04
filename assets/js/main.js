@@ -6,4 +6,16 @@ $(function(){
     $('html').addClass('no-touch');
   }
   
+  $$("body").swipeRight(function(){
+    console.log("swipingRight");
+    var href = $(".previous").attr('href');
+    window.location.href = href;
+  });
+
+  $$("body").swipeLeft(function(){
+    console.log("swipingLeft");
+    var href = $(".next").attr('href');
+    window.location.href = href;
+  });
+
 });

@@ -2,7 +2,7 @@
 layout: post
 title: |
     The Art of Love
-date:   2014-05-30 15:26:11
+date:
 categories: 
 ---
 

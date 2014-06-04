@@ -3,7 +3,7 @@ layout: post
 title: |
     Otter's
     First Love
-date:   2014-05-29 15:25:11
+date:
 categories: 
 ---
 

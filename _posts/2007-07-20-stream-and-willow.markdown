@@ -4,7 +4,7 @@ title: |
     Stream 
     and Willow
 subtitle: for Joanna Newsom
-date:   2014-05-30 15:28:11
+date:
 categories: 
 ---
 

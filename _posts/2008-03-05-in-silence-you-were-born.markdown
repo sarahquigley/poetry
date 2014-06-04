@@ -1,7 +1,7 @@
 ---
 layout: post
 title: |
-date:   2014-05-30 15:30:11
+date:
 categories: 
 ---
 

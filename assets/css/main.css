@@ -177,7 +177,7 @@ h1 a, h2 a, h3 a, h4 a, p a {
 
 @media screen and (min-width: 500px) {
   body {
-    font-size: 1.25rem; } }
+    font-size: 1.25em; } }
 @media screen and (max-width: 300px) {
   body {
     font-size: 0.75em;
@@ -216,7 +216,7 @@ body {
   position: absolute;
   top: 0.8em;
   left: 0;
-  font-size: 1rem;
+  font-size: 16px;
   font-family: JosefinSansLocal, "Josefin Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   z-index: 1; }

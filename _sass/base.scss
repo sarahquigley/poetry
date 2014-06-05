@@ -6,7 +6,7 @@ body{
   font-weight: 300;
   color: $color-mid;
   position: relative;
-  font-size: 1em;
+  font-size: 1em; //For bowsers that don't support vw
   font-size: 4vw;
 }
 
@@ -77,20 +77,21 @@ h1, h2, h3, h4, p{
 }
 
 // Screen > 500px
-@media screen and (min-width: 500px){
+@media screen and (min-width: em(500)){
   body{
     font-size: 1.25em;
   }
 }
 
-@media screen and (max-width: 300px){
+// For browsers that don't support vw
+@media screen and (max-width: em(300)){
   body{
     font-size: 0.75em;
     font-size: 4vw;
   }
 }
 
-@media screen and (max-width: 200px){
+@media screen and (max-width: em(200)){
   body{
     font-size: 0.5em;
     font-size: 4vw;

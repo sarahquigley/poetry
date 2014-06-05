@@ -121,11 +121,10 @@ body {
     display: table;
     clear: both; }
   #site-header a {
-    display: table;
+    display: block;
     float: left;
     clear: both;
-    height: 2em;
-    padding: 0 0.55em;
+    padding: 0.39em 0.55em;
     margin-bottom: 0.16em;
     background: #111111;
     color: #aaaaaa; }
@@ -146,8 +145,7 @@ body {
       -moz-transition: margin-left 0.1125s linear 0.05s, background-color 0.2s linear;
       transition: margin-left 0.1125s linear 0.05s, background-color 0.2s linear; }
     #site-header a > span {
-      display: table-cell;
-      vertical-align: middle; }
+      height: 0.8em; }
     #site-header a i {
       color: #f8f3ef;
       font-weight: 700; }

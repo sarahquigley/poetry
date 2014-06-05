@@ -32,13 +32,11 @@ body{
   }
 
   a {
-    display: table;
+    display: block;
     float: left;
     clear: both;
-    height: 2em;
-    //line-height: 2em;
 
-    padding: 0 0.55em;
+    padding: 0.39em 0.55em;
     margin-bottom: 0.16em;
     background: $color-dark;
     color: $color-light;
@@ -51,8 +49,7 @@ body{
     }
 
     > span{
-      display: table-cell;
-      vertical-align: middle;
+      height: 0.8em;
     }
 
     i{

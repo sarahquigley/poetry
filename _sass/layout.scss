@@ -23,7 +23,7 @@ body{
   font-weight: 400;
   z-index: 1;
 
-  nav{
+  > nav{
     > a {
       color: $color-light;
       font-size: 0.75em;
@@ -54,10 +54,19 @@ body{
       > i{
         padding-left: 0.65em;
       }
+    }
 
-      &:hover{
-        background: $color-mid;
-      }
+  }
+}
+
+// No touch hover effects
+
+:not(.touch), .no-touch{
+
+  #site-header > nav{
+
+    > a:hover{
+      background: $color-mid;
     }
 
     &:hover > a{
@@ -65,7 +74,6 @@ body{
     }
   }
 }
-
 
 // Media Queries
 
@@ -133,10 +141,6 @@ body{
   i{
     display: none;
   }
-
-  &:hover{
-    color: $color-light;
-  }
 }
 
 .previous{
@@ -151,6 +155,19 @@ body{
 
 .next:nth-child(2){
   padding-left: 0.75em;
+}
+
+
+// No touch hover effects
+
+:not(.touch), .no-touch{
+
+  .next, .previous{  
+    &:hover{
+      color: $color-light;
+    }
+  }
+
 }
 
 
@@ -170,10 +187,6 @@ body{
     i{
       display: inline;
     }
-
-    &:hover{
-      color: $color-lightest;
-    }
   }
 
   @each $nav, $dir, $odir, $width in (previous, left, right, 6.5em), (next, right, left, 5.1em){
@@ -183,13 +196,28 @@ body{
       border-bottom-#{$odir}-radius: 0.55em;
       @include transition(#{$dir} transition-time($width) linear);
 
-      &:hover{
-        #{$dir}: 0;
-      }
-
       i{
         padding-#{$dir}: 0.75em;
       }
     }
   }
+
+  // No touch hover effects
+
+  :not(.touch), .no-touch{
+    .next, .previous, .previous:last-child{  
+      &:hover{
+        color: $color-lightest;
+      }
+    }
+
+    @each $nav, $dir in (previous, left), (next, right){
+      .#{$nav}{
+        &:hover{
+          #{$dir}: 0;
+        }
+      }
+    }
+  }
+
 }

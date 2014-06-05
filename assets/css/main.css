@@ -64,8 +64,9 @@ a {
 
 h1 a, h2 a, h3 a, h4 a, p a {
   color: #111111; }
-  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, p a:hover {
-    color: #aaaaaa; }
+
+:not(.touch) h1 a:hover, :not(.touch) h2 a:hover, :not(.touch) h3 a:hover, :not(.touch) h4 a:hover, :not(.touch) p a:hover, .no-touch h1 a:hover, .no-touch h2 a:hover, .no-touch h3 a:hover, .no-touch h4 a:hover, .no-touch p a:hover {
+  color: #aaaaaa; }
 
 @media screen and (min-width: 500px) {
   body {
@@ -112,7 +113,7 @@ body {
   font-family: Josefin Sans, Helvetica, Arial, sans-serif;
   font-weight: 400;
   z-index: 1; }
-  #site-header nav > a {
+  #site-header > nav > a {
     color: #aaaaaa;
     font-size: 0.75em;
     margin-bottom: 0.16em;
@@ -120,39 +121,40 @@ body {
     float: left;
     clear: both;
     background: #111111; }
-    #site-header nav > a:first-child {
+    #site-header > nav > a:first-child {
       font-size: 1em;
       text-transform: uppercase;
       display: visible; }
-    #site-header nav > a:nth-child(1) {
+    #site-header > nav > a:nth-child(1) {
       margin-left: -11.5em;
       -webkit-transition: margin-left 0.14375s linear 0.05s, background-color 0.2s linear;
       -moz-transition: margin-left 0.14375s linear 0.05s, background-color 0.2s linear;
       transition: margin-left 0.14375s linear 0.05s, background-color 0.2s linear; }
-    #site-header nav > a:nth-child(2) {
+    #site-header > nav > a:nth-child(2) {
       margin-left: -4em;
       -webkit-transition: margin-left 0.05s linear 0.05s, background-color 0.2s linear;
       -moz-transition: margin-left 0.05s linear 0.05s, background-color 0.2s linear;
       transition: margin-left 0.05s linear 0.05s, background-color 0.2s linear; }
-    #site-header nav > a:nth-child(3) {
+    #site-header > nav > a:nth-child(3) {
       margin-left: -5em;
       -webkit-transition: margin-left 0.0625s linear 0.05s, background-color 0.2s linear;
       -moz-transition: margin-left 0.0625s linear 0.05s, background-color 0.2s linear;
       transition: margin-left 0.0625s linear 0.05s, background-color 0.2s linear; }
-    #site-header nav > a:nth-child(4) {
+    #site-header > nav > a:nth-child(4) {
       margin-left: -9em;
       -webkit-transition: margin-left 0.1125s linear 0.05s, background-color 0.2s linear;
       -moz-transition: margin-left 0.1125s linear 0.05s, background-color 0.2s linear;
       transition: margin-left 0.1125s linear 0.05s, background-color 0.2s linear; }
-    #site-header nav > a > i, #site-header nav > a > span {
+    #site-header > nav > a > i, #site-header > nav > a > span {
       color: #f8f3ef;
       font-weight: 700; }
-    #site-header nav > a > i {
+    #site-header > nav > a > i {
       padding-left: 0.65em; }
-    #site-header nav > a:hover {
-      background: #444444; }
-  #site-header nav:hover > a {
-    margin-left: 0; }
+
+:not(.touch) #site-header > nav > a:hover, .no-touch #site-header > nav > a:hover {
+  background: #444444; }
+:not(.touch) #site-header > nav:hover > a, .no-touch #site-header > nav:hover > a {
+  margin-left: 0; }
 
 @media screen and (min-width: 650px) {
   #site-header {
@@ -195,8 +197,6 @@ body {
   font-size: 1.15em; }
   .next i, .previous i {
     display: none; }
-  .next:hover, .previous:hover {
-    color: #aaaaaa; }
 
 .previous {
   border-right: 1px solid #111111;
@@ -207,6 +207,9 @@ body {
 
 .next:nth-child(2) {
   padding-left: 0.75em; }
+
+:not(.touch) .next:hover, :not(.touch) .previous:hover, .no-touch .next:hover, .no-touch .previous:hover {
+  color: #aaaaaa; }
 
 @media screen and (min-width: 650px) {
   .next, .previous, .previous:last-child {
@@ -224,31 +227,30 @@ body {
     border-right: none; }
     .next i, .previous i, .previous:last-child i {
       display: inline; }
-    .next:hover, .previous:hover, .previous:last-child:hover {
-      color: #f8f3ef; }
 
   .previous {
-    left: 0;
-    margin-left: -6.5em;
+    left: -6.5em;
     border-top-right-radius: 0.55em;
     border-bottom-right-radius: 0.55em;
-    -webkit-transition: margin-left 0.08125s linear;
-    -moz-transition: margin-left 0.08125s linear;
-    transition: margin-left 0.08125s linear; }
-    .previous:hover {
-      margin-left: 0; }
+    -webkit-transition: left 0.08125s linear;
+    -moz-transition: left 0.08125s linear;
+    transition: left 0.08125s linear; }
     .previous i {
       padding-left: 0.75em; }
 
   .next {
-    right: 0;
-    margin-right: -5.1em;
+    right: -5.1em;
     border-top-left-radius: 0.55em;
     border-bottom-left-radius: 0.55em;
-    -webkit-transition: margin-right 0.06375s linear;
-    -moz-transition: margin-right 0.06375s linear;
-    transition: margin-right 0.06375s linear; }
-    .next:hover {
-      margin-right: 0; }
+    -webkit-transition: right 0.06375s linear;
+    -moz-transition: right 0.06375s linear;
+    transition: right 0.06375s linear; }
     .next i {
-      padding-right: 0.75em; } }
+      padding-right: 0.75em; }
+
+  :not(.touch) .next:hover, :not(.touch) .previous:hover, :not(.touch) .previous:last-child:hover, .no-touch .next:hover, .no-touch .previous:hover, .no-touch .previous:last-child:hover {
+    color: #f8f3ef; }
+  :not(.touch) .previous:hover, .no-touch .previous:hover {
+    left: 0; }
+  :not(.touch) .next:hover, .no-touch .next:hover {
+    right: 0; } }

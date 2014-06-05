@@ -64,8 +64,13 @@ a{
 h1, h2, h3, h4, p{
   a{
     color: $color-dark;
+  }
+}
 
-    &:hover{
+:not(.touch), .no-touch{
+
+  h1, h2, h3, h4, p{
+    a:hover{
       color: $color-light;
     }
   }

@@ -224,6 +224,8 @@ body {
     border-right: none; }
     .next i, .previous i, .previous:last-child i {
       display: inline; }
+    .next:hover, .previous:hover, .previous:last-child:hover {
+      color: #f8f3ef; }
 
   .previous {
     left: 0;

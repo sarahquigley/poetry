@@ -170,6 +170,10 @@ body{
     i{
       display: inline;
     }
+
+    &:hover{
+      color: $color-lightest;
+    }
   }
 
   @each $nav, $dir, $odir, $width in (previous, left, right, 6.5em), (next, right, left, 5.1em){

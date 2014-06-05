@@ -213,6 +213,9 @@ body {
 
 /* Header
 ***********************************/
+#site-header.open a {
+  margin-left: 0 !important; }
+
 #site-header {
   position: absolute;
   top: 0.8em;

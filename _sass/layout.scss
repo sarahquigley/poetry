@@ -178,14 +178,13 @@ body{
 
   @each $nav, $dir, $odir, $width in (previous, left, right, 6.5em), (next, right, left, 5.1em){
     .#{$nav}{
-      #{$dir}: 0;
-      margin-#{$dir}: -#{$width};
+      #{$dir}: -#{$width};
       border-top-#{$odir}-radius: 0.55em;
       border-bottom-#{$odir}-radius: 0.55em;
-      @include transition(margin-#{$dir} transition-time($width) linear);
+      @include transition(#{$dir} transition-time($width) linear);
 
       &:hover{
-        margin-#{$dir}: 0;
+        #{$dir}: 0;
       }
 
       i{

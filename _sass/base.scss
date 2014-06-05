@@ -67,7 +67,7 @@ h1, h2, h3, h4, p{
   }
 }
 
-:not(.touch), .no-touch{
+.no-touch, :not(.touch){
 
   h1, h2, h3, h4, p{
     a:hover{

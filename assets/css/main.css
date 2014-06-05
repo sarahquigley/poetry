@@ -65,7 +65,7 @@ a {
 h1 a, h2 a, h3 a, h4 a, p a {
   color: #111111; }
 
-:not(.touch) h1 a:hover, :not(.touch) h2 a:hover, :not(.touch) h3 a:hover, :not(.touch) h4 a:hover, :not(.touch) p a:hover, .no-touch h1 a:hover, .no-touch h2 a:hover, .no-touch h3 a:hover, .no-touch h4 a:hover, .no-touch p a:hover {
+.no-touch h1 a:hover, .no-touch h2 a:hover, .no-touch h3 a:hover, .no-touch h4 a:hover, .no-touch p a:hover, :not(.touch) h1 a:hover, :not(.touch) h2 a:hover, :not(.touch) h3 a:hover, :not(.touch) h4 a:hover, :not(.touch) p a:hover {
   color: #aaaaaa; }
 
 @media screen and (min-width: 500px) {
@@ -208,7 +208,7 @@ body {
 .next:nth-child(2) {
   padding-left: 0.75em; }
 
-:not(.touch) .next:hover, :not(.touch) .previous:hover, .no-touch .next:hover, .no-touch .previous:hover {
+.no-touch .next:hover, .no-touch .previous:hover, :not(.touch) .next:hover, :not(.touch) .previous:hover {
   color: #aaaaaa; }
 
 @media screen and (min-width: 650px) {
@@ -248,9 +248,9 @@ body {
     .next i {
       padding-right: 0.75em; }
 
-  :not(.touch) .next:hover, :not(.touch) .previous:hover, :not(.touch) .previous:last-child:hover, .no-touch .next:hover, .no-touch .previous:hover, .no-touch .previous:last-child:hover {
+  .no-touch .next:hover, .no-touch .previous:hover, .no-touch .previous:last-child:hover, :not(.touch) .next:hover, :not(.touch) .previous:hover, :not(.touch) .previous:last-child:hover {
     color: #f8f3ef; }
-  :not(.touch) .previous:hover, .no-touch .previous:hover {
+  .no-touch .previous:hover, :not(.touch) .previous:hover {
     left: 0; }
-  :not(.touch) .next:hover, .no-touch .next:hover {
+  .no-touch .next:hover, :not(.touch) .next:hover {
     right: 0; } }

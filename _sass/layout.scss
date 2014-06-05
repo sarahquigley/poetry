@@ -160,7 +160,7 @@ body{
 
 // No touch hover effects
 
-:not(.touch), .no-touch{
+.no-touch, :not(.touch){
 
   .next, .previous{  
     &:hover{
@@ -204,7 +204,7 @@ body{
 
   // No touch hover effects
 
-  :not(.touch), .no-touch{
+  .no-touch, :not(.touch){
     .next, .previous, .previous:last-child{  
       &:hover{
         color: $color-lightest;

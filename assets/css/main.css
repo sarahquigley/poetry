@@ -121,35 +121,33 @@ body {
     display: table;
     clear: both; }
   #site-header a {
-    display: block;
+    display: table;
     float: left;
     clear: both;
     height: 2em;
-    line-height: 2em;
     padding: 0 0.55em;
     margin-bottom: 0.16em;
     background: #111111;
     color: #aaaaaa; }
     #site-header a:nth-child(1) {
-      margin-left: -11.5em;
       -webkit-transition: margin-left 0.14375s linear 0.05s, background-color 0.2s linear;
       -moz-transition: margin-left 0.14375s linear 0.05s, background-color 0.2s linear;
       transition: margin-left 0.14375s linear 0.05s, background-color 0.2s linear; }
     #site-header a:nth-child(2) {
-      margin-left: -4em;
       -webkit-transition: margin-left 0.05s linear 0.05s, background-color 0.2s linear;
       -moz-transition: margin-left 0.05s linear 0.05s, background-color 0.2s linear;
       transition: margin-left 0.05s linear 0.05s, background-color 0.2s linear; }
     #site-header a:nth-child(3) {
-      margin-left: -5em;
       -webkit-transition: margin-left 0.0625s linear 0.05s, background-color 0.2s linear;
       -moz-transition: margin-left 0.0625s linear 0.05s, background-color 0.2s linear;
       transition: margin-left 0.0625s linear 0.05s, background-color 0.2s linear; }
     #site-header a:nth-child(4) {
-      margin-left: -9em;
       -webkit-transition: margin-left 0.1125s linear 0.05s, background-color 0.2s linear;
       -moz-transition: margin-left 0.1125s linear 0.05s, background-color 0.2s linear;
       transition: margin-left 0.1125s linear 0.05s, background-color 0.2s linear; }
+    #site-header a > span {
+      display: table-cell;
+      vertical-align: middle; }
     #site-header a i {
       color: #f8f3ef;
       font-weight: 700; }

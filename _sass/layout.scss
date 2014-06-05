@@ -32,11 +32,11 @@ body{
   }
 
   a {
-    display: block;
+    display: table;
     float: left;
     clear: both;
     height: 2em;
-    line-height: 2em;
+    //line-height: 2em;
 
     padding: 0 0.55em;
     margin-bottom: 0.16em;
@@ -45,9 +45,14 @@ body{
 
     @each $i, $width in (1, 11.5em), (2, 4.0em), (3, 5.0em), (4, 9.0em){
       &:nth-child(#{$i}){
-        margin-left: -$width;
+        //margin-left: -$width;
         @include transition(margin-left transition-time($width) linear 0.05s, background-color 0.2s linear);
       }
+    }
+
+    > span{
+      display: table-cell;
+      vertical-align: middle;
     }
 
     i{

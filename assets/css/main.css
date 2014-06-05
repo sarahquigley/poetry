@@ -109,51 +109,56 @@ body {
   position: absolute;
   top: 0.8em;
   left: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: Josefin Sans, Helvetica, Arial, sans-serif;
   font-weight: 400;
   z-index: 1; }
-  #site-header > nav > a {
-    color: #aaaaaa;
-    font-size: 0.75em;
-    margin-bottom: 0.16em;
-    padding: 0.39em 0.55em;
+  #site-header #site-title {
+    font-size: 1.25em;
+    text-transform: uppercase; }
+  #site-header > nav:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #site-header a {
+    display: block;
     float: left;
     clear: both;
-    background: #111111; }
-    #site-header > nav > a:first-child {
-      font-size: 1em;
-      text-transform: uppercase;
-      display: visible; }
-    #site-header > nav > a:nth-child(1) {
+    height: 2em;
+    line-height: 2em;
+    padding: 0 0.55em;
+    margin-bottom: 0.16em;
+    background: #111111;
+    color: #aaaaaa; }
+    #site-header a:nth-child(1) {
       margin-left: -11.5em;
       -webkit-transition: margin-left 0.14375s linear 0.05s, background-color 0.2s linear;
       -moz-transition: margin-left 0.14375s linear 0.05s, background-color 0.2s linear;
       transition: margin-left 0.14375s linear 0.05s, background-color 0.2s linear; }
-    #site-header > nav > a:nth-child(2) {
+    #site-header a:nth-child(2) {
       margin-left: -4em;
       -webkit-transition: margin-left 0.05s linear 0.05s, background-color 0.2s linear;
       -moz-transition: margin-left 0.05s linear 0.05s, background-color 0.2s linear;
       transition: margin-left 0.05s linear 0.05s, background-color 0.2s linear; }
-    #site-header > nav > a:nth-child(3) {
+    #site-header a:nth-child(3) {
       margin-left: -5em;
       -webkit-transition: margin-left 0.0625s linear 0.05s, background-color 0.2s linear;
       -moz-transition: margin-left 0.0625s linear 0.05s, background-color 0.2s linear;
       transition: margin-left 0.0625s linear 0.05s, background-color 0.2s linear; }
-    #site-header > nav > a:nth-child(4) {
+    #site-header a:nth-child(4) {
       margin-left: -9em;
       -webkit-transition: margin-left 0.1125s linear 0.05s, background-color 0.2s linear;
       -moz-transition: margin-left 0.1125s linear 0.05s, background-color 0.2s linear;
       transition: margin-left 0.1125s linear 0.05s, background-color 0.2s linear; }
-    #site-header > nav > a > i, #site-header > nav > a > span {
+    #site-header a i {
       color: #f8f3ef;
       font-weight: 700; }
-    #site-header > nav > a > i {
+    #site-header a .fa-circle {
       padding-left: 0.65em; }
 
-.no-touch #site-header > nav > a:hover, html:not(.touch) #site-header > nav > a:hover {
+.no-touch #site-header a:hover, html:not(.touch) #site-header a:hover {
   background: #444444; }
-.no-touch #site-header > nav:hover > a, html:not(.touch) #site-header > nav:hover > a {
+.no-touch #site-header:hover a, html:not(.touch) #site-header:hover a {
   margin-left: 0; }
 
 @media screen and (min-width: 650px) {

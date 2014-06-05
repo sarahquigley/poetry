@@ -22,8 +22,4 @@ $(function(){
     }
   });
 
-  $$(".post footer").tap(function(){
-    console.log("tapping");
-  });
-
 });

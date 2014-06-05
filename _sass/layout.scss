@@ -13,7 +13,7 @@ body{
 .touch{
   background: red;
 }
-.no-touch, body:not(.touch){
+.no-touch{
   background: green;
 }
 

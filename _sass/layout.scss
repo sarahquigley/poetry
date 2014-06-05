@@ -10,13 +10,6 @@ body{
   @include justify-content(center);
 }
 
-.touch body{
-  background: red;
-}
-.no-touch body{
-  background: green;
-}
-
 /* Header
 ***********************************/
 
@@ -67,7 +60,7 @@ body{
 
 // No touch hover effects
 
-.no-touch, body:not(.touch){
+.no-touch, html:not(.touch){
 
   #site-header > nav{
 
@@ -166,7 +159,7 @@ body{
 
 // No touch hover effects
 
-.no-touch, body:not(.touch){
+.no-touch, html:not(.touch){
 
   .next, .previous{  
     &:hover{
@@ -210,7 +203,7 @@ body{
 
   // No touch hover effects
 
-  .no-touch, body:not(.touch){
+  .no-touch, html:not(.touch){
     .next, .previous, .previous:last-child{  
       &:hover{
         color: $color-lightest;

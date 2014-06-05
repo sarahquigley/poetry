@@ -65,7 +65,7 @@ a {
 h1 a, h2 a, h3 a, h4 a, p a {
   color: #111111; }
 
-.no-touch h1 a:hover, .no-touch h2 a:hover, .no-touch h3 a:hover, .no-touch h4 a:hover, .no-touch p a:hover, body:not(.touch) h1 a:hover, body:not(.touch) h2 a:hover, body:not(.touch) h3 a:hover, body:not(.touch) h4 a:hover, body:not(.touch) p a:hover {
+.no-touch h1 a:hover, .no-touch h2 a:hover, .no-touch h3 a:hover, .no-touch h4 a:hover, .no-touch p a:hover, html:not(.touch) h1 a:hover, html:not(.touch) h2 a:hover, html:not(.touch) h3 a:hover, html:not(.touch) h4 a:hover, html:not(.touch) p a:hover {
   color: #aaaaaa; }
 
 @media screen and (min-width: 500px) {
@@ -102,12 +102,6 @@ body {
   -o-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center; }
-
-.touch body {
-  background: red; }
-
-.no-touch body {
-  background: green; }
 
 /* Header
 ***********************************/
@@ -157,9 +151,9 @@ body {
     #site-header > nav > a > i {
       padding-left: 0.65em; }
 
-.no-touch #site-header > nav > a:hover, body:not(.touch) #site-header > nav > a:hover {
+.no-touch #site-header > nav > a:hover, html:not(.touch) #site-header > nav > a:hover {
   background: #444444; }
-.no-touch #site-header > nav:hover > a, body:not(.touch) #site-header > nav:hover > a {
+.no-touch #site-header > nav:hover > a, html:not(.touch) #site-header > nav:hover > a {
   margin-left: 0; }
 
 @media screen and (min-width: 650px) {
@@ -214,7 +208,7 @@ body {
 .next:nth-child(2) {
   padding-left: 0.75em; }
 
-.no-touch .next:hover, .no-touch .previous:hover, body:not(.touch) .next:hover, body:not(.touch) .previous:hover {
+.no-touch .next:hover, .no-touch .previous:hover, html:not(.touch) .next:hover, html:not(.touch) .previous:hover {
   color: #aaaaaa; }
 
 @media screen and (min-width: 650px) {
@@ -254,9 +248,9 @@ body {
     .next i {
       padding-right: 0.75em; }
 
-  .no-touch .next:hover, .no-touch .previous:hover, .no-touch .previous:last-child:hover, body:not(.touch) .next:hover, body:not(.touch) .previous:hover, body:not(.touch) .previous:last-child:hover {
+  .no-touch .next:hover, .no-touch .previous:hover, .no-touch .previous:last-child:hover, html:not(.touch) .next:hover, html:not(.touch) .previous:hover, html:not(.touch) .previous:last-child:hover {
     color: #f8f3ef; }
-  .no-touch .previous:hover, body:not(.touch) .previous:hover {
+  .no-touch .previous:hover, html:not(.touch) .previous:hover {
     left: 0; }
-  .no-touch .next:hover, body:not(.touch) .next:hover {
+  .no-touch .next:hover, html:not(.touch) .next:hover {
     right: 0; } }

@@ -10,6 +10,12 @@ body{
   @include justify-content(center);
 }
 
+.touch{
+  background: red;
+}
+.no-touch, body:not(.touch){
+  background: green;
+}
 
 /* Header
 ***********************************/

@@ -277,7 +277,7 @@ body {
     position: fixed; } }
 @media screen and (min-width: 31.25em) {
   #site-header {
-    font-size: 1em; } }
+    font-size: 0.75em; } }
 @media screen and (max-width: 17.5em) {
   #site-header {
     font-size: 1em; } }

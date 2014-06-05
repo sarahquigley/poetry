@@ -2,6 +2,114 @@
 *****************************/
 /* Fonts
 *****************************/
+@font-face {
+  font-family: Merriweather;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Merriweather/Merriweather-Light.eot");
+  src: url("../fonts/Merriweather/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-Light.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Light.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-Light.svg#Merriweather") format("svg"); }
+@font-face {
+  font-family: Merriweather;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Merriweather/Merriweather-Regular.eot");
+  src: url("../fonts/Merriweather/Merriweather-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-Regular.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Regular.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-Regular.svg#Merriweather") format("svg"); }
+@font-face {
+  font-family: Merriweather;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Merriweather/Merriweather-Bold.eot");
+  src: url("../fonts/Merriweather/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-Bold.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Bold.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-Bold.svg#Merriweather") format("svg"); }
+@font-face {
+  font-family: Merriweather;
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/Merriweather/Merriweather-black.eot");
+  src: url("../fonts/Merriweather/Merriweather-black.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-black.woff") format("woff"), url("../fonts/Merriweather/Merriweather-black.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-black.svg#Merriweather") format("svg"); }
+@font-face {
+  font-family: Merriweather;
+  font-weight: 300;
+  font-style: italic;
+  src: url("../fonts/Merriweather/Merriweather-LightItalic.eot");
+  src: url("../fonts/Merriweather/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-LightItalic.woff") format("woff"), url("../fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-LightItalic.svg#Merriweather") format("svg"); }
+@font-face {
+  font-family: Merriweather;
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/Merriweather/Merriweather-Italic.eot");
+  src: url("../fonts/Merriweather/Merriweather-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-Italic.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Italic.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-Italic.svg#Merriweather") format("svg"); }
+@font-face {
+  font-family: Merriweather;
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/Merriweather/Merriweather-BoldItalic.eot");
+  src: url("../fonts/Merriweather/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-BoldItalic.woff") format("woff"), url("../fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-BoldItalic.svg#Merriweather") format("svg"); }
+@font-face {
+  font-family: Merriweather;
+  font-weight: 900;
+  font-style: italic;
+  src: url("../fonts/Merriweather/Merriweather-HeavyItalic.eot");
+  src: url("../fonts/Merriweather/Merriweather-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-HeavyItalic.woff") format("woff"), url("../fonts/Merriweather/Merriweather-HeavyItalic.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-HeavyItalic.svg#Merriweather") format("svg"); }
+@font-face {
+  font-family: JosefinSans;
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/Josefin_Sans/JosefinSans-Thin.eot");
+  src: url("../fonts/Josefin_Sans/JosefinSans-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/JosefinSans-Thin.woff") format("woff"), url("../fonts/Josefin_Sans/JosefinSans-Thin.ttf") format("truetype"), url("../fonts/Josefin_Sans/JosefinSans-Thin.svg#JosefinSans") format("svg"); }
+@font-face {
+  font-family: JosefinSans;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Josefin_Sans/JosefinSans-Light.eot");
+  src: url("../fonts/Josefin_Sans/JosefinSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/JosefinSans-Light.woff") format("woff"), url("../fonts/Josefin_Sans/JosefinSans-Light.ttf") format("truetype"), url("../fonts/Josefin_Sans/JosefinSans-Light.svg#JosefinSans") format("svg"); }
+@font-face {
+  font-family: JosefinSans;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Josefin_Sans/JosefinSans-Regular.eot");
+  src: url("../fonts/Josefin_Sans/JosefinSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/JosefinSans-Regular.woff") format("woff"), url("../fonts/Josefin_Sans/JosefinSans-Regular.ttf") format("truetype"), url("../fonts/Josefin_Sans/JosefinSans-Regular.svg#JosefinSans") format("svg"); }
+@font-face {
+  font-family: JosefinSans;
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Josefin_Sans/JosefinSans-SemiBold.eot");
+  src: url("../fonts/Josefin_Sans/JosefinSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/JosefinSans-SemiBold.woff") format("woff"), url("../fonts/Josefin_Sans/JosefinSans-SemiBold.ttf") format("truetype"), url("../fonts/Josefin_Sans/JosefinSans-SemiBold.svg#JosefinSans") format("svg"); }
+@font-face {
+  font-family: JosefinSans;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Josefin_Sans/JosefinSans-Bold.eot");
+  src: url("../fonts/Josefin_Sans/JosefinSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/JosefinSans-Bold.woff") format("woff"), url("../fonts/Josefin_Sans/JosefinSans-Bold.ttf") format("truetype"), url("../fonts/Josefin_Sans/JosefinSans-Bold.svg#JosefinSans") format("svg"); }
+@font-face {
+  font-family: JosefinSans;
+  font-weight: 100;
+  font-style: italic;
+  src: url("../fonts/Josefin_Sans/JosefinSans-ThinItalic.eot");
+  src: url("../fonts/Josefin_Sans/JosefinSans-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/JosefinSans-ThinItalic.woff") format("woff"), url("../fonts/Josefin_Sans/JosefinSans-ThinItalic.ttf") format("truetype"), url("../fonts/Josefin_Sans/JosefinSans-ThinItalic.svg#JosefinSans") format("svg"); }
+@font-face {
+  font-family: JosefinSans;
+  font-weight: 300;
+  font-style: italic;
+  src: url("../fonts/Josefin_Sans/JosefinSans-LightItalic.eot");
+  src: url("../fonts/Josefin_Sans/JosefinSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/JosefinSans-LightItalic.woff") format("woff"), url("../fonts/Josefin_Sans/JosefinSans-LightItalic.ttf") format("truetype"), url("../fonts/Josefin_Sans/JosefinSans-LightItalic.svg#JosefinSans") format("svg"); }
+@font-face {
+  font-family: JosefinSans;
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/Josefin_Sans/JosefinSans-Italic.eot");
+  src: url("../fonts/Josefin_Sans/JosefinSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/JosefinSans-Italic.woff") format("woff"), url("../fonts/Josefin_Sans/JosefinSans-Italic.ttf") format("truetype"), url("../fonts/Josefin_Sans/JosefinSans-Italic.svg#JosefinSans") format("svg"); }
+@font-face {
+  font-family: JosefinSans;
+  font-weight: 600;
+  font-style: italic;
+  src: url("../fonts/Josefin_Sans/JosefinSans-SemiBoldItalic.eot");
+  src: url("../fonts/Josefin_Sans/JosefinSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/JosefinSans-SemiBoldItalic.woff") format("woff"), url("../fonts/Josefin_Sans/JosefinSans-SemiBoldItalic.ttf") format("truetype"), url("../fonts/Josefin_Sans/JosefinSans-SemiBoldItalic.svg#JosefinSans") format("svg"); }
+@font-face {
+  font-family: JosefinSans;
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/Josefin_Sans/JosefinSans-BoldItalic.eot");
+  src: url("../fonts/Josefin_Sans/JosefinSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/JosefinSans-BoldItalic.woff") format("woff"), url("../fonts/Josefin_Sans/JosefinSans-BoldItalic.ttf") format("truetype"), url("../fonts/Josefin_Sans/JosefinSans-BoldItalic.svg#JosefinSans") format("svg"); }
 /* Misc 
 *****************************/
 /* Reset Styles
@@ -25,12 +133,11 @@ body {
   font-size: 4vw; }
 
 h1, h2, h3 {
-  font-family: Josefin Sans, Helvetica, Arial, sans-serif;
+  font-family: JosefinSans, Helvetica, Arial, sans-serif;
   letter-spacing: 0.1em;
   color: #111111; }
 
 h1, h2 {
-  font-size: 1.82em;
   font-weight: 700;
   text-transform: uppercase; }
 
@@ -110,7 +217,7 @@ body {
   top: 0.8em;
   left: 0;
   font-size: 1rem;
-  font-family: Josefin Sans, Helvetica, Arial, sans-serif;
+  font-family: JosefinSans, Helvetica, Arial, sans-serif;
   font-weight: 400;
   z-index: 1; }
   #site-header #site-title {
@@ -144,8 +251,6 @@ body {
       -webkit-transition: margin-left 0.1125s linear 0.05s, background-color 0.2s linear;
       -moz-transition: margin-left 0.1125s linear 0.05s, background-color 0.2s linear;
       transition: margin-left 0.1125s linear 0.05s, background-color 0.2s linear; }
-    #site-header a > span {
-      height: 0.8em; }
     #site-header a i {
       color: #f8f3ef;
       font-weight: 700; }
@@ -194,7 +299,7 @@ body {
 .next, .previous {
   color: #111111;
   position: static;
-  font-family: Josefin Sans, Helvetica, Arial, sans-serif;
+  font-family: JosefinSans, Helvetica, Arial, sans-serif;
   font-size: 1.15em; }
   .next i, .previous i {
     display: none; }

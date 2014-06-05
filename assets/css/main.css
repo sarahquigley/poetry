@@ -103,10 +103,10 @@ body {
   justify-content: center;
   -ms-flex-pack: center; }
 
-.touch {
+.touch body {
   background: red; }
 
-.no-touch {
+.no-touch body {
   background: green; }
 
 /* Header

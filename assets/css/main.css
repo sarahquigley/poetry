@@ -224,7 +224,7 @@ body {
   #site-header #site-title {
     font-size: 1.25em;
     text-transform: uppercase;
-    line-height: 1.0em; }
+    line-height: 0.5em; }
   #site-header > nav:after {
     content: "";
     display: table;
@@ -234,7 +234,7 @@ body {
     float: left;
     clear: both;
     line-height: 1.0em;
-    padding: 0.39em 0.55em;
+    padding: 0.4em 0.55em;
     margin-bottom: 0.16em;
     background: #111111;
     color: #aaaaaa; }
@@ -308,7 +308,7 @@ body {
   position: static;
   font-family: JosefinSansLocal, "Josefin Sans", Helvetica, Arial, sans-serif;
   font-size: 1.15em;
-  line-height: 1em; }
+  line-height: 0.5em; }
   .next i, .previous i {
     display: none; }
 

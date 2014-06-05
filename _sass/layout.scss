@@ -25,7 +25,7 @@ body{
   #site-title{
     font-size: 1.25em;
     text-transform: uppercase;
-    line-height: 1.0em;
+    line-height: 0.5em;
   }
 
   > nav{
@@ -38,7 +38,7 @@ body{
     clear: both;
     line-height: 1.0em;
 
-    padding: 0.39em 0.55em;
+    padding: 0.4em 0.55em;
     margin-bottom: 0.16em;
     background: $color-dark;
     color: $color-light;
@@ -140,7 +140,7 @@ body{
   position: static;
   font-family: $font-display;
   font-size: 1.15em;
-  line-height: 1em;
+  line-height: 0.5em;
 
   i{
     display: none;

@@ -10,13 +10,6 @@ body{
   @include justify-content(center);
 }
 
-.touch{
-  background: red;
-}
-.no-touch, body:not(.touch){
-  background: green;
-}
-
 /* Header
 ***********************************/
 
@@ -24,61 +17,65 @@ body{
 
 #site-header{
   @include position(absolute, 0.8em null null 0);
-  font-size: rem(20);
+  font-size: rem(16);
   font-family: $font-display;
   font-weight: 400;
   z-index: 1;
 
+  #site-title{
+    font-size: 1.25em;
+    text-transform: uppercase;
+  }
+
   > nav{
-    > a {
-      color: $color-light;
-      font-size: 0.75em;
-      margin-bottom: 0.16em;
-      padding: 0.39em 0.55em;
-      float: left;
-      clear: both;
-      background: $color-dark;
+    @include clearfix;
+  }
 
-      &:first-child{
-        font-size: 1em;
-        text-transform: uppercase;
-        display: visible;
-      }
+  a {
+    display: block;
+    float: left;
+    clear: both;
+    height: 2em;
+    line-height: 2em;
 
-      @each $i, $width in (1, 11.5em), (2, 4.0em), (3, 5.0em), (4, 9.0em){
-        &:nth-child(#{$i}){
-          margin-left: -$width;
-          @include transition(margin-left transition-time($width) linear 0.05s, background-color 0.2s linear);
-        }
-      }
+    padding: 0 0.55em;
+    margin-bottom: 0.16em;
+    background: $color-dark;
+    color: $color-light;
 
-      > i, > span{
-        color: $color-lightest;
-        font-weight: 700;
-      }
-
-      > i{
-        padding-left: 0.65em;
+    @each $i, $width in (1, 11.5em), (2, 4.0em), (3, 5.0em), (4, 9.0em){
+      &:nth-child(#{$i}){
+        margin-left: -$width;
+        @include transition(margin-left transition-time($width) linear 0.05s, background-color 0.2s linear);
       }
     }
 
+    i{
+      color: $color-lightest;
+      font-weight: 700;
+    }
+
+    .fa-circle{
+      padding-left: 0.65em;
+    }
   }
+
 }
 
 // No touch hover effects
 
-.no-touch, body:not(.touch){
+.no-touch, html:not(.touch){
 
-  #site-header > nav{
-
-    > a:hover{
+  #site-header{ 
+    a:hover{
       background: $color-mid;
     }
 
-    &:hover > a{
+    &:hover a{
       margin-left: 0;
     }
   }
+    
 }
 
 // Media Queries
@@ -166,7 +163,7 @@ body{
 
 // No touch hover effects
 
-.no-touch, body:not(.touch){
+.no-touch, html:not(.touch){
 
   .next, .previous{  
     &:hover{
@@ -210,7 +207,7 @@ body{
 
   // No touch hover effects
 
-  .no-touch, body:not(.touch){
+  .no-touch, html:not(.touch){
     .next, .previous, .previous:last-child{  
       &:hover{
         color: $color-lightest;

@@ -2,10 +2,8 @@ $(function(){
 
   if ( 'ontouchstart' in document.documentElement) {
     $('html').addClass('touch');
-    alert('touch');
   } else {
     $('html').addClass('no-touch');
-    alert('no-touch');
   }
   
   $$('body').swipeRight(function(){

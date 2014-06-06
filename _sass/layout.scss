@@ -17,7 +17,7 @@ body{
 
 #site-header.open{
   a{
-    margin-left: 0 !important;
+    left: 0 !important;
   }
 }
 
@@ -39,7 +39,7 @@ body{
   }
 
   a {
-    display: block;
+    position: relative;
     float: left;
     clear: both;
     line-height: 1.0em;
@@ -51,8 +51,8 @@ body{
 
     @each $i, $width in (1, 11.7em), (2, 4.0em), (3, 5.0em), (4, 9.0em){
       &:nth-child(#{$i}){
-        margin-left: -$width;
-        @include transition(margin-left transition-time($width) linear 0.05s, background-color 0.2s linear);
+        left: -$width;
+        @include transition(left transition-time($width) linear 0.05s, background-color 0.2s linear);
       }
     }
 
@@ -78,7 +78,7 @@ body{
     }
 
     &:hover a{
-      margin-left: 0;
+      left: 0;
     }
   }
     

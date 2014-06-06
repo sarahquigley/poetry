@@ -280,8 +280,8 @@ body {
     position: fixed; } }
 @media screen and (min-width: 31.25em) {
   #site-header {
-    font-size: 0.75em; } }
-@media screen and (max-width: 17.5em) {
+    font-size: 0.8em; } }
+@media screen and (max-width: 18.75em) {
   #site-header {
     font-size: 1em; } }
 /* Post styles
@@ -291,7 +291,7 @@ body {
   -moz-align-self: center;
   align-self: center;
   -ms-flex-item-align: center;
-  padding: 3.5em 0; }
+  padding: 4.5em 0; }
   .post header {
     margin-bottom: 1.7em; }
   .post footer > p {
@@ -304,6 +304,9 @@ body {
 #contents p {
   font-size: 0.8em; }
 
+@media screen and (min-width: 31.25em) {
+  .post {
+    padding: 3.5em 0; } }
 @media screen and (min-width: 40.625em) {
   .post, .page {
     max-width: 69%; } }

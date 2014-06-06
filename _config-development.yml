@@ -1,0 +1,19 @@
+# Site settings
+title: Sarah writes poems 
+description: "Poetry as it happens."
+
+author:
+    name: Sarah Quigley
+    first_name: Sarah
+    surname: Quigley
+email: sarah@sarahquigley.net
+
+exclude: [Gemfile, Rakefile, Gemfile.lock]
+
+baseurl: ""
+url: ""
+excerpt_separator: "  "
+
+# Build settings
+markdown: kramdown
+permalink: pretty

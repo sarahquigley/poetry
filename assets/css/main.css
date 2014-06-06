@@ -242,10 +242,10 @@ body {
     background: #111111;
     color: #aaaaaa; }
     #site-header a:nth-child(1) {
-      margin-left: -11.5em;
-      -webkit-transition: margin-left 0.14375s linear 0.05s, background-color 0.2s linear;
-      -moz-transition: margin-left 0.14375s linear 0.05s, background-color 0.2s linear;
-      transition: margin-left 0.14375s linear 0.05s, background-color 0.2s linear; }
+      margin-left: -11.7em;
+      -webkit-transition: margin-left 0.14625s linear 0.05s, background-color 0.2s linear;
+      -moz-transition: margin-left 0.14625s linear 0.05s, background-color 0.2s linear;
+      transition: margin-left 0.14625s linear 0.05s, background-color 0.2s linear; }
     #site-header a:nth-child(2) {
       margin-left: -4em;
       -webkit-transition: margin-left 0.05s linear 0.05s, background-color 0.2s linear;
@@ -265,7 +265,7 @@ body {
       color: #f8f3ef;
       font-weight: 700; }
     #site-header a .fa-circle {
-      padding-left: 0.65em; }
+      padding-left: 0.75em; }
 
 .no-touch #site-header a:hover, html:not(.touch) #site-header a:hover {
   background: #444444; }
@@ -274,7 +274,7 @@ body {
 
 @media screen and (min-width: 40.625em) {
   #site-header {
-    top: 3.5em; } }
+    top: 4.375em; } }
 @media screen and (min-width: 34.375em) {
   #site-header {
     position: fixed; } }
@@ -291,7 +291,7 @@ body {
   -moz-align-self: center;
   align-self: center;
   -ms-flex-item-align: center;
-  padding: 4.375rem 0; }
+  padding: 3.5em 0; }
   .post header {
     margin-bottom: 1.7em; }
   .post footer > p {
@@ -309,7 +309,7 @@ body {
     max-width: 69%; } }
 @media screen and (min-width: 56.25em) {
   .post, .page {
-    max-width: 37.5rem; } }
+    max-width: 30em; } }
 /* Next and Previous links
 ***********************************/
 .next, .previous {

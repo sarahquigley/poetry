@@ -11,20 +11,8 @@ $color-highlight: #b49251;
 /* Fonts
 *****************************/
 
-@each $name, $weight, $style in 
-(Light, 300, normal), (Regular, 400, normal), (Bold, 700, normal), (Black, 900, normal),
-(LightItalic, 300, italic), (Italic, 400, italic), (BoldItalic, 700, italic), (HeavyItalic, 900, italic){
-  @include font-face(MerriweatherLocal, '../fonts/Merriweather/Merriweather-#{$name}', $weight, $style);
-}
-
-@each $name, $weight, $style in 
-(Thin, 100, normal), (Light, 300, normal), (Regular, 400, normal), (SemiBold, 600, normal), (Bold, 700, normal),
-(ThinItalic, 100, italic), (LightItalic, 300, italic), (Italic, 400, italic), (SemiBoldItalic, 600, italic), (BoldItalic, 700, italic){
-  @include font-face(JosefinSansLocal, '../fonts/Josefin_Sans/JosefinSans-#{$name}', $weight, $style);
-}
-
-$font-text: MerriweatherLocal, Merriweather, Georgia, "Times New Roman", serif;
-$font-display: JosefinSansLocal, "Josefin Sans", Helvetica, Arial, sans-serif;
+$font-text: Merriweather, Georgia, "Times New Roman", serif;
+$font-display: "Josefin Sans", Helvetica, Arial, sans-serif;
 
 
 /* Misc 

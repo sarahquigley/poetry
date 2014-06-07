@@ -237,7 +237,7 @@ body {
     background-color: #aaaaaa;
     color: #f8f3ef;
     padding: 0.75em;
-    border-right: none;
+    border-left: none !important;
     top: 50%;
     position: fixed;
     top: 50vh;

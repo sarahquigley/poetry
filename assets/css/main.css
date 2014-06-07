@@ -223,13 +223,10 @@ body {
     display: none; }
 
 .previous {
-  border-right: 1px solid #111111;
   padding-right: 0.75em; }
-  .previous:last-child {
-    border-right: none;
-    padding-right: 0; }
 
-.next:nth-child(2) {
+.previous + .next {
+  border-left: 1px solid #111111;
   padding-left: 0.75em; }
 
 .no-touch .next:hover, .no-touch .previous:hover, html:not(.touch) .next:hover, html:not(.touch) .previous:hover {
@@ -239,7 +236,7 @@ body {
   .next, .previous {
     background-color: #aaaaaa;
     color: #f8f3ef;
-    padding: 0.75em !important;
+    padding: 0.75em;
     border-right: none;
     top: 50%;
     position: fixed;
@@ -272,7 +269,7 @@ body {
     .next i {
       padding-right: 0.75em; }
 
-  .no-touch .next:hover, .no-touch .previous:hover, .no-touch .previous:last-child:hover, html:not(.touch) .next:hover, html:not(.touch) .previous:hover, html:not(.touch) .previous:last-child:hover {
+  .no-touch .next:hover, .no-touch .previous:hover, html:not(.touch) .next:hover, html:not(.touch) .previous:hover {
     color: #f8f3ef; }
   .no-touch .previous:hover, html:not(.touch) .previous:hover {
     left: 0; }

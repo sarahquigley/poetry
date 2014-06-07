@@ -184,16 +184,11 @@ body{
 }
 
 .previous{
-  border-right: 1px solid $color-dark;
   padding-right: 0.75em;
-
-  &:last-child{
-    border-right: none;
-    padding-right: 0;
-  }
 }
 
-.next:nth-child(2){
+.previous + .next{
+  border-left: 1px solid $color-dark;
   padding-left: 0.75em;
 }
 
@@ -218,7 +213,7 @@ body{
   .next, .previous{  
     background-color: $color-light;
     color: $color-lightest;
-    padding: 0.75em !important;
+    padding: 0.75em;
     border-right: none;
     top: 50%;
     @include position(fixed, 50vh null null null);
@@ -245,7 +240,7 @@ body{
   // No touch hover effects
 
   .no-touch, html:not(.touch){
-    .next, .previous, .previous:last-child{  
+    .next, .previous{  
       &:hover{
         color: $color-lightest;
       }

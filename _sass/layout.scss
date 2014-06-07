@@ -1,13 +1,29 @@
+html{
+  //height: 100%;
+}
+
 body{
   background: url("../images/bg.png") center center repeat;
+  position: relative;
 }
 
 #content{
   min-height: 100%;
   min-height: 100vh;
-  display: relative;
   @include display(flex);
   @include justify-content(center);
+}
+
+.no-flexbox.no-flexboxlegacy{
+  #content{
+    display: table;
+    margin: 0 auto !important;
+  }
+
+  .post{
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 
 /* Header
@@ -51,8 +67,8 @@ body{
 
     @each $i, $width in (1, 11.7em), (2, 4.0em), (3, 5.0em), (4, 9.0em){
       &:nth-child(#{$i}){
-        left: -$width;
-        @include transition(left transition-time($width) linear 0.05s, background-color 0.2s linear);
+        margin-left: -$width;
+        @include transition(margin-left transition-time($width) linear 0.05s, background-color 0.2s linear);
       }
     }
 
@@ -78,7 +94,7 @@ body{
     }
 
     &:hover a{
-      left: 0;
+      margin-left: 0;
     }
   }
     
@@ -203,14 +219,14 @@ body{
 
 @media screen and (min-width: em(650)) and (min-height: em(500)){
   
-  .next, .previous, .previous:last-child{  
+  .next, .previous{  
+    background-color: $color-light;
+    color: $color-lightest;
+    padding: 0.75em !important;
+    border-right: none;
     top: 50%;
     @include position(fixed, 50vh null null null);
     @include transform(translateY(-50%));
-    background-color: $color-light;
-    color: $color-lightest;
-    padding: 0.75em;
-    border-right: none;
 
     i{
       display: inline;

@@ -19,7 +19,7 @@ $(function(){
     }
   };
 
-  $("body").swipe({
+  $("html").swipe({
     swipeRight: function(event, distance, duration, fingerCount, fingerData) {
       changePage(".previous");
     },

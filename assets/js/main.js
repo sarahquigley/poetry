@@ -12,19 +12,20 @@ $(function(){
     $('html').addClass('no-touch');
   }
 
+  var changePage = function(page){
+    var href = $(page).attr('href');
+    if( href !== undefined){
+      window.location.href = href;
+    }
+  };
+
   $("body").swipe({
     swipeRight: function(event, distance, duration, fingerCount, fingerData) {
-      var href = $(".previous").attr('href');
-      if( href !== undefined){
-        window.location.href = href;
-      }
+      changePage(".previous");
     },
 
     swipeLeft: function(event, distance, duration, fingerCount, fingerData) {
-      var href = $(".next").attr('href');
-      if( href !== undefined){
-        window.location.href = href;
-      }
+      changePage(".next");
     },
     threshold:0
   });

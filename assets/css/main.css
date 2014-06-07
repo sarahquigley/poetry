@@ -112,7 +112,7 @@ body {
 /* Header
 ***********************************/
 #site-header.open a {
-  left: 0 !important; }
+  margin-left: 0 !important; }
 
 #site-header {
   position: absolute;

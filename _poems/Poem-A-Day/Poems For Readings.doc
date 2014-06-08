@@ -1,0 +1,519 @@
+{\rtf1\adeflang1025\ansi\ansicpg1252\uc1\adeff0\deff0\stshfdbch31505\stshfloch31506\stshfhich31506\stshfbi31507\deflang1033\deflangfe1033\themelang1033\themelangfe0\themelangcs0{\fonttbl{\f0\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f34\fbidi \froman\fcharset1\fprq2{\*\panose 02040503050406030204}Cambria Math;}
+{\f39\fbidi \fswiss\fcharset0\fprq2{\*\panose 020b0604030504040204}Verdana;}{\flomajor\f31500\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\fdbmajor\f31501\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\fhimajor\f31502\fbidi \froman\fcharset0\fprq2{\*\panose 02040503050406030204}Cambria;}
+{\fbimajor\f31503\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\flominor\f31504\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\fdbminor\f31505\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\fhiminor\f31506\fbidi \fswiss\fcharset0\fprq2{\*\panose 020f0502020204030204}Calibri;}
+{\fbiminor\f31507\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f40\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\f41\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\f43\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\f44\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\f45\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f46\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}
+{\f47\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\f48\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\f430\fbidi \fswiss\fcharset238\fprq2 Verdana CE;}{\f431\fbidi \fswiss\fcharset204\fprq2 Verdana Cyr;}
+{\f433\fbidi \fswiss\fcharset161\fprq2 Verdana Greek;}{\f434\fbidi \fswiss\fcharset162\fprq2 Verdana Tur;}{\f437\fbidi \fswiss\fcharset186\fprq2 Verdana Baltic;}{\f438\fbidi \fswiss\fcharset163\fprq2 Verdana (Vietnamese);}
+{\flomajor\f31508\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\flomajor\f31509\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}{\flomajor\f31511\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}
+{\flomajor\f31512\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\flomajor\f31513\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\flomajor\f31514\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}
+{\flomajor\f31515\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\flomajor\f31516\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\fdbmajor\f31518\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}
+{\fdbmajor\f31519\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}{\fdbmajor\f31521\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\fdbmajor\f31522\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}
+{\fdbmajor\f31523\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\fdbmajor\f31524\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\fdbmajor\f31525\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}
+{\fdbmajor\f31526\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\fhimajor\f31528\fbidi \froman\fcharset238\fprq2 Cambria CE;}{\fhimajor\f31529\fbidi \froman\fcharset204\fprq2 Cambria Cyr;}
+{\fhimajor\f31531\fbidi \froman\fcharset161\fprq2 Cambria Greek;}{\fhimajor\f31532\fbidi \froman\fcharset162\fprq2 Cambria Tur;}{\fhimajor\f31535\fbidi \froman\fcharset186\fprq2 Cambria Baltic;}
+{\fbimajor\f31538\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\fbimajor\f31539\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}{\fbimajor\f31541\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}
+{\fbimajor\f31542\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\fbimajor\f31543\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\fbimajor\f31544\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}
+{\fbimajor\f31545\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\fbimajor\f31546\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\flominor\f31548\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}
+{\flominor\f31549\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}{\flominor\f31551\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\flominor\f31552\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}
+{\flominor\f31553\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\flominor\f31554\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\flominor\f31555\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}
+{\flominor\f31556\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\fdbminor\f31558\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\fdbminor\f31559\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\fdbminor\f31561\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\fdbminor\f31562\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\fdbminor\f31563\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}
+{\fdbminor\f31564\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\fdbminor\f31565\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\fdbminor\f31566\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}
+{\fhiminor\f31568\fbidi \fswiss\fcharset238\fprq2 Calibri CE;}{\fhiminor\f31569\fbidi \fswiss\fcharset204\fprq2 Calibri Cyr;}{\fhiminor\f31571\fbidi \fswiss\fcharset161\fprq2 Calibri Greek;}{\fhiminor\f31572\fbidi \fswiss\fcharset162\fprq2 Calibri Tur;}
+{\fhiminor\f31575\fbidi \fswiss\fcharset186\fprq2 Calibri Baltic;}{\fbiminor\f31578\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\fbiminor\f31579\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\fbiminor\f31581\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\fbiminor\f31582\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\fbiminor\f31583\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}
+{\fbiminor\f31584\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\fbiminor\f31585\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\fbiminor\f31586\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;
+\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red255\green255\blue255;}{\*\defchp \fs22\loch\af31506\hich\af31506\dbch\af31505 }{\*\defpap \ql \li0\ri0\sa200\sl276\slmult1
+\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 }\noqfpromote {\stylesheet{\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\kerning28\loch\f0\hich\af0\dbch\af31505\cgrid\langnp1033\langfenp1033 \snext0 \sqformat \spriority0 Normal;}{\*\cs10 \additive \ssemihidden \sunhideused \spriority1 Default Paragraph Font;}{\*
+\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\tblind0\tblindtype3\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv \ql \li0\ri0\sa200\sl276\slmult1
+\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af31507\afs22\alang1025 \ltrch\fcs0 \fs22\lang1033\langfe1033\loch\f31506\hich\af31506\dbch\af31505\cgrid\langnp1033\langfenp1033 
+\snext11 \ssemihidden \sunhideused \sqformat Normal Table;}}{\*\rsidtbl \rsid790981\rsid15739891}{\mmathPr\mmathFont34\mbrkBin0\mbrkBinSub0\msmallFrac0\mdispDef1\mlMargin0\mrMargin0\mdefJc1\mwrapIndent1440\mintLim0\mnaryLim1}{\info{\operator  }
+{\creatim\yr2008\mo7\dy18\hr10\min28}{\revtim\yr2008\mo7\dy18\hr10\min31}{\version3}{\edmins3}{\nofpages32}{\nofwords2340}{\nofchars13338}{\nofcharsws15647}{\vern32895}}{\*\xmlnstbl {\xmlns1 http://schemas.microsoft.com/office/word/2003/wordml}}
+\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect 
+\widowctrl\ftnbj\aenddoc\trackmoves1\trackformatting1\donotembedsysfont0\relyonvml0\donotembedlingdata1\grfdocevents0\validatexml0\showplaceholdtext0\ignoremixedcontent0\saveinvalidxml0\showxmlerrors0\horzdoc\dghspace120\dgvspace120\dghorigin1701
+\dgvorigin1984\dghshow0\dgvshow3\jcompress\viewkind1\viewscale100\rsidroot15739891 \fet0{\*\wgrffmtfilter 2450}\ilfomacatclnup0{\*\docvar {ColorPos}{-1}}{\*\docvar {ColorSet}{-1}}{\*\docvar {StylePos}{-1}}{\*\docvar {StyleSet}{-1}}{\*\ftnsep \ltrpar 
+\pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\kerning28\loch\af0\hich\af0\dbch\af31505\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid790981 \chftnsep 
+\par }}{\*\ftnsepc \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\kerning28\loch\af0\hich\af0\dbch\af31505\cgrid\langnp1033\langfenp1033 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid790981 \chftnsepc 
+\par }}{\*\aftnsep \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\kerning28\loch\af0\hich\af0\dbch\af31505\cgrid\langnp1033\langfenp1033 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid790981 \chftnsep 
+\par }}{\*\aftnsepc \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\kerning28\loch\af0\hich\af0\dbch\af31505\cgrid\langnp1033\langfenp1033 
+{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid790981 \chftnsepc 
+\par }}\ltrpar \sectd \ltrsect\pgnrestart\linex0\footery864\sectdefaultcl\sftnbj {\headerr \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\tqc\tx4320\tqr\tx8640\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\kerning28\loch\af0\hich\af0\dbch\af31505\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \kerning0\insrsid790981 
+\par 
+\par }}{\footerr \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\tqc\tx4320\tqr\tx8640\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\kerning28\loch\af0\hich\af0\dbch\af31505\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \kerning0\insrsid790981 
+\par 
+\par }}{\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}
+{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl8
+\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}\pard\plain \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 \rtlch\fcs1 
+\af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\kerning28\loch\af0\hich\af0\dbch\af31505\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 
+\hich\af39\dbch\af31505\loch\f39 The New Bridge
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 A machine torn straight from the pages\line of }{\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 the War of the Worlds}{\rtlch\fcs1 
+\af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 ,\line \hich\af39\dbch\af31505\loch\f39 it has dug claws into the soil of old Dundrum\line \hich\af39\dbch\af31505\loch\f39 and hunkered down on its haunches.\line \line }{
+\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 St. George's Bells}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\hich\af39\dbch\af31505\loch\f39  peel its arrival.\line Spider on spider on spider,\line little feet disturb hairs\line on the back of my hands,\line and ivy sinks first roots\line into concrete - the webs we weave,\line \line 
+the bridges new lovers build for each othe\hich\af39\dbch\af31505\loch\f39 r,\line rigging stretches to the sky\line and wind plays the cables like a harp.\line It is like a beached ship, you whispered.\line Before it landed here on our small planet,
+\line a sail of purest whitest energy\line stretched from that thin curved mast,\line I replied.\line \line Those pillars hid\hich\af39\dbch\af31505\loch\f39 e\hich\af39\dbch\af31505\loch\f39  the shaft of a glass elevator\line 
+and, deep in the caverns they have hollowed\line beneath the streets of Dundrum,\line small fat-eyed men with silver suits and laser guns\line watch us as we make love on the tracks\line of Dundrum Luas bridge-\line stars pulsing above us,\line cars puls
+\hich\af39\dbch\af31505\loch\f39 i\hich\af39\dbch\af31505\loch\f39 ng below\line and Mars hovering, unblinking,\line an ever-watchful eye. 
+\par }\pard \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \page \hich\af39\dbch\af31505\loch\f39 
+A trip to the hospital
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 I'm visiting St. Vincent's with Angie,\line nice girl, but not much brains,\line a pretty thing, a gentle rain-\line she's not my daughter or my niece,\line just the girl I get to help me \hich\af39\dbch\af31505\loch\f39 
+out around the house.\line \line The corridors are stark and white,\line like the road to heaven, but with too much light\line and too much disinfectant.\line \line She wheels me up in my chair,\line then I hobble up the stairs-\line 
+some things never change,\line I'm still afraid of elevators.\line \line And\hich\af39\dbch\af31505\loch\f39  \hich\af39\dbch\af31505\loch\f39 the rooms that I walk by\line whisper with the weight\line of places where people go to die-\line \line 
+I think of the photo on the mantelpiece,\line you and I hand-in-hand\line on the day before we married.\line Today, though I can hold your hand, \line and stroke your face,\line I don't really thi\hich\af39\dbch\af31505\loch\f39 n
+\hich\af39\dbch\af31505\loch\f39 k you notice anymore-\line the end of too many long years-\line \line so I'll just sprinkle you with water\line from the shrine at Knock,\line and think of how we used walk\line along the Dodder river-\line 
+the sun would hang on the trees,\line wind would rifle at the leaves,\line a trapeze of light\hich\af39\dbch\af31505\loch\f39  \hich\af39\dbch\af31505\loch\f39 and shadow-\line birds- cranes and ducks\line making ripples by the rocks,\line 
+while we talked about tomorrow. 
+\par \page 
+\par }\pard \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 The House on the Hill
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 My life on paper is rakish,\line tight as a papoose }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39   \line rolling like beads across the page,\line fractals from seed to weed - it runs wild.\line \line I \hich\af39\dbch\af31505\loch\f39 am the moon and her shadows,
+\line have known the love that has dried\line on her soft white hands,\line scabbing them over, pocking them.\line \line I have built myself a house }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{
+\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line it is enormous and unfinished, it is the deer,\line it is the oak tree, it is the sea }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line I will sit in the\hich\af39\dbch\af31505\loch\f39 
+ kitchen\line \line and make a pot of tea.
+\par 
+\par }\pard \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \page \hich\af39\dbch\af31505\loch\f39 The Docklands
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 I have fallen in love\line \line with the dark sludge gathering\line and the circling gulls\line (there a swan, curled)\line with the hard clap of feet\line with the shudder of thin bridges\line as I chase\line \line heat
+
+\par 
+\par 
+\par \page }{\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 Otter's first love\line }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \line \hich\af39\dbch\af31505\loch\f39 Otter'\hich\af39\dbch\af31505\loch\f39 s first love was not\line a rough wave,\line strong wrists }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 
+\loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \line \hich\af39\dbch\af31505\loch\f39 not the shrill call\line of gulls\line moving against cliffs }{\rtlch\fcs1 
+\af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \line \hich\af39\dbch\af31505\loch\f39 not the smooth movement\line 
+of stone in paw, 
+\par \hich\af39\dbch\af31505\loch\f39 the cracking of the oyster }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line \line floating on his back,\line he watched the boats\line come in to land }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 
+\loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \line \hich\af39\dbch\af31505\loch\f39 might he hoist a b\hich\af39\dbch\af31505\loch\f39 right sail\line 
+over his belly too
+\par \hich\af39\dbch\af31505\loch\f39 and feel it tauten
+\par \hich\af39\dbch\af31505\loch\f39 in the wind? 
+\par 
+\par \page }{\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 Projections \line }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\line \hich\af39\dbch\af31505\loch\f39 I might get a job with KPMG\line or Price Waterhouse Cooper,\line scratching and sniffing \line away at credits and debits,\line balance sheets.\line \line I'll get numbers up my nose,\line under fingernails,\line 
+at \hich\af39\dbch\af31505\loch\f39 the end of the week\line crawling beneath the wire of my bra,\line lice, serif jaws, itchy feet.\line \line Like pepper, up my nose,\line I'll sneeze, leaving disarray,\line numbers splattered everywhere.
+\par 
+\par }\pard \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \page \hich\af39\dbch\af31505\loch\f39 
+The Summer House and Other Reminiscences
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par 
+\par }{\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 1. The Grove
+\par }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 Do you remember the ye\hich\af39\dbch\af31505\loch\f39 ar\line the elms didn't come into leaf\line in the backyard?\line 
+\par \hich\af39\dbch\af31505\loch\f39 We had a tree surgeon in\line to chop them down }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line branch by branch by branch\line dropping to the ground.
+\par 
+\par \hich\af39\dbch\af31505\loch\f39 Do you remember\line the hulk of the garden? His trunk so broad\line we couldn't touch fingers }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 
+\af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line he is smaller now.\line \line \hich\af39\dbch\af31505\loch\f39 Nestled in a cradle of roots,\line we bury bulbs\line to sprout among
+\line those dead toes.
+\par 
+\par }{\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 2. D\loch\af39\dbch\af31505\hich\f39 \'e9\hich\af39\dbch\af31505\loch\f39 coupage
+\par }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 Behind the house was\line a half shackled shed and a washing line,\line twisted on itself }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 
+\ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  
+\par \hich\af39\dbch\af31505\loch\f39 it might have made a nest for the little birds.
+\par \line \hich\af39\dbch\af31505\loch\f39 The pool, where red koi had on\hich\af39\dbch\af31505\loch\f39 ce puckered lips,
+\par \hich\af39\dbch\af31505\loch\f39 was thick with pond weed,\line hairy and slick with rising mud }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line the flowers had gone wild,\line we picked them and pressed them in books.
+\par 
+\par }{\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 3. The Summer House
+\par }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 Weedthatched, saltstrung,
+\par \hich\af39\dbch\af31505\loch\f39 pebbledashed, windbroken}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \emdash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+
+\par \hich\af39\dbch\af31505\loch\f39 do you remember the summer
+\par \hich\af39\dbch\af31505\loch\f39 you pai\hich\af39\dbch\af31505\loch\f39 nted the windows
+\par \hich\af39\dbch\af31505\loch\f39 and whitewashed the walls?
+\par \hich\af39\dbch\af31505\loch\f39 How I missed the bright red shutters }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  
+\par 
+\par \hich\af39\dbch\af31505\loch\f39 the moths in the bathtub
+\par \hich\af39\dbch\af31505\loch\f39 or the smell of cedar wood }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  
+\par \hich\af39\dbch\af31505\loch\f39 the box your mother brought
+\par \hich\af39\dbch\af31505\loch\f39 from California for your woollens?
+\par \hich\af39\dbch\af31505\loch\f39 It had an elk carved on the lid.
+\par 
+\par \hich\af39\dbch\af31505\loch\f39 Salt and sand and \hich\af39\dbch\af31505\loch\f39 peat smoke?
+\par \hich\af39\dbch\af31505\loch\f39 Too easy to forget ,
+\par \hich\af39\dbch\af31505\loch\f39 that was your childhood not mine }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  
+\par \hich\af39\dbch\af31505\loch\f39 you that trundled home
+\par \hich\af39\dbch\af31505\loch\f39 spilling buckets of rock shrimp, 
+\par \hich\af39\dbch\af31505\loch\f39 you that decorated this house with
+\par \hich\af39\dbch\af31505\loch\f39 waveworn flowers of coral,
+\par \hich\af39\dbch\af31505\loch\f39 you that placed the husk of a crab
+\par \hich\af39\dbch\af31505\loch\f39 on the windowsill. 
+\par 
+\par \page 
+\par }\pard \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 love like 
+\hich\af39\dbch\af31505\loch\f39 a hurricane
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 love like a hurricane\line breaks boughs\line \line lightning tiger\line dewdrop spider\line \line love like summer rain\line softens brittle grass 
+\par 
+\par 
+\par }\pard \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \page \hich\af39\dbch\af31505\loch\f39 The Art of Love
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 Love has left me wondering\line where I left my shoes and my socks\line and my bra\line and my trousers\line and my blouse }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 
+\endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line \line ca\hich\af39\dbch\af31505\loch\f39 ught on the dresser\line riding the headboard\line 
+snagged on the doorknob\line under the bed }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\hich\af39\dbch\af31505\loch\f39  \line \line over the rooftops\line away with the wind\line riding the river\line feeling it bend }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 
+\af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line \line snagging on lilypads\line playing with fish\line nibbling at bedrock\line making it itch }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \line \hich\af39\dbch\af31505\loch\f39 love\hich\af39\dbch\af31505\loch\f39 
+ has left me wondering. 
+\par 
+\par }\pard \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \page \hich\af39\dbch\af31505\loch\f39 Bog Butter
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 When he said bog butter,\line I never imagined little sealed wooden caskets\line and a mild grey wax,\line mottled like the sky tonight }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 
+\loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line \line I thought of turfcutters leaning on spades in the half-light }{\rtlch\fcs1 
+\af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line of neat blocks }{\rtlch\fcs1 
+\af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line \hich\af39\dbch\af31505\loch\f39 
+butter cut from the bog itself, that steams,\line that turns bread black\line and sows old seeds. 
+\par \page 
+\par }\pard \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 The Trouble with Leaves
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 I am built on book knowledge,\line muddled scratchings of too many men }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line for all the books that I have read,\line what have I learnt?\line \line Meerkats are i\hich\af39\dbch\af31505\loch\f39 mmune\line to scorpion sting\line 
+Maori women are best won\line with eels\line \line while you sift the subtleties\line of dreamland\line mothers reorder your head\line that I do not understand\line wave particle duality\line \line that the solar system alone\line 
+is bigger than I can conceive\line to serve chocolate w\hich\af39\dbch\af31505\loch\f39 i\hich\af39\dbch\af31505\loch\f39 th chicken\line and mango with fish\line \line that on Shouting Hill\line the women chaff their thighs\line 
+to catch their monthly blood.\line \line How would I be\line if that was all I knew }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line rough leaves, wind,\line rough men?
+\par 
+\par }\pard \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \page \hich\af39\dbch\af31505\loch\f39 
+The Mermaid and the Man
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 I live by the ocean\line and every night the wav\hich\af39\dbch\af31505\loch\f39 es\line arch and fall.\line \line And every night, as the waves\line breathe heavily,\line I count leaves\line and the frayed stalks\line 
+of seaweed\line travelling to sea.\line \line I count the rusty silhouettes\line of cans and fishing trawlers }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line they make constellations\line swimming for land }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{
+\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line crabs. \line \line I liv\hich\af39\dbch\af31505\loch\f39 e by the ocean\line and every night the waves\line tidy up\line 
+untidy }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line 
+the tide subsides\line and I sleep. 
+\par \page 
+\par 
+\par }{\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 lolla rossa, touches herself\line }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \line \hich\af39\dbch\af31505\loch\f39 it often strikes me\line this lettuce has many hands\line all clasped and curling\line a dead bee\line \line what is she waiting for?\line \line 
+they always talk of le\hich\af39\dbch\af31505\loch\f39 ttuce\line and the heart\line how it is so fine and so tender
+\par \page 
+\par }\pard \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 Dark Roast
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 Every morning my father shoots himself up on caffeine\-}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \emdash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \line \hich\af39\dbch\af31505\loch\f39 his drug, a thick black sludge\line dredged from the bottom of a cafeti\loch\af39\dbch\af31505\hich\f39 \'e8\hich\af39\dbch\af31505\loch\f39 re.\line 
+Stern and silent,\line he balances his cup on a radiator\line and reads F\hich\af39\dbch\af31505\loch\f39 eynman.\line \line Over time you become a little like\line your choice of beverage}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 
+\loch\af39\dbch\af31505\hich\f39 \emdash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \line \hich\af39\dbch\af31505\loch\f39 which might be why my father smashed\line the teeth of the narcissus\line 
+pushing from our muddied lawn,\line and I drink juice. 
+\par 
+\par }\pard \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \page \hich\af39\dbch\af31505\loch\f39 The Autumn Guard
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 The wind is in the saplings\line and they are loosing lea\hich\af39\dbch\af31505\loch\f39 ves\line for the first time.\line \line "What are these red birds\line skittering across the lawn?\line Those birds were mine!"
+
+\par 
+\par }\pard \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \page \hich\af39\dbch\af31505\loch\f39 
+The Weaver and the Wainwright
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 Snowflakes
+\par \hich\af39\dbch\af31505\loch\f39 are knotted from water\line to give a wheel of lace }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line all children know this.\line 
+\par \hich\af39\dbch\af31505\loch\f39 Old Man Frost fastens\line his wheels t\hich\af39\dbch\af31505\loch\f39 o the carriage\line of the Snow Queen,\line but that is not their secret.\line \line The secret of snow\line is sloughed from the skin\line 
+of albino serpents }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line 
+whittled from the collars\line of old women }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\hich\af39\dbch\af31505\loch\f39  \line \line it is an ancient bad-tempered secret,\line better left to sleep\line with those cold white \hich\af39\dbch\af31505\loch\f39 dogs.
+\par }\pard \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \page \hich\af39\dbch\af31505\loch\f39 Stream and willow
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 (for Joanna Newsom)}{\rtlch\fcs1 
+\af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \line \line \hich\af39\dbch\af31505\loch\f39 The moon is bright }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{
+\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line oh the moon is my night light\line which I hang from a string\line as I simmer and sing\line through the darkness,\line 
+\line and the willows are strings\line which I pluck as I sing\line and the rocks are a drum\line which you \hich\af39\dbch\af31505\loch\f39 thrum }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{
+\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line \line your hand is a cup\line oh you gather me up\line your lips are abrupt,\line and I simmer and sing\line as you drink,
+\line \line and the willows are strings\line which I pluck as I sing\line and the rocks are a drum\line which you thrum,\line \line oh the rocks are a drum\line which you thrum as you run\line an\hich\af39\dbch\af31505\loch\f39 
+d the reeds are forever parting.
+\par 
+\par \page 
+\par }\pard \ltrpar\ql \li0\ri0\sb240\keepn\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ab\ai\af39\afs28 \ltrch\fcs0 \b\i\f39\fs28\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 The Kiss
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 I have followed the tracks of deer\line through virgin land, \line slept on dry moss\line and catkins\line beneath the boughs of a silver birch.\line \line I have eaten fresh snow\line from winter fields, \line 
+still whipped wattled with blades\line \hich\af39\dbch\af31505\loch\f39 of ryegrass\line and flecked with white clover.\line \line I have licked the wind\line from the devil's mountain.\line \line I have tasted the yellowed lace\line 
+of an older woman's collar, \line caught her white neck\line on my tongue, \line an apparition.\line \line I have marked foundations\line and slung lines\line for \hich\af39\dbch\af31505\loch\f39 t\hich\af39\dbch\af31505\loch\f39 
+he borders of a new field, \line only to fly home\line leaving it unsown. 
+\par 
+\par }\pard \ltrpar\ql \li0\ri0\pagebb\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 Johnny-No-Bones
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 Melting into bed\line no bones\line if you prod\line you'll hit the bedsprings\line \line Melting into bed\line days stain pillows\line dribble\line you can't unbutter bread
+\par 
+\par 
+\par }\pard \ltrpar\ql \li0\ri0\pagebb\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 Thursday}{\rtlch\fcs1 
+\af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \line \line \hich\af39\dbch\af31505\loch\f39 The little man I clipped fr\hich\af39\dbch\af31505\loch\f39 om yesterday's newspaper is lost,\line and he's got a family }{
+\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line 
+little paper kids cut Tuesday's newspaper, a paper wife\line from Monday's.\line They live in the desk drawer\line between stapler and sellotape.\line \line Today I cut a paper dog.
+\par }{\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 The Foolish Cat}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \line \line 
+\hich\af39\dbch\af31505\loch\f39 The practical cat likes\hich\af39\dbch\af31505\loch\f39  his food from cans }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \line \hich\af39\dbch\af31505\loch\f39 he sits on the windowsill listening for\line the clank of his metal bowl.\line \line The practical cat sleeps all day\line on cushions by the fire, all night
+\line on a feather bed at your feet.\line \line The practical cat preens and pouts\line and pounces at all the right \hich\af39\dbch\af31505\loch\f39 times }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 
+\endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \line \hich\af39\dbch\af31505\loch\f39 his ears are scratched, his fur caressed.\line \line The practical cat maintains his mane\line with pride }{
+\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line not I }{\rtlch\fcs1 
+\af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line 
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 I dream of the hunt }{\rtlch\fcs1 
+\af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  
+\par \hich\af39\dbch\af31505\loch\f39 the taste of field mouse and robin.\line I want to sleep beneath hedges,\line 
+\par \hich\af39\dbch\af31505\loch\f39 to stalk through fields at night,\line to scrabble up tre\hich\af39\dbch\af31505\loch\f39 es,\line to leap\line to leap\line to leap }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 
+\loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  
+\par 
+\par }\pard \ltrpar\ql \li0\ri0\pagebb\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 The Kiss
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 Better cooked lightly
+\par }\pard \ltrpar\ql \fi720\li0\ri0\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 like parsley and spinach,
+
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 asparagus
+\par }\pard \ltrpar\ql \fi720\li0\ri0\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 
+and most green vegetables in fact.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 Do not stew the lettuce.
+\par 
+\par \hich\af39\dbch\af31505\loch\f39 Tart apples can take the long brew.
+\par 
+\par }\pard \ltrpar\ql \fi720\li0\ri0\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 And possibly peas.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par }\pard \ltrpar\ql \li0\ri0\pagebb\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 dinner
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 emerged smiling\line sweaty\line \line \hich\af39\dbch\af31505\loch\f39 rice had boiled\line over\line \line traces of milkwhite\line foam 
+\par }\pard \ltrpar\ql \li0\ri0\pagebb\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 Sightseeing
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 The tour bus traces the same old curves,\line stopping today, like yesterday, to worship
+\par \hich\af39\dbch\af31505\loch\f39 at the grand and the beautiful }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line the National Library and Trinity College, \line swinging by the Phoenix Park, 
+\par \hich\af39\dbch\af31505\loch\f39 that awkward obelisk, those familiar gates.\line 
+\par \hich\af39\dbch\af31505\loch\f39 Let's find small places }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\hich\af39\dbch\af31505\loch\f39  \line rough parks in the arse of Dublin,\line the knock-kneed railings of bridges,\line nooks of office blocks away from the prying eyes\line of streetlights and strangers,\line that spot on the back of your ne
+\hich\af39\dbch\af31505\loch\f39 ck. 
+\par 
+\par }\pard \ltrpar\ql \li0\ri0\pagebb\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 The Runaway
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 I}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \rquote }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\hich\af39\dbch\af31505\loch\f39 m leaving, did I tell you, Joanna?\line I}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \rquote }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 m off to wander the haygrass\line bogbrush dewrush wilds }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{
+\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line and I}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \rquote }{\rtlch\fcs1 
+\af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 m selling my frown and my pinafore
+\par \hich\af39\dbch\af31505\loch\f39 to a thrift store.\line 
+\par \hich\af39\dbch\af31505\loch\f39 Did I tell you, Joanna, that I}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \rquote }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 ve been too long\line on this big boat? It}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \rquote }{\rtlch\fcs1 
+\af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 s so calm\hich\af39\dbch\af31505\loch\f39  it \hich\af39\dbch\af31505\loch\f39 hurts }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  
+\par \hich\af39\dbch\af31505\loch\f39 and the captain tells me 
+\par \hich\af39\dbch\af31505\loch\f39 there}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \rquote }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\hich\af39\dbch\af31505\loch\f39 s no chance of landing any day soon.\line 
+\par \hich\af39\dbch\af31505\loch\f39 I}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \rquote }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\hich\af39\dbch\af31505\loch\f39 m taking my chances alone on the sea,\line I}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \rquote }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 ll inflate like a whale }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line a small float, waves at my throat.\line From the shore, birds will swoop
+\par \hich\af39\dbch\af31505\loch\f39 and wave.
+\par 
+\par \hich\af39\dbch\af31505\loch\f39 I}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \rquote }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\hich\af39\dbch\af31505\loch\f39 ll greet them as I beach my\hich\af39\dbch\af31505\loch\f39 self,\line bob hoppin}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \rquote }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  birds that skirt and pert\line my seed fingers. \line They}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \rquote }{
+\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 ll teach me to sing again,\line and I}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 
+\loch\af39\dbch\af31505\hich\f39 \rquote }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 ll teach them to weave nests\line like mobiles }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  all  \hich\af39\dbch\af31505\loch\f39 moons and spiders}{
+\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \rquote }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  legs.\line \line 
+Or perhaps, perhaps Joanna,\line the moon will fall on me as I float\line alone on the dark\hich\af39\dbch\af31505\loch\f39 ening rocking sea }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{
+\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line and I}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \rquote }{\rtlch\fcs1 
+\af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 ll die a silver death,\line alone and landless.\line \line And oh Joanna, I}{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 
+\loch\af39\dbch\af31505\hich\f39 \rquote }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 ll miss you,
+\par \hich\af39\dbch\af31505\loch\f39 did I tell you that?
+\par 
+\par }\pard \ltrpar\ql \li0\ri0\pagebb\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  Road Music
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\hyphpar0\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \ai\af39\afs24 \ltrch\fcs0 \i\f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39 (for Tom Waits)
+\par }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\par \hich\af39\dbch\af31505\loch\f39 The rhythm of the cars\line tosses me away,\line half-dead,\line half-eaten,\line \line the snaking road finishes me off }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 
+\endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39  \line \hich\af39\dbch\af31505\loch\f39 rainlight on the roads,\line streetlights }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 
+\f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 \hich\af39\dbch\af31505\loch\f39   \line cage of bone.\line \line What a surprise Fox!\line 
+Fancy meeting you here\line Fox! It has swallowed
+\par \hich\af39\dbch\af31505\loch\f39 you down too }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\insrsid790981 \loch\af39\dbch\af31505\hich\f39 \endash }{\rtlch\fcs1 \af39\afs24 \ltrch\fcs0 \f39\fs24\lang2057\langfe1033\langnp2057\insrsid790981 
+\hich\af39\dbch\af31505\loch\f39  \line \line waiting for beetles and bluebottles,\line old Fox and I,\line lost on that curve\line of oesophagus.
+\par 
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af39 \ltrch\fcs0 \f39\insrsid790981 \page \hich\af39\dbch\af31505\loch\f39 Maybe one day there\loch\af39\dbch\af31505\hich\f39 \rquote 
+\hich\af39\dbch\af31505\loch\f39 ll be a w\hich\af39\dbch\af31505\loch\f39 ikipedia entry
+\par \hich\af39\dbch\af31505\loch\f39 all about me -
+\par \hich\af39\dbch\af31505\loch\f39 that gets a thousand hits a day,
+\par \hich\af39\dbch\af31505\loch\f39 that simplifies my history
+\par \hich\af39\dbch\af31505\loch\f39 down to a few beautiful paragraphs -
+\par \hich\af39\dbch\af31505\loch\f39 and folks all over the internet
+\par \hich\af39\dbch\af31505\loch\f39 will click on all the hyperlinks
+\par \hich\af39\dbch\af31505\loch\f39 that jewel my accomplishments
+\par \hich\af39\dbch\af31505\loch\f39 like micah in a granite sky.
+\par 
+\par \hich\af39\dbch\af31505\loch\f39 But,\hich\af39\dbch\af31505\loch\f39  until that happy day,
+\par \hich\af39\dbch\af31505\loch\f39 I'll decorate my myspace page
+\par \hich\af39\dbch\af31505\loch\f39 with pert penguins and floppy bunnies
+\par \hich\af39\dbch\af31505\loch\f39 and quizzes that deduce from a few arbitrary questions
+\par \hich\af39\dbch\af31505\loch\f39 that I\loch\af39\dbch\af31505\hich\f39 \rquote \hich\af39\dbch\af31505\loch\f39 m a deep thinker,
+\par \hich\af39\dbch\af31505\loch\f39 a loyal friend 
+\par \hich\af39\dbch\af31505\loch\f39 and I kiss like Zak from }{\rtlch\fcs1 \ai\af39 \ltrch\fcs0 \i\f39\insrsid790981 \hich\af39\dbch\af31505\loch\f39 Saved by the Bel}{\rtlch\fcs1 \af39 \ltrch\fcs0 \f39\insrsid790981 \hich\af39\dbch\af31505\loch\f39 l.
+
+\par 
+\par \hich\af39\dbch\af31505\loch\f39 One day, I suppose, I'll\hich\af39\dbch\af31505\loch\f39  get tired of networking with my friends,
+\par \hich\af39\dbch\af31505\loch\f39 but by that time there\loch\af39\dbch\af31505\hich\f39 \rquote \hich\af39\dbch\af31505\loch\f39 ll be a wikipedia entry
+\par \hich\af39\dbch\af31505\loch\f39 all about me -
+\par \hich\af39\dbch\af31505\loch\f39 that gets a thousand hits a day,
+\par \hich\af39\dbch\af31505\loch\f39 that simplifies my history
+\par \hich\af39\dbch\af31505\loch\f39 down to a few beautiful paragraphs -
+\par \hich\af39\dbch\af31505\loch\f39 and, when I'm feeling self-indulgent,
+\par \hich\af39\dbch\af31505\loch\f39 I'll press that l\hich\af39\dbch\af31505\loch\f39 ittle edit button
+\par \hich\af39\dbch\af31505\loch\f39 and add few pertinent facts about my life and times
+\par \hich\af39\dbch\af31505\loch\f39 and then a few days later
+\par \hich\af39\dbch\af31505\loch\f39 some bastard invigilator takes them down
+\par \hich\af39\dbch\af31505\loch\f39 because they weren't properly referenced
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid790981 
+\par \page }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \fs24\insrsid790981 \hich\af0\dbch\af31505\loch\f0 My love, let me tell you a secret,\line some people are better than you-\line they\hich\af0\dbch\af31505\loch\f0  tidy the kitchen without being asked,\line 
+and go to the gym three times a week,\line they\loch\af0\dbch\af31505\hich\f0 \rquote \hich\af0\dbch\af31505\loch\f0 re experts in ancient Greek\line language mythology-\line Sinope Pasiphae Carme Ananke,\line \line they always put down the toilet seat,
+\line they\loch\af0\dbch\af31505\hich\f0 \rquote \hich\af0\dbch\af31505\loch\f0 ve read all of Dickens \line and Browning and Yeats\line and c\hich\af0\dbch\af31505\loch\f0 an integrate equations \line of two or more variables as they sleep,\line 
+they buy white lilies every Tuesday-\line Elara Lysithea Himalia Leda.\line \line Some people are better than you-\line they tidy the kitchen without being asked,\line they know big words like 'dirigible'\line and use the\hich\af0\dbch\af31505\loch\f0 m
+\hich\af0\dbch\af31505\loch\f0  in prose\line and on shopping lists,\line one dirigible pear please-\line Callisto Ganymede Europa Io,\line \line they cook sushi and know\line more than three sexual positions,\line loyalty of a dog passion of a panther,
+\line they whisper the names\line of the moons of Jupiter \line slowly, syncopative\hich\af0\dbch\af31505\loch\f0 l\hich\af0\dbch\af31505\loch\f0 y\line as their lover climaxes-\line Thebe Almathea Adrastea Metis.\line \line 
+They draw picture perfect nudes\line in charcoal and pastels,\line I prefer stick figures. 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid790981 \page }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \fs24\insrsid790981 \hich\af0\dbch\af31505\loch\f0 There's something I've learned\line with a little experience,\line though this may seem a little heinous,\line 
+anything can be a \hich\af0\dbch\af31505\loch\f0 penis...\line traffic lights, an ice cream cone,\line those chubby little garden gnomes,\line chimney pots and tubas-\line and then there's the obvious\line squidgy worms and sausage rolls,\line 
+every obelisk and bone,\line oh Freud would tumble in his grave\line if I claimed this cane\line was just\hich\af0\dbch\af31505\loch\f0  \hich\af0\dbch\af31505\loch\f0 a cane. 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid790981 \page }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \fs24\insrsid790981 \hich\af0\dbch\af31505\loch\f0 I used to just be me,\line mismatched and odd-\line a handknit sock, crooked,\line walking to my own beat.\line 
+\line Now I am a scientist-\line I can pipette one-handed\line blindfolded upside-down.\line I make tea on a bunsen burner.\line My social life is bacterial,\line I measure love in mic\hich\af0\dbch\af31505\loch\f0 rolitres,\line white-coated goggle-eyed
+\line aseptic that's me.\line My necklace is of mitochondria\line strung on DNA.\line \line Now I am a hippie chick-\line I'm nice to trees and rocks and bees,\line I'm careful not to sneeze on spiders.\line I make jewelry from hemp and bead.\line 
+Wholefood stores a\hich\af0\dbch\af31505\loch\f0 r\hich\af0\dbch\af31505\loch\f0 e my church,\line broccoli juice the blood,\line the body is wholewheat,\line Nutrition for vegans the bible.\line Free love, baby! Free love!\line \line Now I am an artiste-
+\line I wear pantaloons.\line I write poetry free of structure,\line form, who needs it!\line And, fuck it, what's the need for wor\hich\af0\dbch\af31505\loch\f0 d\hich\af0\dbch\af31505\loch\f0 s.\line A post-modern existential\line minimalist that's me,
+\line I pretend to like performance\line art and even my farts\line are atonal music. 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid790981 \page }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \fs24\insrsid790981 
+\par \ltrrow}\trowd \irow0\irowband0\lastrow \ltrrow\ts11\trgaph180\trrh8010\trleft-180\trftsWidth1\trpaddl180\trpaddr180\trpaddfl3\trpaddfr3\tblind0\tblindtype3 \clvertalc\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone 
+\cltxlrtb\clftsWidth3\clwWidth6720\clshdrawnil \cellx6540\pard \ltrpar\ql \li0\ri0\nowidctlpar\intbl\wrapdefault\nooverflow\faauto\rin0\lin0 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \fs24\insrsid790981 \hich\af0\dbch\af31505\loch\f0 Boy, reading Niedecker
+\line and hiding behind your hair,\line there among the scutch grass\line and the dandelions-\line I lie all day just where you la\hich\af0\dbch\af31505\loch\f0 y,\line oh love is a beast with wings,\line she flies and she sings,\line she wears gold rings
+\line and drinks.\line \line Oh the grass sticks\line and I flick it away,\line regret it later-\line scents linger on my clothes \line for days,\line and I imagine them spiced with you-\line I dream of a soup of grass an\hich\af0\dbch\af31505\loch\f0 d
+\hich\af0\dbch\af31505\loch\f0  you\line to drink, \line \line I dream, but not even in that \line half world do I drink,\line I taste and I spit\line on the pavement,\line beside the chewing gum\line and the half-eaten mars bar,\line 
+love is a beast with wings,\line she dies when she stings\line and I\loch\af0\dbch\af31505\hich\f0 \rquote \hich\af0\dbch\af31505\loch\f0 ll have none of that. \cell }\pard \ltrpar\ql \li0\ri0\sa200\sl276\slmult1
+\widctlpar\intbl\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \fs24\insrsid790981 \trowd \irow0\irowband0\lastrow \ltrrow
+\ts11\trgaph180\trrh8010\trleft-180\trftsWidth1\trpaddl180\trpaddr180\trpaddfl3\trpaddfr3\tblind0\tblindtype3 \clvertalc\clbrdrt\brdrnone \clbrdrl\brdrnone \clbrdrb\brdrnone \clbrdrr\brdrnone \cltxlrtb\clftsWidth3\clwWidth6720\clshdrawnil \cellx6540\row 
+}\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \fs24\insrsid790981 
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \fs24\insrsid790981 
+\par }{\*\themedata 504b030414000600080000002100828abc13fa0000001c020000130000005b436f6e74656e745f54797065735d2e786d6cac91cb6ac3301045f785fe83d0b6d8
+72ba28a5d8cea249777d2cd20f18e4b12d6a8f843409c9df77ecb850ba082d74231062ce997b55ae8fe3a00e1893f354e9555e6885647de3a8abf4fbee29bbd7
+2a3150038327acf409935ed7d757e5ee14302999a654e99e393c18936c8f23a4dc072479697d1c81e51a3b13c07e4087e6b628ee8cf5c4489cf1c4d075f92a0b
+44d7a07a83c82f308ac7b0a0f0fbf90c2480980b58abc733615aa2d210c2e02cb04430076a7ee833dfb6ce62e3ed7e14693e8317d8cd0433bf5c60f53fea2fe7
+065bd80facb647e9e25c7fc421fd2ddb526b2e9373fed4bb902e182e97b7b461e6bfad3f010000ffff0300504b030414000600080000002100a5d6a7e7c00000
+00360100000b0000005f72656c732f2e72656c73848fcf6ac3300c87ef85bd83d17d51d2c31825762fa590432fa37d00e1287f68221bdb1bebdb4fc7060abb08
+84a4eff7a93dfeae8bf9e194e720169aaa06c3e2433fcb68e1763dbf7f82c985a4a725085b787086a37bdbb55fbc50d1a33ccd311ba548b63095120f88d94fbc
+52ae4264d1c910d24a45db3462247fa791715fd71f989e19e0364cd3f51652d73760ae8fa8c9ffb3c330cc9e4fc17faf2ce545046e37944c69e462a1a82fe353
+bd90a865aad41ed0b5b8f9d6fd010000ffff0300504b0304140006000800000021006b799616830000008a0000001c0000007468656d652f7468656d652f7468
+656d654d616e616765722e786d6c0ccc4d0ac3201040e17da17790d93763bb284562b2cbaebbf600439c1a41c7a0d29fdbd7e5e38337cedf14d59b4b0d592c9c
+070d8a65cd2e88b7f07c2ca71ba8da481cc52c6ce1c715e6e97818c9b48d13df49c873517d23d59085adb5dd20d6b52bd521ef2cdd5eb9246a3d8b4757e8d3f7
+29e245eb2b260a0238fd010000ffff0300504b03041400060008000000210096b5ade296060000501b0000160000007468656d652f7468656d652f7468656d65
+312e786d6cec594f6fdb3614bf0fd87720746f6327761a07758ad8b19b2d4d1bc46e871e698996d850a240d2497d1bdae38001c3ba618715d86d87615b8116d8
+a5fb34d93a6c1dd0afb0475292c5585e9236d88aad3e2412f9e3fbff1e1fa9abd7eec70c1d1221294fda5efd72cd4324f1794093b0eddd1ef62fad79482a9c04
+98f184b4bd2991deb58df7dfbb8ad755446282607d22d771db8b944ad79796a40fc3585ee62949606ecc458c15bc8a702910f808e8c66c69b9565b5d8a314d3c
+94e018c8de1a8fa94fd05093f43672e23d06af89927ac06762a049136785c10607758d9053d965021d62d6f6804fc08f86e4bef210c352c144dbab999fb7b471
+7509af678b985ab0b6b4ae6f7ed9ba6c4170b06c788a705430adf71bad2b5b057d03606a1ed7ebf5babd7a41cf00b0ef83a6569632cd467faddec9699640f671
+9e76b7d6ac355c7c89feca9cccad4ea7d36c65b258a206641f1b73f8b5da6a6373d9c11b90c537e7f08dce66b7bbeae00dc8e257e7f0fd2badd5868b37a088d1
+e4600ead1ddaef67d40bc898b3ed4af81ac0d76a197c86826828a24bb318f3442d8ab518dfe3a20f000d6458d104a9694ac6d88728eee2782428d60cf03ac1a5
+193be4cbb921cd0b495fd054b5bd0f530c1931a3f7eaf9f7af9e3f45c70f9e1d3ff8e9f8e1c3e3073f5a42ceaa6d9c84e5552fbffdeccfc71fa33f9e7ef3f2d1
+17d57859c6fffac327bffcfc793510d26726ce8b2f9ffcf6ecc98baf3efdfdbb4715f04d814765f890c644a29be408edf3181433567125272371be15c308d3f2
+8acd249438c19a4b05fd9e8a1cf4cd296699771c393ac4b5e01d01e5a30a787d72cf1178108989a2159c77a2d801ee72ce3a5c545a6147f32a99793849c26ae6
+6252c6ed637c58c5bb8b13c7bfbd490a75330f4b47f16e441c31f7184e140e494214d273fc80900aedee52ead87597fa824b3e56e82e451d4c2b4d32a423279a
+668bb6690c7e9956e90cfe766cb37b077538abd27a8b1cba48c80acc2a841f12e698f13a9e281c57911ce298950d7e03aba84ac8c154f8655c4f2af074481847
+bd804859b5e696007d4b4edfc150b12addbecba6b18b148a1e54d1bc81392f23b7f84137c2715a851dd0242a633f900710a218ed715505dfe56e86e877f0034e
+16bafb0e258ebb4faf06b769e888340b103d3311da9750aa9d0a1cd3e4efca31a3508f6d0c5c5c398602f8e2ebc71591f5b616e24dd893aa3261fb44f95d843b
+5974bb5c04f4edafb95b7892ec1108f3f98de75dc97d5772bdff7cc95d94cf672db4b3da0a6557f70db629362d72bcb0431e53c6066acac80d699a6409fb44d0
+8741bdce9c0e4971624a2378cceaba830b05366b90e0ea23aaa241845368b0eb9e2612ca8c742851ca251ceccc70256d8d87265dd96361531f186c3d9058edf2
+c00eafe8e1fc5c509031bb4d680e9f39a3154de0accc56ae644441edd76156d7429d995bdd88664a9dc3ad50197c38af1a0c16d684060441db02565e85f3b966
+0d0713cc48a0ed6ef7dedc2dc60b17e92219e180643ed27acffba86e9c94c78ab90980d8a9f0913ee49d62b512b79626fb06dccee2a432bbc60276b9f7dec44b
+7904cfbca4f3f6443ab2a49c9c2c41476dafd55c6e7ac8c769db1bc399161ee314bc2e75cf8759081743be1236ec4f4d6693e5336fb672c5dc24a8c33585b5fb
+9cc24e1d4885545b58463634cc5416022cd19cacfccb4d30eb45296023fd35a458598360f8d7a4003bbaae25e331f155d9d9a5116d3bfb9a95523e51440ca2e0
+088dd844ec6370bf0e55d027a012ae264c45d02f708fa6ad6da6dce29c255df9f6cae0ec38666984b372ab5334cf640b37795cc860de4ae2816e95b21be5ceaf
+8a49f90b52a51cc6ff3355f47e0237052b81f6800fd7b802239daf6d8f0b1571a8426944fdbe80c6c1d40e8816b88b8569082ab84c36ff0539d4ff6dce591a26
+ade1c0a7f669880485fd484582903d284b26fa4e2156cff62e4b9265844c4495c495a9157b440e091bea1ab8aaf7760f4510eaa69a6465c0e04ec69ffb9e65d0
+28d44d4e39df9c1a52ecbd3607fee9cec7263328e5d661d3d0e4f62f44acd855ed7ab33cdf7bcb8ae889599bd5c8b3029895b6825696f6af29c239b75a5bb1e6
+345e6ee6c28117e73586c1a2214ae1be07e93fb0ff51e133fb65426fa843be0fb515c187064d0cc206a2fa926d3c902e907670048d931db4c1a44959d366ad93
+b65abe595f70a75bf03d616c2dd959fc7d4e6317cd99cbcec9c58b34766661c7d6766ca1a9c1b327531486c6f941c638c67cd22a7f75e2a37be0e82db8df9f30
+254d30c1372581a1f51c983c80e4b71ccdd28dbf000000ffff0300504b0304140006000800000021000dd1909fb60000001b010000270000007468656d652f74
+68656d652f5f72656c732f7468656d654d616e616765722e786d6c2e72656c73848f4d0ac2301484f78277086f6fd3ba109126dd88d0add40384e4350d363f24
+51eced0dae2c082e8761be9969bb979dc9136332de3168aa1a083ae995719ac16db8ec8e4052164e89d93b64b060828e6f37ed1567914b284d262452282e3198
+720e274a939cd08a54f980ae38a38f56e422a3a641c8bbd048f7757da0f19b017cc524bd62107bd5001996509affb3fd381a89672f1f165dfe514173d9850528
+a2c6cce0239baa4c04ca5bbabac4df000000ffff0300504b01022d0014000600080000002100828abc13fa0000001c0200001300000000000000000000000000
+000000005b436f6e74656e745f54797065735d2e786d6c504b01022d0014000600080000002100a5d6a7e7c0000000360100000b000000000000000000000000
+002b0100005f72656c732f2e72656c73504b01022d00140006000800000021006b799616830000008a0000001c00000000000000000000000000140200007468
+656d652f7468656d652f7468656d654d616e616765722e786d6c504b01022d001400060008000000210096b5ade296060000501b000016000000000000000000
+00000000d10200007468656d652f7468656d652f7468656d65312e786d6c504b01022d00140006000800000021000dd1909fb60000001b010000270000000000
+00000000000000009b0900007468656d652f7468656d652f5f72656c732f7468656d654d616e616765722e786d6c2e72656c73504b050600000000050005005d010000960a00000000}
+{\*\colorschememapping 3c3f786d6c2076657273696f6e3d22312e302220656e636f64696e673d225554462d3822207374616e64616c6f6e653d22796573223f3e0d0a3c613a636c724d
+617020786d6c6e733a613d22687474703a2f2f736368656d61732e6f70656e786d6c666f726d6174732e6f72672f64726177696e676d6c2f323030362f6d6169
+6e22206267313d226c743122207478313d22646b3122206267323d226c743222207478323d22646b322220616363656e74313d22616363656e74312220616363
+656e74323d22616363656e74322220616363656e74333d22616363656e74332220616363656e74343d22616363656e74342220616363656e74353d22616363656e74352220616363656e74363d22616363656e74362220686c696e6b3d22686c696e6b2220666f6c486c696e6b3d22666f6c486c696e6b222f3e}
+{\*\latentstyles\lsdstimax267\lsdlockeddef0\lsdsemihiddendef1\lsdunhideuseddef1\lsdqformatdef0\lsdprioritydef99{\lsdlockedexcept \lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority0 \lsdlocked0 Normal;
+\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 1;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 2;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 3;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 4;
+\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 5;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 6;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 7;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 8;\lsdqformat1 \lsdpriority9 \lsdlocked0 heading 9;
+\lsdpriority39 \lsdlocked0 toc 1;\lsdpriority39 \lsdlocked0 toc 2;\lsdpriority39 \lsdlocked0 toc 3;\lsdpriority39 \lsdlocked0 toc 4;\lsdpriority39 \lsdlocked0 toc 5;\lsdpriority39 \lsdlocked0 toc 6;\lsdpriority39 \lsdlocked0 toc 7;
+\lsdpriority39 \lsdlocked0 toc 8;\lsdpriority39 \lsdlocked0 toc 9;\lsdqformat1 \lsdpriority35 \lsdlocked0 caption;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority10 \lsdlocked0 Title;\lsdpriority1 \lsdlocked0 Default Paragraph Font;
+\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority11 \lsdlocked0 Subtitle;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority22 \lsdlocked0 Strong;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority20 \lsdlocked0 Emphasis;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority59 \lsdlocked0 Table Grid;\lsdunhideused0 \lsdlocked0 Placeholder Text;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority1 \lsdlocked0 No Spacing;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority60 \lsdlocked0 Light Shading;\lsdsemihidden0 \lsdunhideused0 \lsdpriority61 \lsdlocked0 Light List;\lsdsemihidden0 \lsdunhideused0 \lsdpriority62 \lsdlocked0 Light Grid;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority63 \lsdlocked0 Medium Shading 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority64 \lsdlocked0 Medium Shading 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority65 \lsdlocked0 Medium List 1;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority66 \lsdlocked0 Medium List 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority67 \lsdlocked0 Medium Grid 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority68 \lsdlocked0 Medium Grid 2;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority69 \lsdlocked0 Medium Grid 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority70 \lsdlocked0 Dark List;\lsdsemihidden0 \lsdunhideused0 \lsdpriority71 \lsdlocked0 Colorful Shading;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority72 \lsdlocked0 Colorful List;\lsdsemihidden0 \lsdunhideused0 \lsdpriority73 \lsdlocked0 Colorful Grid;\lsdsemihidden0 \lsdunhideused0 \lsdpriority60 \lsdlocked0 Light Shading Accent 1;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority61 \lsdlocked0 Light List Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority62 \lsdlocked0 Light Grid Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 1;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority65 \lsdlocked0 Medium List 1 Accent 1;\lsdunhideused0 \lsdlocked0 Revision;
+\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority34 \lsdlocked0 List Paragraph;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority29 \lsdlocked0 Quote;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority30 \lsdlocked0 Intense Quote;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority66 \lsdlocked0 Medium List 2 Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 1;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority70 \lsdlocked0 Dark List Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority71 \lsdlocked0 Colorful Shading Accent 1;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority72 \lsdlocked0 Colorful List Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority73 \lsdlocked0 Colorful Grid Accent 1;\lsdsemihidden0 \lsdunhideused0 \lsdpriority60 \lsdlocked0 Light Shading Accent 2;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority61 \lsdlocked0 Light List Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority62 \lsdlocked0 Light Grid Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 2;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority65 \lsdlocked0 Medium List 1 Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority66 \lsdlocked0 Medium List 2 Accent 2;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 2;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority70 \lsdlocked0 Dark List Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority71 \lsdlocked0 Colorful Shading Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority72 \lsdlocked0 Colorful List Accent 2;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority73 \lsdlocked0 Colorful Grid Accent 2;\lsdsemihidden0 \lsdunhideused0 \lsdpriority60 \lsdlocked0 Light Shading Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority61 \lsdlocked0 Light List Accent 3;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority62 \lsdlocked0 Light Grid Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 3;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority65 \lsdlocked0 Medium List 1 Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority66 \lsdlocked0 Medium List 2 Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 3;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority70 \lsdlocked0 Dark List Accent 3;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority71 \lsdlocked0 Colorful Shading Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority72 \lsdlocked0 Colorful List Accent 3;\lsdsemihidden0 \lsdunhideused0 \lsdpriority73 \lsdlocked0 Colorful Grid Accent 3;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority60 \lsdlocked0 Light Shading Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority61 \lsdlocked0 Light List Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority62 \lsdlocked0 Light Grid Accent 4;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority65 \lsdlocked0 Medium List 1 Accent 4;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority66 \lsdlocked0 Medium List 2 Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 4;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority70 \lsdlocked0 Dark List Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority71 \lsdlocked0 Colorful Shading Accent 4;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority72 \lsdlocked0 Colorful List Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority73 \lsdlocked0 Colorful Grid Accent 4;\lsdsemihidden0 \lsdunhideused0 \lsdpriority60 \lsdlocked0 Light Shading Accent 5;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority61 \lsdlocked0 Light List Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority62 \lsdlocked0 Light Grid Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 5;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority65 \lsdlocked0 Medium List 1 Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority66 \lsdlocked0 Medium List 2 Accent 5;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 5;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority70 \lsdlocked0 Dark List Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority71 \lsdlocked0 Colorful Shading Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority72 \lsdlocked0 Colorful List Accent 5;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority73 \lsdlocked0 Colorful Grid Accent 5;\lsdsemihidden0 \lsdunhideused0 \lsdpriority60 \lsdlocked0 Light Shading Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority61 \lsdlocked0 Light List Accent 6;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority62 \lsdlocked0 Light Grid Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 6;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority65 \lsdlocked0 Medium List 1 Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority66 \lsdlocked0 Medium List 2 Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 6;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority70 \lsdlocked0 Dark List Accent 6;
+\lsdsemihidden0 \lsdunhideused0 \lsdpriority71 \lsdlocked0 Colorful Shading Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority72 \lsdlocked0 Colorful List Accent 6;\lsdsemihidden0 \lsdunhideused0 \lsdpriority73 \lsdlocked0 Colorful Grid Accent 6;
+\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority19 \lsdlocked0 Subtle Emphasis;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority21 \lsdlocked0 Intense Emphasis;
+\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority31 \lsdlocked0 Subtle Reference;\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority32 \lsdlocked0 Intense Reference;
+\lsdsemihidden0 \lsdunhideused0 \lsdqformat1 \lsdpriority33 \lsdlocked0 Book Title;\lsdpriority37 \lsdlocked0 Bibliography;\lsdqformat1 \lsdpriority39 \lsdlocked0 TOC Heading;}}{\*\datastore 010500000200000018000000
+4d73786d6c322e534158584d4c5265616465722e352e3000000000000000000000060000
+d0cf11e0a1b11ae1000000000000000000000000000000003e000300feff090006000000000000000000000001000000010000000000000000100000feffffff00000000feffffff0000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffdfffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffff52006f006f007400200045006e00740072007900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016000500ffffffffffffffffffffffffec69d9888b8b3d4c859eaf6cd158be0f000000000000000000000000200f
+a404e3e8c801feffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000105000000000000}}

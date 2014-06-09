@@ -10,8 +10,15 @@ body{
   @include justify-content(center);
 }
 
-.no-flexbox.no-flexboxlegacy{
+.no-flexbox.no-flexboxlegacy, .no-flexbox.flexboxlegacy{
+  height: 100%;
+  
+  body{
+    height: 100%;
+  }
+
   #content{
+    height: 100%;
     display: table;
     margin: 0 auto !important;
   }

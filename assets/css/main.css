@@ -102,12 +102,17 @@ body {
   justify-content: center;
   -ms-flex-pack: center; }
 
-.no-flexbox.no-flexboxlegacy #content {
-  display: table;
-  margin: 0 auto !important; }
-.no-flexbox.no-flexboxlegacy .post {
-  display: table-cell;
-  vertical-align: middle; }
+.no-flexbox.no-flexboxlegacy, .no-flexbox.flexboxlegacy {
+  height: 100%; }
+  .no-flexbox.no-flexboxlegacy body, .no-flexbox.flexboxlegacy body {
+    height: 100%; }
+  .no-flexbox.no-flexboxlegacy #content, .no-flexbox.flexboxlegacy #content {
+    height: 100%;
+    display: table;
+    margin: 0 auto !important; }
+  .no-flexbox.no-flexboxlegacy .post, .no-flexbox.flexboxlegacy .post {
+    display: table-cell;
+    vertical-align: middle; }
 
 /* Header
 ***********************************/

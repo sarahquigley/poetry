@@ -39,7 +39,7 @@ I write all my CSS using [SASS](http://sass-lang.com/). [Bourbon](http://bourbon
 
 ### Google WebFonts
 
-[Google Web Fonts](https://www.google.com/fonts) is an excellent resoource for creating beautiful online typography.
+[Google Web Fonts](https://www.google.com/fonts) is an excellent resource for creating beautiful online typography.
 
 ### Font Awesome Icons
 
@@ -47,7 +47,7 @@ I write all my CSS using [SASS](http://sass-lang.com/). [Bourbon](http://bourbon
 
 ### Modernizr
 
-[Modernizr](http://modernizr.com/) allows you to detect browser feature support, ensuring older browsers can be supported with more ease.
+[Modernizr](http://modernizr.com/) allows you to detect browser feature support, ensuring older browsers can be supported with greater ease.
 
 ### JQuery and JQuery TouchSwipe
 

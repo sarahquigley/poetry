@@ -3,7 +3,7 @@ poetry
 
 Poetry, and code.
 
-View live version: [Read my poetry.](http://sarahquigley.github.io/poetry/)
+View live version: [Read my poetry.](http://sarahquigley.net/poetry/)
 
 ## What is this project?
 

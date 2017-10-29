@@ -8,7 +8,7 @@ author:
     surname: Quigley
 email: sarah@sarahquigley.net
 
-exclude: [Gemfile, Rakefile, Gemfile.lock]
+exclude: [Gemfile, Rakefile, Gemfile.lock, package.json, README.md]
 
 baseurl: "http://sarahquigley.net/poetry"
 url: "http://sarahquigley.net/poetry"

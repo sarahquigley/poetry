@@ -2,7 +2,10 @@
 layout: post
 title: |
    The Invisible
-   Bakery 
+   Bakery
+excerpt: |
+  Bushwick wears its own cologne,
+  a delicate infusion of fish guts
 ---
 
 Bushwick wears its own cologne,  
@@ -14,4 +17,3 @@ But then there's the Butter Street,
 the Invisible Bakery, the air celebrates  
 the swift movements of floured hands,  
 folding and rolling and folding again.
-

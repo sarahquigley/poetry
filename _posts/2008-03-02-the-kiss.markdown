@@ -2,7 +2,11 @@
 layout: post
 title: |
     The Kiss
-categories: 
+excerpt: |
+  I have followed the tracks of deer
+  through virgin land,
+  slept on dry moss
+  and
 ---
 
 I have followed the tracks of deer  

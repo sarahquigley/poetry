@@ -1,10 +1,12 @@
 ---
 layout: post
 title: |
-    Stream 
+    Stream
     and Willow
 subtitle: for Joanna Newsom
-categories: 
+excerpt: |
+  The moon is bright –
+  oh the moon is my night light
 ---
 
 The moon is bright –  
@@ -16,7 +18,7 @@ through the darkness,
 and the willows are strings  
 which I pluck as I sing  
 and the rocks are a drum  
-which you thrum – 
+which you thrum –
 
 your hand is a cup  
 oh you gather me up  

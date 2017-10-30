@@ -2,7 +2,11 @@
 layout: post
 title: |
     The New Bridge
-categories:
+excerpt: |
+  A machine torn straight from the pages
+  of the War of the Worlds,
+  it has dug claws into the soil of old Dundrum
+  and hunkered down
 ---
 
 A machine torn straight from the pages  
@@ -35,4 +39,4 @@ of Dundrum Luas bridge-
 stars pulsing above us,  
 cars pulsing below  
 and Mars hovering, unblinking,  
-an ever-watchful eye. 
+an ever-watchful eye.

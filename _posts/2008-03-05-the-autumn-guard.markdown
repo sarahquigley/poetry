@@ -3,7 +3,9 @@ layout: post
 title: |
     The Autumn
     Guard
-categories: 
+excerpt: |
+  The wind is in the saplings
+  and they are loosing
 ---
 
 The wind is in the saplings  
@@ -13,4 +15,3 @@ for the first time.
 "What are these red birds  
 skittering across the lawn?  
 Those birds were mine!"
-

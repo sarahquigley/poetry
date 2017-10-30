@@ -3,7 +3,11 @@ layout: post
 title: |
     Otter's
     First Love
-categories: 
+excerpt: |
+  Otter's first love was not
+  a rough wave,
+  soft fingers, strong wrists –
+  not
 ---
 
 Otter's first love was not  
@@ -23,4 +27,3 @@ might he hoist a bright sail
 over his belly too  
 and feel it tauten  
 in the wind?   
-

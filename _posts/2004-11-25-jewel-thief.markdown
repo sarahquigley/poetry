@@ -2,6 +2,9 @@
 layout: post
 title: |
     Jewel Thief
+excerpt: |
+  The streetlights thread
+  up the hillside
 ---
 
 The streetlights  

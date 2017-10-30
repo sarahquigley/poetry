@@ -1,8 +1,12 @@
 ---
 layout: post
 title: |
-   Grandma's 
-   Wild Lace 
+   Grandma's
+   Wild Lace
+excerpt: |
+  For the little ones
+  Grandma grew lace
+  in her backyard
 ---
 
 For the little ones  

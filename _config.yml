@@ -1,5 +1,5 @@
 # Site settings
-title: Sarah writes poems 
+title: Sarah writes poems
 description: "Poetry as it happens."
 
 author:
@@ -10,10 +10,12 @@ email: sarah@sarahquigley.net
 
 exclude: [Gemfile, Rakefile, Gemfile.lock, package.json, README.md]
 
-baseurl: "http://sarahquigley.net/poetry"
-url: "http://sarahquigley.net/poetry"
+baseurl: "/poetry"
+url: "http://sarahquigley.net"
 excerpt_separator: "  "
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+plugins:
+  - jekyll-autoprefixer

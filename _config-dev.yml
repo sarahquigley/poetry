@@ -1,5 +1,5 @@
 # Site settings
-title: Sarah writes poems 
+title: Sarah writes poems
 description: "Poetry as it happens."
 
 author:
@@ -11,7 +11,7 @@ email: sarah@sarahquigley.net
 exclude: [Gemfile, Rakefile, Gemfile.lock]
 
 baseurl: ""
-url: ""
+url: "http://localhost:4000"
 excerpt_separator: "  "
 
 # Build settings

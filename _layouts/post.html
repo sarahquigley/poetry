@@ -2,18 +2,11 @@
 layout: default
 ---
 
-{% if page.id == "home" %}
-  {% assign current_post = site.posts[0] %}
-  {% assign content = site.posts[0].content %}
-{% else %}
-  {% assign current_post = page %}
-{% endif %}
-
 <section class="post">
 
   {% capture current_post_title_length %}{{ current_post.title | size }}{% endcapture %}
 
-  {% if current_post_title_length != "0" && current_post.subtitle %}
+  {% if current_post_title_length != "0" %}
   <header class="post-header">
 
     {% if current_post_title_length != "0" %}
@@ -30,7 +23,7 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
-  
+
   <footer>
     <p>Written by {{ site.author.name }}<br/>
     Posted on the {{ current_post.date | date: "%-d %b, %Y" }}</p>
@@ -48,4 +41,3 @@ layout: default
 
 
 </section>
-

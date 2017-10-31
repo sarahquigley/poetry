@@ -1,6 +1,6 @@
 # Site settings
-title: Sarah writes poems
-description: "Poetry as it happens."
+title: vs.
+description: poems by Sarah Quigley
 
 author:
     name: Sarah Quigley
@@ -19,3 +19,6 @@ markdown: kramdown
 permalink: pretty
 plugins:
   - jekyll-autoprefixer
+  - jekyll-paginate
+
+paginate: 13

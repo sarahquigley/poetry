@@ -1,0 +1,28 @@
+{% assign post=include.post %}
+
+<article class="post">
+
+  {% capture post_title_length %}{{ post.title | size }}{% endcapture %}
+
+  {% if post_title_length != "0" %}
+  <header class="post-header">
+
+    {% if post_title_length != "0" %}
+    <h1>{{ post.title | newline_to_br }}</h1>
+    {% endif %}
+
+    {% if current_post.subtitle %}
+    <h3>{{ post.subtitle | newline_to_br }}</h3>
+    {% endif %}
+
+  </header>
+  {% endif %}
+
+  <article class="post-content">
+    {{ post.content }}
+  </article>
+
+  <footer>
+    Posted on the {{ post.date | date: "%-d %b, %Y" }}</p>
+  </footer>
+</article>

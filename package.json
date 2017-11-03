@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/sarahquigley/poetry/issues"
   },
-  "homepage": "https://github.com/sarahquigley/poetry#readme"
+  "homepage": "https://github.com/sarahquigley/poetry#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize-scss": "^7.0.0"
+  }
 }

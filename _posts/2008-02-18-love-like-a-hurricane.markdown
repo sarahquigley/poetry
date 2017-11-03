@@ -1,11 +1,13 @@
 ---
 layout: post
-title: |
+title: |-
     love like
     a hurricane
-excerpt: |
+excerpt: |-
   love like a hurricane
   breaks boughs
+excerpt_font_size: 4.1
+
 ---
 
 love like a hurricane  

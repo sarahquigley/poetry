@@ -1,6 +1,8 @@
 # Site settings
 title: vs.
-description: poems by Sarah Quigley
+description: |-
+  poems
+  by Sarah Quigley
 
 author:
     name: Sarah Quigley
@@ -13,6 +15,9 @@ exclude: [Gemfile, Rakefile, Gemfile.lock, package.json, README.md]
 baseurl: "/poetry"
 url: "http://sarahquigley.net"
 excerpt_separator: "  "
+
+sass:
+  sass_dir: _styles
 
 # Build settings
 markdown: kramdown

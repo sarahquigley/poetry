@@ -1,11 +1,13 @@
 ---
 layout: post
-title: |
+title: |-
     The Art of Love
-excerpt: |
+excerpt: |-
   Love has left me wondering
   where I left my shoes and my socks
   and
+excerpt_font_size: 3.3
+
 ---
 
 Love has left me wondering  

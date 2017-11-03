@@ -1,0 +1,49 @@
+$color--bg-site-nav: $charcoal;
+$color--bg-paagination: $lightgrey;
+
+#site-header {
+  padding: 11em $padding-leftright--default $padding-topbottom--default $padding-leftright--default;
+
+  h1, h2 {
+    margin: 0;
+  }
+
+  h1 {
+    @include font-dimensions(100, 95, 2);
+  }
+
+  h2 {
+    @include font-dimensions(29, 35.5, -10);
+    font-family: $font-family--subheadline;
+    font-weight: 300;
+    margin-left: -0.1em;
+  }
+
+  a {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    height: 7em;
+  }
+}
+
+#site-nav {
+  background-color: $color--bg-site-nav;
+  height: 5em;
+  padding: 0 $padding-leftright--default;
+}
+
+.pagination {
+  align-items: center;
+  background-color: $color--bg-paagination;
+  display: flex;
+  height: 7.7em;
+  justify-content: space-between;
+  padding: 0 $padding-leftright--default;
+
+  a, span {
+    @include font-dimensions(16, 19.2);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

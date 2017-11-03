@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  color: $color--text-body;
+  font-family: $font-family--body;
+  font-size: vw(10, 375); // 10px @vw 375px
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color--text-headline;
+  font-family: $font-family--headline;
+  line-height: 1em;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1 {
+  @include font-dimensions(50, 50, 2);
+  font-style: italic;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3.5em;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+h4 {
+  font-size: 2.5em;
+}
+
+h5 {
+  font-size: 2em;
+}
+
+h6 {
+  font-size: 1.8em;
+}
+
+p {
+  @include font-dimensions(17, 28);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  font-size: inherit;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+
+  }
+
+  &:focus {
+
+  }
+
+  &:visited {
+
+  }
+}

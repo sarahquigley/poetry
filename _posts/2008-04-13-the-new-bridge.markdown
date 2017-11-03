@@ -1,12 +1,13 @@
 ---
 layout: post
-title: |
+title: |-
     The New Bridge
-excerpt: |
+excerpt: |-
   A machine torn straight from the pages
   of the War of the Worlds,
   it has dug claws into the soil of old Dundrum
   and hunkered down
+excerpt_font_size: 2.7
 ---
 
 A machine torn straight from the pages  

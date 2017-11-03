@@ -1,12 +1,13 @@
 ---
 layout: post
-title: |
+title: |-
     The House
     on the Hill
-excerpt: |
-  My life on paper is rakish,
-  tight as a papoose –
+excerpt: |-
+  My life on paper is rakish, tight as a papoose –
   rolling like beads
+excerpt_font_size: 3.6
+
 ---
 
 My life on paper is rakish,  

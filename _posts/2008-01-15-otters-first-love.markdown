@@ -1,13 +1,13 @@
 ---
 layout: post
-title: |
+title: |-
     Otter's
     First Love
-excerpt: |
-  Otter's first love was not
-  a rough wave,
-  soft fingers, strong wrists –
-  not
+excerpt: |-
+  Otter's first love was not a rough wave,
+  soft fingers, strong wrists – not
+excerpt_font_size: 3.4
+
 ---
 
 Otter's first love was not  

@@ -1,0 +1,47 @@
+$color--bg-thumbnail-light: $white;
+$color--bg-thumbnail-mid: $offwhite;
+$color--bg-thumbnail-dark: $midgrey;
+
+$color--text-thumbnail-light: $white;
+$color--text-thumbanil-dark: $color--text-headline;
+
+.thumbnail {
+  height: 27.5em;
+  overflow: hidden;
+
+  h2 {
+    @include font-dimensions(36, 41);
+    color: inherit;
+    font-family: $font-family--body;
+    font-weight: 300;
+    margin: 0;
+
+    &:after {
+      content: ' ...';
+    }
+  }
+
+  a {
+    align-items: center;
+    color: inherit;
+    display: flex;
+    height: 100%;
+    padding: 0 $padding-leftright--default;
+    width: 100%;
+  }
+
+  &:nth-child(3n+2) {
+    background-color: $color--bg-thumbnail-dark;
+    color: $color--text-thumbnail-light;
+  }
+
+  &:nth-child(3n) {
+    background-color: $color--bg-thumbnail-mid;
+    color: $color--text-thumbanil-dark;
+  }
+
+  &:nth-child(3n+1) {
+    background-color: $color--bg-thumbnail-light;
+    color: $color--text-thumbanil-dark;
+  }
+}

@@ -1,9 +1,11 @@
 ---
 layout: post
-title: |
-excerpt: |
+title: |-
+excerpt: |-
   Each day is a plump green grape
-  to be plucked and pressed 
+  to be plucked and pressed
+excerpt_font_size: 3.5
+
 ---
 
 Each day is a  

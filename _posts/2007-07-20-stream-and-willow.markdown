@@ -1,12 +1,13 @@
 ---
 layout: post
-title: |
+title: |-
     Stream
     and Willow
 subtitle: for Joanna Newsom
-excerpt: |
-  The moon is bright –
-  oh the moon is my night light
+excerpt: |-
+  The moon is bright – oh the moon is my night light
+excerpt_font_size: 3.6
+
 ---
 
 The moon is bright –  

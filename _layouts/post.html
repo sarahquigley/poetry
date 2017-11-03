@@ -4,38 +4,15 @@ layout: default
 
 <section class="post">
 
-  {% capture current_post_title_length %}{{ current_post.title | size }}{% endcapture %}
-
-  {% if current_post_title_length != "0" %}
-  <header class="post-header">
-
-    {% if current_post_title_length != "0" %}
-    <h1>{{ current_post.title | newline_to_br }}</h1>
-    {% endif %}
-
-    {% if current_post.subtitle %}
-    <h3>{{ current_post.subtitle | newline_to_br }}</h3>
-    {% endif %}
-
-  </header>
-  {% endif %}
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-  <footer>
-    <p>Written by {{ site.author.name }}<br/>
-    Posted on the {{ current_post.date | date: "%-d %b, %Y" }}</p>
-  </footer>
+  {% include post.html post=page %}
 
   <nav class="nav-buttons">
-    {% if current_post.previous %}
-    <a class="previous" href="{{ current_post.previous.url | prepend: site.baseurl }}"><span>Previous Poem</span><i class="fa fa-angle-left"></i></a>
+    {% if page.previous %}
+    <a class="previous" href="{{ page.previous.url | relative_url }}"><span>Previous Poem</span><i class="fa fa-angle-left"></i></a>
     {% endif %}
 
-    {% if current_post.next %}
-    <a class="next" href="{{ current_post.next.url | prepend: site.baseurl }}"><i class="fa fa-angle-right"></i><span>Next Poem</span></a>
+    {% if page.next %}
+    <a class="next" href="{{ page.next.url | relative_url }}"><i class="fa fa-angle-right"></i><span>Next Poem</span></a>
     {% endif %}
   </nav>
 

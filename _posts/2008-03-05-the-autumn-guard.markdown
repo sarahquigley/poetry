@@ -1,11 +1,12 @@
 ---
 layout: post
-title: |
+title: |-
     The Autumn
     Guard
-excerpt: |
+excerpt: |-
   The wind is in the saplings
   and they are loosing
+excerpt_font_size: 3.6
 ---
 
 The wind is in the saplings  

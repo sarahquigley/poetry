@@ -1,9 +1,9 @@
 ---
 layout: post
-title: |
+title: |-
    The Invisible
    Bakery
-excerpt: |
+excerpt: |-
   Bushwick wears its own cologne,
   a delicate infusion of fish guts
 ---

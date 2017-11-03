@@ -1,10 +1,12 @@
 ---
 layout: post
-title: |
+title: |-
     Jewel Thief
-excerpt: |
+excerpt: |-
   The streetlights thread
   up the hillside
+excerpt_font_size: 4.1
+
 ---
 
 The streetlights  

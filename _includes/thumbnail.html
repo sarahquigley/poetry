@@ -1,5 +1,11 @@
 {% assign post=include.post %}
 
-<article>
-  <h4>{{ post.excerpt | newline_to_br }}</h4>
+<article class="thumbnail">
+  <a href="{{ post.url |  relative_url }}">
+    {% if post.excerpt_font_size %}
+    <h2 style="font-size: {{ post.excerpt_font_size }}em">{{ post.excerpt | newline_to_br }}</h2>
+    {% else %}
+    <h2>{{ post.excerpt | newline_to_br }}</h2>
+    {% endif %}
+  </a>
 </article>

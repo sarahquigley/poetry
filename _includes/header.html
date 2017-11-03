@@ -1,4 +1,9 @@
 <header id="site-header">
-  <h1>{{ site.title }}</h1>
-  <h2>{{ site.description }}</h2>
+  <a href="{{ "/" | relative_url }}">
+    <h1>{{ site.title }}</h1>
+    <h2>{{ site.description | newline_to_br }}</h2>
+  </a>
 </header>
+<nav id="site-nav">
+  <a href="{{ "/about" | relative_url }}">Info</a>
+</nav>

@@ -1,12 +1,14 @@
 ---
 layout: post
-title: |
+title: |-
     lolla rossa,
     touches herself
-excerpt: |
+excerpt: |-
   it often strikes me
   this lettuce has many hands
   all clasped and
+excerpt_font_size: 3.6
+
 ---
 
 it often strikes me  

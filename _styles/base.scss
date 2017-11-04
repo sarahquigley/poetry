@@ -17,7 +17,7 @@ h5,
 h6 {
   color: $color--text-headline;
   font-family: $font-family--headline;
-  line-height: 1em;
+  line-height: 1;
 
   &:first-child {
     margin-top: 0;
@@ -35,27 +35,31 @@ h1 {
 }
 
 h2 {
-  font-size: 3.5em;
+  font-size: em(35);
 }
 
 h3 {
-  font-size: 3em;
+  font-size: em(30);
 }
 
 h4 {
-  font-size: 2.5em;
+  font-size: em(25);
 }
 
 h5 {
-  font-size: 2em;
+  font-size: en(20);
 }
 
 h6 {
-  font-size: 1.8em;
+  font-size: em(18);
 }
 
 p {
   @include font-dimensions(17, 28);
+
+  &:first-child {
+    margin-top: 0;
+  }
 
   &:last-child {
     margin-bottom: 0;

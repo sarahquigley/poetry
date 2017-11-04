@@ -6,7 +6,7 @@ $color--text-thumbnail-light: $white;
 $color--text-thumbanil-dark: $color--text-headline;
 
 .thumbnail {
-  height: 27.5em;
+  height: em(275);
   overflow: hidden;
 
   h2 {

@@ -11,10 +11,14 @@
   @return ($target / $vw-context) * 1vw;
 }
 
+@function em($target, $base: 10) {
+  @return $target / $base * 1em;
+}
+
 /** Mixins **/
 
 @mixin font-dimensions($size, $line-height, $tracking: 0, $font-base: 10) {
-  font-size: $size / $font-base * 1em;
+  font-size: em($size, $font-base);
   line-height: $line-height / $size;
   letter-spacing: $tracking / 1000 * 1em;
 }

@@ -10,6 +10,12 @@ author:
     surname: Quigley
 email: sarah@sarahquigley.net
 
+footer:
+  organisation: a finite adventure
+  organisation_link: 'http://finiteadventures.com'
+  copyright_start: 2008
+
+
 exclude: [Gemfile, Rakefile, Gemfile.lock, package.json, README.md]
 
 baseurl: "/poetry"

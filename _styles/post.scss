@@ -1,3 +1,26 @@
+$color--bg-post-footer: $offwhite;
+
 .post {
   padding: $padding-topbottom--default $padding-leftright--default;
+
+  header {
+    margin-bottom: em(35);
+  }
+
+  .post-content {
+    margin-bottom: em(40);
+  }
+
+  footer {
+    background-color: $color--bg-post-footer;
+    height: em(36);
+
+    p {
+      @include font-dimensions(18, 21.6);
+      font-family: $font-family--headline;
+      font-weight: 700;
+      padding-top: em(4, 18);
+      text-align: center;
+    }
+  }
 }

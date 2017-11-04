@@ -15,13 +15,13 @@ id: home
 
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Prev</a>
+    <a href="{{ paginator.previous_page_path }}" class="previous"><span class="pagination-arrow">«</span><span>Prev<span></a>
   {% else %}
-    <span class="previous">Prev</span>
+    <span class="previous"><span class="pagination-arrow">«</span><span>Prev</span></span>
   {% endif %}
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    <a href="{{ paginator.next_page_path }}" class="next"><span>Next</span><span class="pagination-arrow">»</span</a>
   {% else %}
-    <span class="next">Next</span>
+    <span class="next"><span>Next<span><span class="pagination-arrow">»</span</span>
   {% endif %}
 </div>

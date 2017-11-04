@@ -4,3 +4,4 @@ _site
 *.~lock*
 .fuse*
 .DS_STORE
+node_modules/

@@ -1,5 +1,7 @@
 $color--bg-site-nav: $charcoal;
-$color--bg-paagination: $lightgrey;
+$color--bg-site-nav-info: $white;
+
+$color--bg-pagination: $lightgrey;
 
 $color--bg-logo-dark: $almostblack;
 $color--bg-logo-mid: $midgrey;
@@ -65,13 +67,55 @@ $color--bg-logo-light: $grey;
 
 #site-nav {
   background-color: $color--bg-site-nav;
+  display: flex;
   height: em(50);
   padding: 0 $padding-leftright--default;
+  align-items: center;
+
+  .site-nav-info {
+    height: em(26);
+    width: em(26);
+
+    span {
+      display: none;
+    }
+
+    &:before {
+      @include font-dimensions(26, 26);
+      background-color: $color--bg-site-nav-info;
+      border-radius: 50%;
+      content: "i";
+      display: block;
+      font-family: $font-family--headline;
+      font-style: italic;
+      font-weight: 900;
+      text-align: center;
+    }
+  }
+}
+
+#site-footer {
+  color: $color--text-headline;
+  padding: em(25) $padding-leftright--default;
+  text-align: center;
+
+  .site-footer-organisation {
+    @include font-dimensions(24, 28.8);
+    font-family: $font-family--headline;
+    font-style: italic;
+    padding-bottom: em(23, 24);
+  }
+
+  .site-footer-copyright {
+    @include font-dimensions(14, 16.8);
+    font-family: $font-family--headline;
+    padding-bottom: em(23, 14);
+  }
 }
 
 .pagination {
   align-items: center;
-  background-color: $color--bg-paagination;
+  background-color: $color--bg-pagination;
   display: flex;
   height: em(77);
   justify-content: space-between;

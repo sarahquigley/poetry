@@ -3,10 +3,12 @@ layout: default
 id: home
 ---
 
-<section>
+<section id="home">
 {% for post in paginator.posts %}
   {% if forloop.first == true and paginator.posts.size >= 4 %}
-    {% include post.html post=post %}
+    <a class="home-post" href="{{ post.url |  relative_url }}">
+      {% include post.html post=post %}
+    </a>
   {% else %}
     {% include thumbnail.html post=post %}
   {% endif %}

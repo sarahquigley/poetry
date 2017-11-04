@@ -23,4 +23,14 @@ $color--bg-post-footer: $offwhite;
       text-align: center;
     }
   }
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 10px;
+    margin: 0 auto;
+    width: em(375);
+  }
+}
+
+.home-post {
+  flex-basis: 100%;
 }

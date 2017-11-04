@@ -31,16 +31,20 @@ $color--bg-logo-light: $grey;
     flex-direction: row;
     height: em(70);
   }
+
+  @media (min-width: $breakpoint-md) {
+    padding-top: $padding-topbottom--default;
+  }
 }
 
 #site-logo {
   div:first-child {
     background-color: $color--bg-logo-mid;
-    transform: rotate(-45deg);
     height: em(36);
     left: em(-40);
     position: absolute;
     top: em(33);
+    transform: rotate(-45deg);
     width: em(180);
   }
 
@@ -56,12 +60,32 @@ $color--bg-logo-light: $grey;
 
   div:last-child {
     background-color: $color--bg-logo-light;
-    transform: rotate(79deg);
     height: em(36);
     left: em(130);
     position: absolute;
     top: em(28);
+    transform: rotate(79deg);
     width: em(101);
+  }
+
+  @media (min-width: $breakpoint-md) {
+    div:first-child {
+      left: auto;
+      right: em(-40);
+      transform: rotate(45deg);
+    }
+
+    div:nth-child(2) {
+      left: auto;
+      right: em(36);
+      transform: rotate(-53deg);
+    }
+
+    div:last-child {
+      left: auto;
+      right: em(130);
+      transform: rotate(-79deg);
+    }
   }
 }
 
@@ -113,6 +137,12 @@ $color--bg-logo-light: $grey;
   }
 }
 
+#home {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+}
+
 .pagination {
   align-items: center;
   background-color: $color--bg-pagination;
@@ -139,5 +169,14 @@ $color--bg-logo-light: $grey;
     &:last-child {
       margin-left: em(20, 36);
     }
+  }
+}
+
+#site-header,
+#site-nav,
+#site-footer,
+.pagination {
+  @media (min-width: $breakpoint-md) {
+    font-size: 10px;
   }
 }

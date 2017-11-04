@@ -18,8 +18,10 @@ $font-family--headline: 'Playfair Display', serif;
 $font-family--subheadline: 'Source Sans Pro', sans-serif;
 
 // Breakpoints
-$breakpoint-md: 670px;
-$breakpoint-lg: 1020px;
+$breakpoint-xs: 300px;
+$breakpoint-sm: 450px;
+$breakpoint-md: 600px;
+$breakpoint-lg: 900px;
 
 // Layout
 $padding-leftright--default: em(31.5);

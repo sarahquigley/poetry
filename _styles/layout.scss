@@ -8,32 +8,38 @@ $color--bg-logo-mid: $midgrey;
 $color--bg-logo-light: $grey;
 
 #site-header {
-  padding: em(110) $padding-leftright--default $padding-topbottom--default $padding-leftright--default;
+  position: relative;
+  overflow: hidden;
+
+  hgroup {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: em(110) $padding-leftright--default $padding-topbottom--default $padding-leftright--default;
+  }
 
   h1, h2 {
     margin: 0;
   }
 
   h1 {
-    @include font-dimensions(100, 95, 2);
+    @include font-dimensions(100, 47, 2);
+    height: em(70, 100);
   }
 
   h2 {
     @include font-dimensions(29, 35.5, -10);
     font-family: $font-family--subheadline;
+    height: em(70, 29);
     font-weight: 300;
     margin-left: -0.1em;
   }
 
-  a {
-    align-items: flex-end;
-    display: flex;
-    flex-direction: row;
-    height: em(70);
-  }
-
   @media (min-width: $breakpoint-md) {
-    padding-top: $padding-topbottom--default;
+    hgroup {
+      padding-top: $padding-topbottom--default;
+    }
   }
 }
 
@@ -138,9 +144,15 @@ $color--bg-logo-light: $grey;
 }
 
 #home {
-  display: flex;
-  flex-direction: column;
-  flex-flow: wrap;
+  display: grid;
+
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: 1 / 3 * 100% 1 / 3 * 100% 1 / 3 * 100%;
+  }
 }
 
 .pagination {

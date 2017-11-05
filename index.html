@@ -3,7 +3,7 @@ layout: default
 id: home
 ---
 
-<section id="home">
+<section id="home" class="{% if paginator.posts.size >= 4 %}home--home-post{% endif %}">
 {% for post in paginator.posts %}
   {% if forloop.first == true and paginator.posts.size >= 4 %}
     <a class="home-post" href="{{ post.url |  relative_url }}">

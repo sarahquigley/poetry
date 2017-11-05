@@ -15,6 +15,10 @@
   @return $target / $base * 1em;
 }
 
+@function px-at-viewport($target, $viewport-width, $target-viewport-width) {
+  @return ($target / $viewport-width) * $target-viewport-width * 1px;
+}
+
 /** Mixins **/
 
 @mixin font-dimensions($size, $line-height, $tracking: 0, $font-base: 10) {

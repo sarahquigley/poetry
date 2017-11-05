@@ -3,27 +3,29 @@ layout: default
 id: home
 ---
 
-<section id="home" class="{% if paginator.posts.size >= 4 %}home--home-post{% endif %}">
-{% for post in paginator.posts %}
-  {% if forloop.first == true and paginator.posts.size >= 4 %}
-    <a class="home-post" href="{{ post.url |  relative_url }}">
-      {% include post.html post=post %}
-    </a>
-  {% else %}
-    {% include thumbnail.html post=post %}
-  {% endif %}
-{% endfor %}
-</section>
+<section id="gallery">
+  <section id="gallery-grid" class="{% if paginator.posts.size >= 4 %}gallery-grid--gallery-post{% endif %}">
+  {% for post in paginator.posts %}
+    {% if forloop.first == true and paginator.posts.size >= 4 %}
+      <a class="gallery-post" href="{{ post.url |  relative_url }}">
+        {% include post.html post=post %}
+      </a>
+    {% else %}
+      {% include thumbnail.html post=post %}
+    {% endif %}
+  {% endfor %}
+  </section>
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous"><span class="pagination-arrow">«</span><span>Prev</span></a>
-  {% else %}
-    <span class="previous"><span class="pagination-arrow">«</span><span>Prev</span></span>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next"><span>Next</span><span class="pagination-arrow">»</span></a>
-  {% else %}
-    <span class="next"><span>Next</span><span class="pagination-arrow">»</span></span>
-  {% endif %}
-</div>
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous"><span class="pagination-arrow">«</span><span>Prev</span></a>
+    {% else %}
+      <span class="previous"><span class="pagination-arrow">«</span><span>Prev</span></span>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next"><span>Next</span><span class="pagination-arrow">»</span></a>
+    {% else %}
+      <span class="next"><span>Next</span><span class="pagination-arrow">»</span></span>
+    {% endif %}
+  </div>
+</section>

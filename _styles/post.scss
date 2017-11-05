@@ -40,17 +40,3 @@ $color--bg-post-footer: $offwhite;
     font-size: px-at-viewport(10, 900, 1200);
   }
 }
-
-.home-post {
-  align-items: center;
-  display: flex;
-
-  @media (min-width: $breakpoint-md) {
-    grid-column: 1 / span 2;
-  }
-
-  @media (min-width: $breakpoint-lg) {
-    grid-column: 2 / span 2;
-    grid-row: 1 / span 3;
-  }
-}

@@ -1,6 +1,8 @@
 $fa-font-path: "../node_modules/font-awesome/fonts";
 
 // Colour Variables
+
+// Greyscale
 $white: white;
 $almostwhite: rgb(247, 246, 247);
 $offwhite: rgb(237, 237, 237);
@@ -10,6 +12,13 @@ $midgrey: rgb(82, 79, 82);
 $charcoal: rgb(71, 70, 71);
 $almostblack: rgb(53, 52, 51);
 
+// Technicolour
+$plumpink: rgb(153, 106, 110);
+$tangerineorange: rgb(239, 150, 113);
+$lighttangerineorange: rgb(241, 172, 143);
+$sunnyyellow: rgb(253, 224, 113);
+
+// Colours by usage
 $color--text-body: $midgrey;
 $color--text-headline: $almostblack;
 

@@ -1,15 +1,23 @@
+// Colours Gallery
+$color-stop--gallery-stripes: px-at-viewport(275/3, 375, 1200);
+
+
+// Colours Thumbnail
+// Backgrounds
 $color--bg-thumbnail-light: $white;
 $color--bg-thumbnail-mid: $offwhite;
 $color--bg-thumbnail-dark: $midgrey;
 
 $color--bg-thumbnail-gradient: $almostwhite;
 
+// Text
 $color--text-thumbnail-light: $white;
 $color--text-thumbanil-dark: $color--text-headline;
 
+
+// Colours Gallery Post
 $color--bg-gallery-post: $color--bg-thumbnail-light;
 
-$color-stop--gallery-stripes: px-at-viewport(275/3, 375, 1200);
 
 #gallery {
   background-image: linear-gradient(
@@ -46,6 +54,7 @@ $color-stop--gallery-stripes: px-at-viewport(275/3, 375, 1200);
 .thumbnail {
   height: em(275);
   overflow: hidden;
+  position: relative;
 
   h2 {
     @include font-dimensions(36, 41);
@@ -59,13 +68,23 @@ $color-stop--gallery-stripes: px-at-viewport(275/3, 375, 1200);
     }
   }
 
-  a {
+  .thumbnail-preview,
+  .thumbnail-hover {
     align-items: center;
     color: inherit;
     display: flex;
     height: 100%;
     padding: 0 $padding-leftright--default;
     width: 100%;
+  }
+
+  .thumbnail-hover {
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: visibility 500ms, opacity 500ms;
+    opacity: 0;
+    visibility: hidden;
   }
 
   &:nth-child(3n+2) {
@@ -103,6 +122,13 @@ $color-stop--gallery-stripes: px-at-viewport(275/3, 375, 1200);
 
   @media (min-width: $breakpoint-xl) {
     font-size: px-at-viewport(10/3, 375, 1200);
+  }
+
+  &:hover {
+    .thumbnail-hover {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
 

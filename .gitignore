@@ -5,4 +5,5 @@ _site
 .fuse*
 .DS_STORE
 node_modules/
+vendor/
 npm.debug.log

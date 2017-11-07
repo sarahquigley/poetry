@@ -10,9 +10,13 @@ $color--bg-thumbnail-dark: $midgrey;
 
 $color--bg-thumbnail-gradient: $almostwhite;
 
+$color--bg-thumbnail-hover-light: rgba($sunnyyellow, 0.9);
+$color--bg-thumbnail-hover-mid: rgba($tangerineorange, 0.9);
+$color--bg-thumbnail-hover-dark: rgba($plumpink, 0.9);
+
 // Text
 $color--text-thumbnail-light: $white;
-$color--text-thumbanil-dark: $color--text-headline;
+$color--text-thumbnail-dark: $color--text-headline;
 
 
 // Colours Gallery Post
@@ -78,28 +82,56 @@ $color--bg-gallery-post: $color--bg-thumbnail-light;
     width: 100%;
   }
 
+  .thumbnail-preview {
+    transition: opacity 200ms linear, transform 200ms linear;
+  }
+
   .thumbnail-hover {
     left: 0;
     position: absolute;
     top: 0;
-    transition: visibility 500ms, opacity 500ms;
     opacity: 0;
+    transition: visibility 400ms ease-in, opacity 400ms ease-in;
     visibility: hidden;
   }
 
   &:nth-child(3n+2) {
     background-color: $color--bg-thumbnail-dark;
     color: $color--text-thumbnail-light;
+
+    .thumbnail-hover {
+      background-color: $color--bg-thumbnail-hover-dark;
+    }
   }
 
   &:nth-child(3n) {
     background-color: $color--bg-thumbnail-mid;
-    color: $color--text-thumbanil-dark;
+    color: $color--text-thumbnail-dark;
+
+    .thumbnail-hover {
+      background-color: $color--bg-thumbnail-hover-mid;
+    }
   }
 
   &:nth-child(3n+1) {
     background-color: $color--bg-thumbnail-light;
-    color: $color--text-thumbanil-dark;
+    color: $color--text-thumbnail-dark;
+
+    .thumbnail-hover {
+      background-color: $color--bg-thumbnail-hover-light;
+    }
+  }
+
+  &:hover {
+    .thumbnail-preview {
+      opacity: 0.9;
+      transform: scale(0.9);
+    }
+
+    .thumbnail-hover {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   @media (min-width: $breakpoint-md) {
@@ -112,23 +144,24 @@ $color--bg-gallery-post: $color--bg-thumbnail-light;
     &:nth-child(2n) {
       background-color: $color--bg-thumbnail-dark;
       color: $color--text-thumbnail-light;
+
+      .thumbnail-hover {
+        background-color: $color--bg-thumbnail-hover-dark;
+      }
     }
 
     &:nth-child(2n+1) {
       background-color: $color--bg-thumbnail-light;
-      color: $color--text-thumbanil-dark;
+      color: $color--text-thumbnail-dark;
+
+      .thumbnail-hover {
+        background-color: $color--bg-thumbnail-hover-light;
+      }
     }
   }
 
   @media (min-width: $breakpoint-xl) {
     font-size: px-at-viewport(10/3, 375, 1200);
-  }
-
-  &:hover {
-    .thumbnail-hover {
-      opacity: 1;
-      visibility: visible;
-    }
   }
 }
 

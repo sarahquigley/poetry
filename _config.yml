@@ -16,7 +16,7 @@ footer:
   copyright_start: 2008
 
 
-exclude: [Gemfile, Rakefile, Gemfile.lock, package.json, README.md]
+exclude: [Gemfile, Rakefile, Gemfile.lock, package.json, README.md, node_modules]
 
 baseurl: "/poetry"
 url: "http://sarahquigley.net"

@@ -1,4 +1,5 @@
 {% assign post=include.post %}
+{% capture post_title_length %}{{ post.title | size }}{% endcapture %}
 
 <article class="thumbnail">
   <a href="{{ post.url |  relative_url }}">
@@ -10,10 +11,18 @@
       {% endif %}
     </div>
     <div class="thumbnail-hover">
-      {% if post.title_font_size %}
-      <h1 style="font-size: {{ post.title_font_size }}em">{{ post.title | newline_to_br }}</h1>
+      {% if post_title_length != "0" %}
+        {% if post.title_font_size %}
+        <h1 style="font-size: {{ post.title_font_size }}em">{{ post.title | newline_to_br }}</h1>
+        {% else %}
+        <h1>{{ post.title | newline_to_br }}</h1>
+        {% endif %}
       {% else %}
-      <h1>{{ post.title | newline_to_br }}</h1>
+        {% if post.title_font_size %}
+        <h1 style="font-size: {{ post.title_font_size }}em">{ Untitled }</h1>
+        {% else %}
+        <h1>{ Untitled }</h1>
+        {% endif %}
       {% endif %}
     <div>
   </a>

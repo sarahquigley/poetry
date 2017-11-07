@@ -4,7 +4,10 @@
   "description": "poems by Sarah Quigley",
   "main": "index.html",
   "scripts": {
-    "serve": "jekyll serve --config _config.yml,_config-dev.yml"
+    "copy": "rm -r vendor && mkdir -p vendor/ && cp -r node_modules/font-awesome/fonts vendor/font-awesome && cp node_modules/lunr/lunr.js vendor/lunr",
+    "deploy": "gh-pages-deploy",
+    "serve": "jekyll serve --config _config.yml,_config-dev.yml",
+    "start": "npm run copy && npm run serve"
   },
   "repository": {
     "type": "git",
@@ -25,5 +28,11 @@
     "font-awesome": "^4.7.0",
     "lunr": "^2.1.4",
     "normalize-scss": "^7.0.0"
+  },
+  "devDependencies": {
+    "gh-pages-deploy": "^0.4.2"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "_site"
   }
 }

@@ -6,4 +6,4 @@ _site
 .DS_STORE
 node_modules/
 vendor/
-npm.debug.log
+npm-debug.log

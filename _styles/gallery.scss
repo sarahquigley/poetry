@@ -91,7 +91,7 @@ $color--bg-gallery-post-details-hover: $lighttangerineorange;
   }
 
   .thumbnail-preview {
-    transition: opacity 200ms linear, transform 200ms linear;
+    transition: opacity 150ms linear, transform 150ms linear;
   }
 
   .thumbnail-hover {
@@ -99,8 +99,7 @@ $color--bg-gallery-post-details-hover: $lighttangerineorange;
     position: absolute;
     top: 0;
     opacity: 0;
-    transition: visibility 400ms ease-in, opacity 400ms ease-in;
-    visibility: hidden;
+    transition: opacity 250ms linear;
   }
 
   &:nth-child(3n+2) {
@@ -150,7 +149,6 @@ $color--bg-gallery-post-details-hover: $lighttangerineorange;
 
     .thumbnail-hover {
       opacity: 1;
-      visibility: visible;
     }
   }
 

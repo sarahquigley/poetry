@@ -11,6 +11,7 @@
       {% endif %}
     </div>
     <div class="thumbnail-hover">
+      <time>{{ post.date | date: "%Y · %m · %d" }}</time>
       {% if post_title_length != "0" %}
         {% if post.title_font_size %}
         <h1 style="font-size: {{ post.title_font_size }}em">{{ post.title | newline_to_br }}</h1>

@@ -15,8 +15,9 @@ $color--bg-post-footer: $offwhite;
     background-color: $color--bg-post-footer;
     height: em(36);
 
-    p {
+    time {
       @include font-dimensions(18, 21.6);
+      display: block;
       font-family: $font-family--headline;
       font-weight: 700;
       padding-top: em(4, 18);

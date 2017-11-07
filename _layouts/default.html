@@ -5,15 +5,20 @@
 
   <body>
 
-    <div id="content">
+    <div>
 
       {% include header.html %}
 
-      {{ content }}
+      <div id="content">
+        {{ content }}
+      </div>
 
       {% include footer.html %}
 
     </div>
+
+    <script src="{{ "/vendor/waypoints/noframework.waypoints.js" | relative_url }}"></script>
+    <script type="text/javascript" src="{{ "/assets/scripts/main.js" | relative_url }}"></script>
 
   </body>
 

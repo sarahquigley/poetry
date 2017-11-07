@@ -1,5 +1,12 @@
 /** Functions **/
 
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
 /**
  * Converts a pixel width at a given viewport width to vw units
  * @param  {number} $target    Pixel width at viewport
@@ -13,6 +20,10 @@
 
 @function em($target, $base: 10) {
   @return $target / $base * 1em;
+}
+
+@function px-at-em($target, $base: 10) {
+  @return strip-unit($target) * $base * 1px;
 }
 
 @function px-at-viewport($target, $viewport-width, $target-viewport-width) {

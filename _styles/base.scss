@@ -18,14 +18,7 @@ h6 {
   color: $color--text-headline;
   font-family: $font-family--headline;
   line-height: 1;
-
-  &:first-child {
-    margin-top: 0;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  margin: 0;
 }
 
 h1 {

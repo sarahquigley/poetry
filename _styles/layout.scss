@@ -7,38 +7,80 @@ $color--bg-logo-dark: $almostblack;
 $color--bg-logo-mid: $midgrey;
 $color--bg-logo-light: $grey;
 
+$padding-top--site-header-mobile: em(110);
+$height--site-nav: em(50);
+$height--site-header-mobile: $padding-top--site-header-mobile + $padding-topbottom--default + em(70, 10) + $height--site-nav;
+$height--site-header-desktop: ($padding-topbottom--default * 2) + em(70, 10) + $height--site-nav;
+
 #site-header {
-  position: relative;
-  overflow: hidden;
+  background-color: rgba($color--bg-site, 0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 
-  hgroup {
-    align-items: flex-end;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    padding: em(110) $padding-leftright--default $padding-topbottom--default $padding-leftright--default;
-  }
+  header {
+    position: relative;
+    overflow: hidden;
 
-  h1, h2 {
-    margin: 0;
-  }
-
-  h1 {
-    @include font-dimensions(100, 47, 2);
-    height: em(70, 100);
-  }
-
-  h2 {
-    @include font-dimensions(29, 35.5, -10);
-    font-family: $font-family--subheadline;
-    height: em(70, 29);
-    font-weight: 300;
-    margin-left: -0.1em;
-  }
-
-  @media (min-width: $breakpoint-md) {
     hgroup {
-      padding-top: $padding-topbottom--default;
+      align-items: flex-end;
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      padding: $padding-top--site-header-mobile $padding-leftright--default $padding-topbottom--default $padding-leftright--default;
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    h1 {
+      @include font-dimensions(100, 47, 2);
+      height: em(70, 100);
+    }
+
+    h2 {
+      @include font-dimensions(29, 35.5, -10);
+      font-family: $font-family--subheadline;
+      height: em(70, 29);
+      font-weight: 300;
+      margin-left: -0.1em;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      hgroup {
+        padding-top: $padding-topbottom--default;
+      }
+    }
+  }
+
+  nav {
+    background-color: $color--bg-site-nav;
+    display: flex;
+    height: em(50);
+    padding: 0 $padding-leftright--default;
+    align-items: center;
+
+    .site-nav-info {
+      height: em(26);
+      width: em(26);
+
+      span {
+        display: none;
+      }
+
+      &:before {
+        @include font-dimensions(26, 26);
+        background-color: $color--bg-site-nav-info;
+        border-radius: 50%;
+        content: "i";
+        display: block;
+        font-family: $font-family--headline;
+        font-style: italic;
+        font-weight: 900;
+        text-align: center;
+      }
     }
   }
 }
@@ -95,35 +137,6 @@ $color--bg-logo-light: $grey;
   }
 }
 
-#site-nav {
-  background-color: $color--bg-site-nav;
-  display: flex;
-  height: em(50);
-  padding: 0 $padding-leftright--default;
-  align-items: center;
-
-  .site-nav-info {
-    height: em(26);
-    width: em(26);
-
-    span {
-      display: none;
-    }
-
-    &:before {
-      @include font-dimensions(26, 26);
-      background-color: $color--bg-site-nav-info;
-      border-radius: 50%;
-      content: "i";
-      display: block;
-      font-family: $font-family--headline;
-      font-style: italic;
-      font-weight: 900;
-      text-align: center;
-    }
-  }
-}
-
 #site-footer {
   color: $color--text-headline;
   display: flex;
@@ -165,6 +178,14 @@ $color--bg-logo-light: $grey;
       justify-content: flex-end;
       text-align: right;
     }
+  }
+}
+
+#content {
+  margin-top: $height--site-header-mobile;
+
+  @media (min-width: $breakpoint-md) {
+    margin-top: px-at-em($height--site-header-desktop);
   }
 }
 

@@ -16,6 +16,7 @@ $color--bg-thumbnail-hover-dark: rgba($plumpink, 0.9);
 
 // Text
 $color--text-thumbnail-light: $white;
+$color--text-thumbnail-mid: $midgrey;
 $color--text-thumbnail-dark: $color--text-headline;
 
 
@@ -26,10 +27,10 @@ $color--bg-gallery-post: $color--bg-thumbnail-light;
 #gallery {
   background-image: linear-gradient(
     90deg,
-    $white,
+    $color--bg-site,
     rgba(255, 255, 255, 0) 150px,
     rgba(255, 255, 255, 0) 1450px,
-    $white 1600px
+    $color--bg-site 1600px
   ), repeating-linear-gradient(
     $color--bg-thumbnail-light,
     $color--bg-thumbnail-light $color-stop--gallery-stripes,
@@ -72,6 +73,12 @@ $color--bg-gallery-post: $color--bg-thumbnail-light;
     }
   }
 
+  time {
+    @include font-dimensions(20.35, 24.42);
+    font-family: $font-family--headline;
+    font-weight: 700;
+  }
+
   .thumbnail-preview,
   .thumbnail-hover {
     align-items: center;
@@ -102,6 +109,10 @@ $color--bg-gallery-post: $color--bg-thumbnail-light;
     .thumbnail-hover {
       background-color: $color--bg-thumbnail-hover-dark;
     }
+
+    time {
+      color: $color--text-thumbnail-light;
+    }
   }
 
   &:nth-child(3n) {
@@ -111,6 +122,10 @@ $color--bg-gallery-post: $color--bg-thumbnail-light;
     .thumbnail-hover {
       background-color: $color--bg-thumbnail-hover-mid;
     }
+
+    time {
+      color: $color--text-thumbnail-light;
+    }
   }
 
   &:nth-child(3n+1) {
@@ -119,6 +134,10 @@ $color--bg-gallery-post: $color--bg-thumbnail-light;
 
     .thumbnail-hover {
       background-color: $color--bg-thumbnail-hover-light;
+    }
+
+    time {
+      color: $color--text-thumbnail-mid;
     }
   }
 
@@ -148,6 +167,10 @@ $color--bg-gallery-post: $color--bg-thumbnail-light;
       .thumbnail-hover {
         background-color: $color--bg-thumbnail-hover-dark;
       }
+
+      time {
+        color: $color--text-thumbnail-light;
+      }
     }
 
     &:nth-child(2n+1) {
@@ -156,6 +179,10 @@ $color--bg-gallery-post: $color--bg-thumbnail-light;
 
       .thumbnail-hover {
         background-color: $color--bg-thumbnail-hover-light;
+      }
+
+      time {
+        color: $color--text-thumbnail-mid;
       }
     }
   }

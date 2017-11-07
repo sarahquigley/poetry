@@ -18,8 +18,8 @@ footer:
 
 exclude: [Gemfile, Rakefile, Gemfile.lock, package.json, README.md, node_modules]
 
-baseurl: "/poetry"
-url: "http://sarahquigley.net"
+baseurl: ""
+url: "http://poetry.sarahquigley.net"
 excerpt_separator: "  "
 
 sass:

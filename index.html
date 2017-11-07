@@ -1,31 +1,432 @@
----
-layout: default
-id: home
----
+<!DOCTYPE html>
+<html>
 
-<section id="gallery">
-  <section id="gallery-grid" class="{% if paginator.posts.size >= 4 %}gallery-grid--gallery-post{% endif %}">
-  {% for post in paginator.posts %}
-    {% if forloop.first == true and paginator.posts.size >= 4 %}
-      <a class="gallery-post" href="{{ post.url |  relative_url }}">
-        {% include post.html post=post %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>vs.</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="poems
+by Sarah Quigley">
+    <link rel="canonical" href="http://poetry.sarahquigley.net/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/styles/main.css">
+</head>
+
+
+  <body>
+
+    <div>
+
+      <div id="site-header">
+  <header>
+    <a href="/">
+      <div id="site-logo">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <hgroup>
+          <h1>vs.</h1>
+          <h2>poems<br />
+by Sarah Quigley</h2>
+      </hgroup>
+    </a>
+  </header>
+  <nav>
+    <a class="site-nav-info" href="/about"><span>Info</span></a>
+  </nav>
+</div>
+
+
+      <div id="content">
+        <section id="gallery">
+  <section id="gallery-grid" class="gallery-grid--gallery-post">
+  
+    
+      <a class="gallery-post" href="/2013/11/07/the-invisible-bakery/">
+        
+
+
+<article class="post">
+    
+    <header class="post-header">
+      
+      <h1>The Invisible<br />
+Bakery</h1>
+      
+      
+    </header>
+    
+
+    <div class="post-content">
+      <p>Bushwick wears its own cologne,<br />
+a delicate infusion of fish guts<br />
+and the unsorted trash of local history<br />
+accumulating in gutters,</p>
+
+<p>But then there’s the Butter Street,<br />
+the Invisible Bakery, the air celebrates<br />
+the swift movements of floured hands,<br />
+folding and rolling and folding again.</p>
+
+    </div>
+
+    <footer>
+      <time>2013 · 11 · 07</time>
+    </footer>
+
+    <div class="post-decorations">
+      <div></div>
+    </div>
+</article>
+
       </a>
-    {% else %}
-      {% include thumbnail.html post=post %}
-    {% endif %}
-  {% endfor %}
+    
+  
+    
+      
+
+
+<article class="thumbnail">
+  <a href="/2008/04/13/the-new-bridge/">
+    <div class="thumbnail-preview">
+      
+      <h2 style="font-size: 2.7em">A machine torn straight from the pages<br />
+of the War of the Worlds,<br />
+it has dug claws into the soil of old Dundrum<br />
+and hunkered down</h2>
+      
+    </div>
+    <div class="thumbnail-hover">
+      <time>2008 · 04 · 13</time>
+      
+        
+        <h1>The New Bridge</h1>
+        
+      
+    <div>
+  </a>
+</article>
+
+    
+  
+    
+      
+
+
+<article class="thumbnail">
+  <a href="/2008/03/05/the-autumn-guard/">
+    <div class="thumbnail-preview">
+      
+      <h2 style="font-size: 3.6em">The wind is in the saplings<br />
+and they are loosing</h2>
+      
+    </div>
+    <div class="thumbnail-hover">
+      <time>2008 · 03 · 05</time>
+      
+        
+        <h1>The Autumn<br />
+Guard</h1>
+        
+      
+    <div>
+  </a>
+</article>
+
+    
+  
+    
+      
+
+
+<article class="thumbnail">
+  <a href="/2008/03/05/in-silence-you-were-born/">
+    <div class="thumbnail-preview">
+      
+      <h2 style="font-size: 3.6em">in silence you were born<br />
+I buried you beneath</h2>
+      
+    </div>
+    <div class="thumbnail-hover">
+      <time>2008 · 03 · 05</time>
+      
+        
+        <h1>{ Untitled }</h1>
+        
+      
+    <div>
+  </a>
+</article>
+
+    
+  
+    
+      
+
+
+<article class="thumbnail">
+  <a href="/2008/03/02/the-kiss/">
+    <div class="thumbnail-preview">
+      
+      <h2 style="font-size: 3.1em">I have followed the tracks of deer<br />
+through virgin land,<br />
+slept on dry moss<br />
+and</h2>
+      
+    </div>
+    <div class="thumbnail-hover">
+      <time>2008 · 03 · 02</time>
+      
+        
+        <h1>The Kiss</h1>
+        
+      
+    <div>
+  </a>
+</article>
+
+    
+  
+    
+      
+
+
+<article class="thumbnail">
+  <a href="/2008/02/18/love-like-a-hurricane/">
+    <div class="thumbnail-preview">
+      
+      <h2 style="font-size: 4.1em">love like a hurricane<br />
+breaks boughs</h2>
+      
+    </div>
+    <div class="thumbnail-hover">
+      <time>2008 · 02 · 18</time>
+      
+        
+        <h1>love like<br />
+a hurricane</h1>
+        
+      
+    <div>
+  </a>
+</article>
+
+    
+  
+    
+      
+
+
+<article class="thumbnail">
+  <a href="/2008/02/07/the-art-of-love/">
+    <div class="thumbnail-preview">
+      
+      <h2 style="font-size: 3.3em">Love has left me wondering<br />
+where I left my shoes and my socks<br />
+and</h2>
+      
+    </div>
+    <div class="thumbnail-hover">
+      <time>2008 · 02 · 07</time>
+      
+        
+        <h1>The Art of Love</h1>
+        
+      
+    <div>
+  </a>
+</article>
+
+    
+  
+    
+      
+
+
+<article class="thumbnail">
+  <a href="/2008/01/15/otters-first-love/">
+    <div class="thumbnail-preview">
+      
+      <h2 style="font-size: 3.4em">Otter's first love was not a rough wave,<br />
+soft fingers, strong wrists – not</h2>
+      
+    </div>
+    <div class="thumbnail-hover">
+      <time>2008 · 01 · 15</time>
+      
+        
+        <h1>Otter's<br />
+First Love</h1>
+        
+      
+    <div>
+  </a>
+</article>
+
+    
+  
+    
+      
+
+
+<article class="thumbnail">
+  <a href="/2008/01/06/lolla-rossa-touches-herself/">
+    <div class="thumbnail-preview">
+      
+      <h2 style="font-size: 3.6em">it often strikes me<br />
+this lettuce has many hands<br />
+all clasped and</h2>
+      
+    </div>
+    <div class="thumbnail-hover">
+      <time>2008 · 01 · 06</time>
+      
+        
+        <h1>lolla rossa,<br />
+touches herself</h1>
+        
+      
+    <div>
+  </a>
+</article>
+
+    
+  
+    
+      
+
+
+<article class="thumbnail">
+  <a href="/2007/12/18/the-house-on-the-hill/">
+    <div class="thumbnail-preview">
+      
+      <h2 style="font-size: 3.6em">My life on paper is rakish, tight as a papoose –<br />
+rolling like beads</h2>
+      
+    </div>
+    <div class="thumbnail-hover">
+      <time>2007 · 12 · 18</time>
+      
+        
+        <h1>The House<br />
+on the Hill</h1>
+        
+      
+    <div>
+  </a>
+</article>
+
+    
+  
+    
+      
+
+
+<article class="thumbnail">
+  <a href="/2007/07/20/stream-and-willow/">
+    <div class="thumbnail-preview">
+      
+      <h2 style="font-size: 3.6em">The moon is bright – oh the moon is my night light</h2>
+      
+    </div>
+    <div class="thumbnail-hover">
+      <time>2007 · 07 · 20</time>
+      
+        
+        <h1>Stream<br />
+and Willow</h1>
+        
+      
+    <div>
+  </a>
+</article>
+
+    
+  
+    
+      
+
+
+<article class="thumbnail">
+  <a href="/2007/07/11/ill-live-in-the-craters/">
+    <div class="thumbnail-preview">
+      
+      <h2 style="font-size: 4.3em">I’ll live in the craters<br />
+of your skin</h2>
+      
+    </div>
+    <div class="thumbnail-hover">
+      <time>2007 · 07 · 11</time>
+      
+        
+        <h1>{ Untitled }</h1>
+        
+      
+    <div>
+  </a>
+</article>
+
+    
+  
+    
+      
+
+
+<article class="thumbnail">
+  <a href="/2007/04/04/each-day-is-a-plump-green-grape/">
+    <div class="thumbnail-preview">
+      
+      <h2 style="font-size: 3.5em">Each day is a plump green grape<br />
+to be plucked and pressed</h2>
+      
+    </div>
+    <div class="thumbnail-hover">
+      <time>2007 · 04 · 04</time>
+      
+        
+        <h1>{ Untitled }</h1>
+        
+      
+    <div>
+  </a>
+</article>
+
+    
+  
   </section>
 
   <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous"><span class="pagination-arrow">«</span><span>Prev</span></a>
-    {% else %}
+    
       <span class="previous"><span class="pagination-arrow">«</span><span>Prev</span></span>
-    {% endif %}
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next"><span>Next</span><span class="pagination-arrow">»</span></a>
-    {% else %}
-      <span class="next"><span>Next</span><span class="pagination-arrow">»</span></span>
-    {% endif %}
+    
+    
+      <a href="/page2" class="next"><span>Next</span><span class="pagination-arrow">»</span></a>
+    
   </div>
 </section>
+
+      </div>
+
+      <footer id="site-footer">
+  <div class="site-footer-organisation">a finite adventure</div>
+  <div class="site-footer-copyright">© Sarah Quigley 2008 - <script>document.write(new Date().getFullYear())</script></div>
+  <form class="form-search" action="/search" method="get">
+  <label for="search-box">Search</label>
+  <input type="text" id="search-box" name="query" placeholder="Search ..."/>
+  <button type="submit"><i class="fa fa-search" aria-hidden="true"></i><span>Search</span></button>
+</form>
+
+</footer>
+
+
+    </div>
+
+    <script src="/vendor/noframework.waypoints.js"></script>
+    <script type="text/javascript" src="/assets/scripts/main.js"></script>
+
+  </body>
+
+</html>

@@ -1,21 +1,247 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>vs.</title>
+    <description>poems
+by Sarah Quigley</description>
+    <link>http://poetry.sarahquigley.net/</link>
+    <atom:link href="http://poetry.sarahquigley.net/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        <title>The Invisible
+Bakery</title>
+        <description>&lt;p&gt;Bushwick wears its own cologne,&lt;br /&gt;
+a delicate infusion of fish guts&lt;br /&gt;
+and the unsorted trash of local history&lt;br /&gt;
+accumulating in gutters,&lt;/p&gt;
+
+&lt;p&gt;But then there’s the Butter Street,&lt;br /&gt;
+the Invisible Bakery, the air celebrates&lt;br /&gt;
+the swift movements of floured hands,&lt;br /&gt;
+folding and rolling and folding again.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 07 Nov 2013 00:00:00 -0500</pubDate>
+        <link>http://poetry.sarahquigley.net/2013/11/07/the-invisible-bakery/</link>
+        <guid isPermaLink="true">http://poetry.sarahquigley.net/2013/11/07/the-invisible-bakery/</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>The New Bridge</title>
+        <description>&lt;p&gt;A machine torn straight from the pages&lt;br /&gt;
+of the War of the Worlds,&lt;br /&gt;
+it has dug claws into the soil of old Dundrum&lt;br /&gt;
+and hunkered down on its haunches.&lt;/p&gt;
+
+&lt;p&gt;St. George’s Bells peel its arrival.&lt;br /&gt;
+Spider on spider on spider,&lt;br /&gt;
+little feet disturb hairs&lt;br /&gt;
+on the back of my hands,&lt;br /&gt;
+and ivy sinks first roots&lt;br /&gt;
+into concrete - the webs we weave,&lt;/p&gt;
+
+&lt;p&gt;the bridges new lovers build for each other,&lt;br /&gt;
+rigging stretches to the sky&lt;br /&gt;
+and wind plays the cables like a harp.&lt;br /&gt;
+It is like a beached ship, you whispered.&lt;br /&gt;
+Before it landed here on our small planet,&lt;br /&gt;
+a sail of purest whitest energy&lt;br /&gt;
+stretched from that thin curved mast,&lt;br /&gt;
+I replied.&lt;/p&gt;
+
+&lt;p&gt;Those pillars hide the shaft of a glass elevator&lt;br /&gt;
+and, deep in the caverns they have hollowed&lt;br /&gt;
+beneath the streets of Dundrum,&lt;br /&gt;
+small fat-eyed men with silver suits and laser guns&lt;br /&gt;
+watch us as we make love on the tracks&lt;br /&gt;
+of Dundrum Luas bridge-&lt;br /&gt;
+stars pulsing above us,&lt;br /&gt;
+cars pulsing below&lt;br /&gt;
+and Mars hovering, unblinking,&lt;br /&gt;
+an ever-watchful eye.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 13 Apr 2008 00:00:00 -0400</pubDate>
+        <link>http://poetry.sarahquigley.net/2008/04/13/the-new-bridge/</link>
+        <guid isPermaLink="true">http://poetry.sarahquigley.net/2008/04/13/the-new-bridge/</guid>
+      </item>
+    
+      <item>
+        <title>The Autumn
+Guard</title>
+        <description>&lt;p&gt;The wind is in the saplings&lt;br /&gt;
+and they are loosing leaves&lt;br /&gt;
+for the first time.&lt;/p&gt;
+
+&lt;p&gt;“What are these red birds&lt;br /&gt;
+skittering across the lawn?&lt;br /&gt;
+Those birds were mine!”&lt;/p&gt;
+</description>
+        <pubDate>Wed, 05 Mar 2008 00:00:00 -0500</pubDate>
+        <link>http://poetry.sarahquigley.net/2008/03/05/the-autumn-guard/</link>
+        <guid isPermaLink="true">http://poetry.sarahquigley.net/2008/03/05/the-autumn-guard/</guid>
+      </item>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;in silence you were born&lt;br /&gt;
+I buried you beneath a sap maple&lt;/p&gt;
+
+&lt;p&gt;that it may draw sweetness&lt;br /&gt;
+from you&lt;/p&gt;
+</description>
+        <pubDate>Wed, 05 Mar 2008 00:00:00 -0500</pubDate>
+        <link>http://poetry.sarahquigley.net/2008/03/05/in-silence-you-were-born/</link>
+        <guid isPermaLink="true">http://poetry.sarahquigley.net/2008/03/05/in-silence-you-were-born/</guid>
+      </item>
+    
+      <item>
+        <title>The Kiss</title>
+        <description>&lt;p&gt;I have followed the tracks of deer&lt;br /&gt;
+through virgin land, &lt;br /&gt;
+slept on dry moss&lt;br /&gt;
+and catkins&lt;br /&gt;
+beneath the boughs of a silver birch.&lt;/p&gt;
+
+&lt;p&gt;I have eaten fresh snow&lt;br /&gt;
+from winter fields, &lt;br /&gt;
+still whipped wattled with blades&lt;br /&gt;
+of ryegrass&lt;br /&gt;
+and flecked with white clover.&lt;/p&gt;
+
+&lt;p&gt;I have licked the wind&lt;br /&gt;
+from the devil’s mountain.&lt;/p&gt;
+
+&lt;p&gt;I have tasted the yellowed lace&lt;br /&gt;
+of an older woman’s collar, &lt;br /&gt;
+caught her white neck&lt;br /&gt;
+on my tongue, &lt;br /&gt;
+an apparition.&lt;/p&gt;
+
+&lt;p&gt;I have marked foundations&lt;br /&gt;
+and slung lines&lt;br /&gt;
+for the borders of a new field, &lt;br /&gt;
+only to fly home&lt;br /&gt;
+leaving it unsown.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Mar 2008 00:00:00 -0500</pubDate>
+        <link>http://poetry.sarahquigley.net/2008/03/02/the-kiss/</link>
+        <guid isPermaLink="true">http://poetry.sarahquigley.net/2008/03/02/the-kiss/</guid>
+      </item>
+    
+      <item>
+        <title>love like
+a hurricane</title>
+        <description>&lt;p&gt;love like a hurricane&lt;br /&gt;
+breaks boughs&lt;/p&gt;
+
+&lt;p&gt;lightning tiger&lt;br /&gt;
+dewdrop spider&lt;/p&gt;
+
+&lt;p&gt;love like summer rain&lt;br /&gt;
+softens brittle grass&lt;/p&gt;
+</description>
+        <pubDate>Mon, 18 Feb 2008 00:00:00 -0500</pubDate>
+        <link>http://poetry.sarahquigley.net/2008/02/18/love-like-a-hurricane/</link>
+        <guid isPermaLink="true">http://poetry.sarahquigley.net/2008/02/18/love-like-a-hurricane/</guid>
+      </item>
+    
+      <item>
+        <title>The Art of Love</title>
+        <description>&lt;p&gt;Love has left me wondering&lt;br /&gt;
+where I left my shoes and my socks&lt;br /&gt;
+and my bra&lt;br /&gt;
+and my trousers&lt;br /&gt;
+and my blouse –&lt;/p&gt;
+
+&lt;p&gt;caught on the dresser&lt;br /&gt;
+riding the headboard&lt;br /&gt;
+snagged on the doorknob&lt;br /&gt;
+under the bed –&lt;/p&gt;
+
+&lt;p&gt;over the rooftops&lt;br /&gt;
+away with the wind&lt;br /&gt;
+riding the river&lt;br /&gt;
+feeling it bend –&lt;/p&gt;
+
+&lt;p&gt;snagging on lilypads&lt;br /&gt;
+playing with fish&lt;br /&gt;
+nibbling at bedrock&lt;br /&gt;
+making it itch –&lt;br /&gt;
+love has left me wondering.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 07 Feb 2008 00:00:00 -0500</pubDate>
+        <link>http://poetry.sarahquigley.net/2008/02/07/the-art-of-love/</link>
+        <guid isPermaLink="true">http://poetry.sarahquigley.net/2008/02/07/the-art-of-love/</guid>
+      </item>
+    
+      <item>
+        <title>Otter's
+First Love</title>
+        <description>&lt;p&gt;Otter’s first love was not&lt;br /&gt;
+a rough wave,&lt;br /&gt;
+soft fingers, strong wrists –&lt;br /&gt;
+not the shrill call&lt;br /&gt;
+of gulls&lt;br /&gt;
+moving against cliffs –&lt;br /&gt;
+not the smooth sweep&lt;br /&gt;
+of stone in paw, &lt;br /&gt;
+the cracking of the oyster –&lt;/p&gt;
+
+&lt;p&gt;floating on his back,&lt;br /&gt;
+he watched the boats&lt;br /&gt;
+come in to land –&lt;br /&gt;
+might he hoist a bright sail&lt;br /&gt;
+over his belly too&lt;br /&gt;
+and feel it tauten&lt;br /&gt;
+in the wind?&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Jan 2008 00:00:00 -0500</pubDate>
+        <link>http://poetry.sarahquigley.net/2008/01/15/otters-first-love/</link>
+        <guid isPermaLink="true">http://poetry.sarahquigley.net/2008/01/15/otters-first-love/</guid>
+      </item>
+    
+      <item>
+        <title>lolla rossa,
+touches herself</title>
+        <description>&lt;p&gt;it often strikes me&lt;br /&gt;
+this lettuce has many hands&lt;br /&gt;
+all clasped and curling&lt;br /&gt;
+a dead bee&lt;/p&gt;
+
+&lt;p&gt;what is she waiting for?&lt;/p&gt;
+
+&lt;p&gt;they always talk of lettuce&lt;br /&gt;
+and the heart&lt;br /&gt;
+how it is so fine and so tender&lt;/p&gt;
+</description>
+        <pubDate>Sun, 06 Jan 2008 00:00:00 -0500</pubDate>
+        <link>http://poetry.sarahquigley.net/2008/01/06/lolla-rossa-touches-herself/</link>
+        <guid isPermaLink="true">http://poetry.sarahquigley.net/2008/01/06/lolla-rossa-touches-herself/</guid>
+      </item>
+    
+      <item>
+        <title>The House
+on the Hill</title>
+        <description>&lt;p&gt;My life on paper is rakish,&lt;br /&gt;
+tight as a papoose –  &lt;br /&gt;
+rolling like beads across the page,&lt;br /&gt;
+fractals from seed to weed - it runs wild.&lt;/p&gt;
+
+&lt;p&gt;I have known the moon and her shadows,&lt;br /&gt;
+felt the love that has dried &lt;br /&gt;
+on her soft white hands,&lt;br /&gt;
+scabbing them over, pocking them.&lt;/p&gt;
+
+&lt;p&gt;I have built myself a house – &lt;br /&gt;
+it is enormous and unfinished, it is the deer,&lt;br /&gt;
+it is the oak tree, it is the sea – &lt;br /&gt;
+I will sit in the kitchen&lt;/p&gt;
+
+&lt;p&gt;and make a pot of tea.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 18 Dec 2007 00:00:00 -0500</pubDate>
+        <link>http://poetry.sarahquigley.net/2007/12/18/the-house-on-the-hill/</link>
+        <guid isPermaLink="true">http://poetry.sarahquigley.net/2007/12/18/the-house-on-the-hill/</guid>
+      </item>
+    
   </channel>
 </rss>

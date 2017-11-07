@@ -2,6 +2,7 @@ $color--bg-post-footer: $offwhite;
 
 .post {
   padding: $padding-topbottom--default $padding-leftright--default;
+  position: relative;
 
   header {
     margin-bottom: em(35);
@@ -39,5 +40,21 @@ $color--bg-post-footer: $offwhite;
 
   @media (min-width: $breakpoint-xl) {
     font-size: px-at-viewport(10, 900, 1200);
+  }
+}
+
+.post-decorations {
+  div {
+    background-color: $color--bg-post-footer;
+    height: em(36);
+    right: em(-37);
+    position: absolute;
+    top: em(92);
+    transform: rotate(-38deg);
+    width: em(140);
+  }
+
+  @media (min-width: $breakpoint-md) {
+    display: none;
   }
 }

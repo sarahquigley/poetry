@@ -6,6 +6,9 @@ $color--bg-pagination: $lightgrey;
 $color--bg-logo-dark: $almostblack;
 $color--bg-logo-mid: $midgrey;
 $color--bg-logo-light: $grey;
+$color--bg-logo-dark-hover: $plumpink;
+$color--bg-logo-mid-hover: $tangerineorange;
+$color--bg-logo-light-hover: $sunnyyellow;
 
 $padding-top--site-header-mobile: em(110);
 $height--site-nav: em(50);
@@ -13,9 +16,10 @@ $height--site-header-mobile: $padding-top--site-header-mobile + $padding-topbott
 $height--site-header-desktop: ($padding-topbottom--default * 2) + em(70, 10) + $height--site-nav;
 
 #site-header {
-  background-color: rgba($color--bg-site, 0.9);
+  background-image: linear-gradient($color--bg-site, rgba($color--bg-site, 0.95));
   position: fixed;
   top: 0;
+  transition: font-size 200ms linear;
   width: 100%;
   z-index: 1;
 
@@ -83,9 +87,35 @@ $height--site-header-desktop: ($padding-topbottom--default * 2) + em(70, 10) + $
       }
     }
   }
+
+  &.site-header--scrolled {
+    font-size: vw(10, 375) * 0.8;
+
+    @media (min-width: $breakpoint-xs) {
+      font-size: 10px * 0.8;
+    }
+  }
+
+  &:hover {
+    #site-logo {
+      div:first-child {
+        background-color: $color--bg-logo-mid-hover;
+      }
+      div:nth-child(2) {
+        background-color: $color--bg-logo-dark-hover;
+      }
+      div:last-child {
+        background-color: $color--bg-logo-light-hover;
+      }
+    }
+  }
 }
 
 #site-logo {
+  div {
+    transition: background-color 500ms ease-in;
+  }
+
   div:first-child {
     background-color: $color--bg-logo-mid;
     height: em(36);
@@ -184,6 +214,10 @@ $height--site-header-desktop: ($padding-topbottom--default * 2) + em(70, 10) + $
 #content {
   margin-top: $height--site-header-mobile;
 
+  @media (min-width: $breakpoint-xs) {
+    margin-top: px-at-em($height--site-header-mobile);
+  }
+
   @media (min-width: $breakpoint-md) {
     margin-top: px-at-em($height--site-header-desktop);
   }
@@ -222,7 +256,7 @@ $height--site-header-desktop: ($padding-topbottom--default * 2) + em(70, 10) + $
 #site-nav,
 #site-footer,
 .pagination {
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: $breakpoint-xs) {
     font-size: 10px;
   }
 }

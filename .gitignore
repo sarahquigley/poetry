@@ -1,9 +1,0 @@
-_site
-.swp
-.sass-cache/
-*.~lock*
-.fuse*
-.DS_STORE
-node_modules/
-vendor/
-npm-debug.log

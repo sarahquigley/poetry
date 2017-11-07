@@ -5,8 +5,7 @@
   "main": "index.html",
   "scripts": {
     "copy": "rm -r vendor && mkdir -p vendor/ && cp -r node_modules/font-awesome/fonts vendor/font-awesome && cp node_modules/lunr/lunr.js vendor/lunr.js && cp node_modules/waypoints/lib/noframework.waypoints.js vendor/noframework.waypoints.js",
-    "deploy": "gh-pages-deploy",
-    "gh-pages": "npm run build && gh-pages -d _site",
+    "deploy": "npm run build && gh-pages -d _site",
     "serve": "jekyll serve --config _config.yml,_config-dev.yml",
     "build": "npm run copy && jekyll build",
     "start": "npm run copy && npm run serve"
@@ -33,13 +32,6 @@
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
-    "gh-pages": "^1.0.0",
-    "gh-pages-deploy": "^0.4.2"
-  },
-  "gh-pages-deploy": {
-    "staticpath": "_site",
-    "prep": [
-      "build"
-    ]
+    "gh-pages": "^1.0.0"
   }
 }

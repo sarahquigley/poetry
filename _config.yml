@@ -17,6 +17,7 @@ footer:
 
 
 exclude: [Gemfile, Rakefile, Gemfile.lock, package.json, README.md, node_modules]
+include: [vendor]
 
 baseurl: ""
 url: "http://poetry.sarahquigley.net"

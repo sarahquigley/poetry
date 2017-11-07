@@ -22,7 +22,7 @@ $color--text-thumbnail-dark: $color--text-headline;
 
 // Colours Gallery Post
 $color--bg-gallery-post: $color--bg-thumbnail-light;
-$color--bg-gallery-post-hover: $color--bg-thumbnail-hover-light;
+$color--bg-gallery-post-details-hover: $lighttangerineorange;
 
 
 #gallery {
@@ -211,7 +211,13 @@ $color--bg-gallery-post-hover: $color--bg-thumbnail-hover-light;
   align-items: center;
   background-color: $color--bg-gallery-post;
   display: flex;
-  transition: background-color 400ms ease-in;
+  overflow: hidden;
+  position: relative;
+
+  footer,
+  .post-decorations div {
+    transition: background-color 400ms ease-in;
+  }
 
   @media (min-width: $breakpoint-md) {
     grid-column: 1 / span 2;
@@ -223,10 +229,9 @@ $color--bg-gallery-post-hover: $color--bg-thumbnail-hover-light;
   }
 
   &:hover {
-    background-color: $color--bg-gallery-post-hover;
-
+    footer,
     .post-decorations div {
-      background-color: $color--bg-gallery-post-hover;
+      background-color: $color--bg-gallery-post-details-hover;
     }
   }
 }

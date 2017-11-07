@@ -1,8 +1,12 @@
 $color--bg-post-footer: $offwhite;
 
+.page-post {
+  overflow: hidden;
+  position: relative;
+}
+
 .post {
   padding: $padding-topbottom--default $padding-leftright--default;
-  position: relative;
 
   header {
     margin-bottom: em(35);
@@ -55,6 +59,6 @@ $color--bg-post-footer: $offwhite;
   }
 
   @media (min-width: $breakpoint-md) {
-    display: none;
+    //display: none;
   }
 }

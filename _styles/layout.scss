@@ -79,10 +79,13 @@ $height--site-nav: em(50);
     transition: opacity 150ms linear, transform 150ms ease-in;
   }
 
-  h1, h2 {
+  a, h1 {
+    height: 100%;
+  }
+
+  h1 {
     @include font-dimensions(60, 28.2, 2);
     color: $color--bg-site-nav-info;
-    height: 100%;
   }
 
   .site-nav-info {

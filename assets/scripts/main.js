@@ -1,17 +1,23 @@
 document.addEventListener("DOMContentLoaded", function(){
 
   var waypoint = new Waypoint({
-    element: document.getElementById('site-header'),
+    element: document.getElementById('site-nav'),
     handler: function(direction) {
-      var scrolledClass = 'site-header--scrolled';
+      var scrolledClass = 'scrolled--sticky-site-nav';
       if(direction === 'down') {
-        this.element.classList.add(scrolledClass);
+        document.body.classList.add(scrolledClass);
       } else {
-        this.element.classList.remove(scrolledClass);
+        document.body.classList.remove(scrolledClass);
       }
-    },
-    offset: -50
+    }
   });
 
   Waypoint.refreshAll();
 });
+
+window.onscroll = function() {
+  var target = document.getElementById("site-header");
+  var height = target.offsetHeight / 1.5;
+  var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  target.style.opacity = (height - scrollTop) / height;
+};

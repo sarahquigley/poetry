@@ -1,18 +1,20 @@
-<div id="site-header">
-  <header>
-    <a href="{{ "/" | relative_url }}">
-      <div id="site-logo">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <hgroup>
-          <h1>{{ site.title }}</h1>
-          <h2>{{ site.description | newline_to_br }}</h2>
-      </hgroup>
-    </a>
-  </header>
-  <nav>
-    <a class="site-nav-info" href="{{ "/about" | relative_url }}"><span>Info</span></a>
-  </nav>
-</div>
+<header id="site-header">
+  <a href="{{ "/" | relative_url }}">
+    <div id="site-logo">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <hgroup>
+        <h1 >{{ site.title }}</h1>
+        <h2>{{ site.description | newline_to_br }}</h2>
+    </hgroup>
+  </a>
+</header>
+
+<nav id="site-nav">
+  <hgroup>
+      <h1 >{{ site.title }}</h1>
+  </hgroup>
+  <a class="site-nav-info" href="{{ "/about" | relative_url }}"><span>Info</span></a>
+</nav>

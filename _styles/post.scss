@@ -51,14 +51,72 @@ $color--bg-post-footer: $offwhite;
   div {
     background-color: $color--bg-post-footer;
     height: em(36);
-    right: em(-37);
     position: absolute;
+  }
+
+  div:first-child {
+    height: em(36);
+    right: em(-37);
     top: em(92);
     transform: rotate(-38deg);
     width: em(140);
   }
 
   @media (min-width: $breakpoint-md) {
-    //display: none;
+    div:nth-child(2) {
+      height: em(36);
+      left: em(-37);
+      top: em(92);
+      transform: rotate(38deg);
+      width: em(140);
+    }
+
+    div:nth-child(3) {
+      height: em(36);
+      left: em(-37);
+      bottom: em(112);
+      transform: rotate(-22deg);
+      width: em(126);
+    }
+
+    div:nth-child(4) {
+      height: em(36);
+      right: em(-37);
+      bottom: em(112);
+      transform: rotate(22deg);
+      width: em(126);
+    }
+
+    div:nth-child(5) {
+      height: em(36);
+      left: em(-2);
+      top: em(250);
+      transform: rotate(175deg);
+      width: em(125);
+    }
+
+    div:nth-child(6) {
+      height: em(36);
+      right: em(-2);
+      top: em(250);
+      transform: rotate(-175deg);
+      width: em(125);
+    }
+
+    div:nth-child(7) {
+      height: em(36);
+      right: em(-13);
+      bottom: em(190);
+      transform: rotate(-28deg);
+      width: em(70);
+    }
+
+      div:nth-child(8) {
+        height: em(36);
+        left: em(-13);
+        bottom: em(190);
+        transform: rotate(28deg);
+        width: em(70);
+      }
   }
 }

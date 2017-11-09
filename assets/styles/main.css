@@ -2796,15 +2796,21 @@ a {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    background-image: -webkit-linear-gradient(left, #353433 25%, #fde071 37.5%, #ef9671, #996a6e 62.5%, #353433 75%);
+    background-image: linear-gradient(90deg, #353433 25%, #fde071 37.5%, #ef9671, #996a6e 62.5%, #353433 75%);
+    background-position: right center;
+    background-size: 400% auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     height: 100%;
-    padding: 11em 3.15em 4em 3.15em; }
+    padding: 11em 3.15em 4em 3.15em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   #site-header h1 {
     font-size: 10em;
     line-height: 0.47;
@@ -2815,9 +2821,13 @@ a {
     line-height: 1.224137931;
     letter-spacing: -0.01em;
     font-family: "Source Sans Pro", sans-serif;
-    height: 2.4137931034em;
     font-weight: 300;
+    height: 2.4137931034em;
     margin-left: -0.1em; }
+  #site-header:hover hgroup {
+    background-position: left center;
+    -webkit-transition: background-position 1000ms ease-out;
+    transition: background-position 1000ms ease-out; }
   #site-header:hover #site-logo div:first-child {
     background-color: #feb295; }
   #site-header:hover #site-logo div:nth-child(2) {
@@ -2855,13 +2865,11 @@ a {
         -ms-flex-direction: row;
             flex-direction: row;
     height: 4.2em;
-    -webkit-transform: translateY(-4.2em);
-            transform: translateY(-4.2em);
+    -webkit-transform: translateY(-0.2em);
+            transform: translateY(-0.2em);
     opacity: 0;
-    -webkit-transition: opacity 150ms linear, -webkit-transform 150ms ease-in;
-    transition: opacity 150ms linear, -webkit-transform 150ms ease-in;
-    transition: opacity 150ms linear, transform 150ms ease-in;
-    transition: opacity 150ms linear, transform 150ms ease-in, -webkit-transform 150ms ease-in; }
+    -webkit-transition: opacity 250ms linear;
+    transition: opacity 250ms linear; }
   #site-nav a, #site-nav h1 {
     height: 100%; }
   #site-nav h1 {
@@ -3024,9 +3032,7 @@ a {
   width: 100%;
   z-index: 1; }
   .scrolled--sticky-site-nav #site-nav hgroup {
-    opacity: 1;
-    -webkit-transform: translateY(-0.2em);
-            transform: translateY(-0.2em); }
+    opacity: 1; }
 .scrolled--sticky-site-nav #content {
   margin-top: 5em; }
   @media (min-width: 375px) {
@@ -3169,8 +3175,8 @@ a {
   position: relative; }
   .gallery-post footer,
   .gallery-post .post-decorations div {
-    -webkit-transition: background-color 400ms ease-in;
-    transition: background-color 400ms ease-in; }
+    -webkit-transition: background-color 250ms ease-in;
+    transition: background-color 250ms ease-in; }
   @media (min-width: 600px) {
     .gallery-post {
       -ms-grid-column-span: 2;
@@ -3227,12 +3233,64 @@ a {
 .post-decorations div {
   background-color: #ededed;
   height: 3.6em;
+  position: absolute; }
+.post-decorations div:first-child {
+  height: 3.6em;
   right: -3.7em;
-  position: absolute;
   top: 9.2em;
   -webkit-transform: rotate(-38deg);
           transform: rotate(-38deg);
   width: 14em; }
+@media (min-width: 600px) {
+  .post-decorations div:nth-child(2) {
+    height: 3.6em;
+    left: -3.7em;
+    top: 9.2em;
+    -webkit-transform: rotate(38deg);
+            transform: rotate(38deg);
+    width: 14em; }
+  .post-decorations div:nth-child(3) {
+    height: 3.6em;
+    left: -3.7em;
+    bottom: 11.2em;
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+    width: 12.6em; }
+  .post-decorations div:nth-child(4) {
+    height: 3.6em;
+    right: -3.7em;
+    bottom: 11.2em;
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+    width: 12.6em; }
+  .post-decorations div:nth-child(5) {
+    height: 3.6em;
+    left: -0.2em;
+    top: 25em;
+    -webkit-transform: rotate(175deg);
+            transform: rotate(175deg);
+    width: 12.5em; }
+  .post-decorations div:nth-child(6) {
+    height: 3.6em;
+    right: -0.2em;
+    top: 25em;
+    -webkit-transform: rotate(-175deg);
+            transform: rotate(-175deg);
+    width: 12.5em; }
+  .post-decorations div:nth-child(7) {
+    height: 3.6em;
+    right: -1.3em;
+    bottom: 19em;
+    -webkit-transform: rotate(-28deg);
+            transform: rotate(-28deg);
+    width: 7em; }
+  .post-decorations div:nth-child(8) {
+    height: 3.6em;
+    left: -1.3em;
+    bottom: 19em;
+    -webkit-transform: rotate(28deg);
+            transform: rotate(28deg);
+    width: 7em; } }
 
 .form-search {
   display: -webkit-box;

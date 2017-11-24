@@ -218,6 +218,21 @@ $height--thumbnail: em(275);
   overflow: hidden;
   position: relative;
 
+  &.gallery-post--long {
+    align-items: flex-start;
+
+    &:after {
+      content: '';
+      background-image: linear-gradient(transparent, $color--bg-thumbnail-light);
+      bottom: 0;
+      display: block;
+      font-size: vw(10, 900); // 10px @vw 375px
+      height: $padding-topbottom--default * 4;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
   footer,
   .post-decorations div {
     transition: background-color 250ms ease-in;

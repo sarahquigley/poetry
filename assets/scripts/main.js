@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
+/* document.addEventListener("DOMContentLoaded", function(){
 
   var waypoint = new Waypoint({
     element: document.getElementById('site-nav'),
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
   Waypoint.refreshAll();
-});
+}); */
 
 window.onscroll = function() {
   var target = document.getElementById("site-header");

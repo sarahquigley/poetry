@@ -78,13 +78,16 @@ $height--site-nav: em(50);
 // Site Nav
 
 #site-nav {
+  align-items: center;
   background-color: $color--bg-site-nav;
   display: flex;
   height: em(50);
-  padding: 0 $padding-leftright--default;
-  align-items: center;
   justify-content: space-between;
+  padding: 0 $padding-leftright--default;
+  position: sticky;
+  top: 0;
   transition: height 100ms linear;
+  z-index: 1;
 
   hgroup {
     align-items: flex-end;

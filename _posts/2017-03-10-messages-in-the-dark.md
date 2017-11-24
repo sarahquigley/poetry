@@ -6,6 +6,7 @@ title: |-
 excerpt: |-
   a black bear turned polar
   night shot with light
+length: long
 ---
 
 a black bear turned polar  

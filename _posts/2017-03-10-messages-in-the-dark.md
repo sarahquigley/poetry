@@ -26,7 +26,7 @@ we are the lost ones
 washed ashore on islands  
 of our bliss  
 
-wrinkles carved on wrinkles
+wrinkles carved on wrinkles  
 stories that they tell  
 warmth of unfamiliar skin  
 tattoos on calloused hands  

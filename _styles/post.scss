@@ -35,7 +35,7 @@ $color--bg-post-footer: $offwhite;
     margin: 0 auto;
     padding-bottom: $padding-topbottom--default * 2;
     padding-top: $padding-topbottom--default * 2;
-    width: em(375);
+    max-width: em(375);
   }
 
   @media (min-width: $breakpoint-lg) {

@@ -50,11 +50,11 @@ h6 {
 p {
   @include font-dimensions(17, 28);
 
-  &:first-child {
+  &:first-of-type {
     margin-top: 0;
   }
 
-  &:last-child {
+  &:last-of-type {
     margin-bottom: 0;
   }
 }

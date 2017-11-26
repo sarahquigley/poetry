@@ -246,15 +246,19 @@ $height--site-nav: em(50);
   padding: 0 $padding-leftright--default;
 
   > a, > span {
-    @include font-dimensions(16, 20);
+    @include font-dimensions(36, 13, 0);
+
     font-weight: 700;
     text-transform: uppercase;
+
+    &:hover {
+    }
   }
 
   .pagination-arrow {
-    @include font-dimensions(36, 20, 0, 16);
     color: $color--text-headline;
     font-family: $font-family--headline;
+    transition: font-size 150ms linear;
 
     &:first-child {
       margin-right: em(20, 36);
@@ -263,6 +267,15 @@ $height--site-nav: em(50);
     &:last-child {
       margin-left: em(20, 36);
     }
+  }
+
+  .pagination-label {
+    @include font-dimensions(16, 20, 0, 36);
+    vertical-align: middle;
+  }
+
+  .disabled span {
+    visibility: hidden;
   }
 }
 

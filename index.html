@@ -18,14 +18,14 @@ id: home
 
   <div class="pagination">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous"><span class="pagination-arrow">«</span><span class="pagination-label">Prev</span></a>
+      <a href="{{ paginator.previous_page_path }}" class="previous"><span class="pagination-button"><span class="pagination-arrow">«</span><span class="pagination-label">Prev</span></span></a>
     {% else %}
-      <span class="previous disabled"><span class="pagination-arrow">«</span><span class="pagination-label">Prev</span></span>
+      <span class="previous disabled"><span class="pagination-button"><span class="pagination-arrow">«</span><span class="pagination-label">Prev</span></span></span>
     {% endif %}
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next"><span class="pagination-label">Next</span><span class="pagination-arrow">»</span></a>
+      <a href="{{ paginator.next_page_path }}" class="next"><span class="pagination-button"><span class="pagination-label">Next</span><span class="pagination-arrow">»</span></span></a>
     {% else %}
-      <span class="next disabled"><span class="pagination-label">Next</span><span class="pagination-arrow">»</span></span>
+      <span class="next disabled"><span class="pagination-button"><span class="pagination-label">Next</span><span class="pagination-arrow">»</span></span></span>
     {% endif %}
   </div>
 </section>

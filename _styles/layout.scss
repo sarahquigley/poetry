@@ -243,20 +243,50 @@ $height--site-nav: em(50);
   display: flex;
   height: em(77);
   justify-content: space-between;
-  padding: 0 $padding-leftright--default;
+  //padding: 0 $padding-leftright--default;
 
   > a, > span {
-    @include font-dimensions(36, 13, 0);
-
-    font-weight: 700;
-    text-transform: uppercase;
+    align-items: center;
+    background-size: 200%;
+    display: flex;
+    height: 100%;
+    max-width: 50%;
+    transition: background 150ms linear, color 150ms linear;
+    width: em(250);
 
     &:hover {
+      color: $color--text-headline;
     }
+
+    &.next {
+      background-image: linear-gradient(90deg, transparent, transparent 50%, $sunnyyellow);
+      background-position: center left;
+      justify-content: flex-end;
+      padding-right: $padding-leftright--default;
+
+      &:hover {
+        background-position: center right;
+      }
+    }
+
+    &.previous {
+      background-image: linear-gradient(270deg, transparent, transparent 50%, $sunnyyellow);
+      background-position: center right;
+      justify-content: flex-start;
+      padding-left: $padding-leftright--default;
+
+      &:hover {
+        background-position: center left;
+      }
+    }
+  }
+  .pagination-button {
+    @include font-dimensions(36, 13, 0);
+    font-weight: 700;
+    text-transform: uppercase;
   }
 
   .pagination-arrow {
-    color: $color--text-headline;
     font-family: $font-family--headline;
     transition: font-size 150ms linear;
 

@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-{% include form-search.html %}
+<div id="search">
+  {% include form-search.html %}
 
-<ul id="search-results"></ul>
+  <section id="search-results"></section>
+</div>
+
+<div class="pagination"></div>
 
 <script>
   window.store = {
@@ -13,6 +17,7 @@ layout: default
         "author": "{{ post.author | xml_escape }}",
         "category": "{{ post.category | xml_escape }}",
         "content": {{ post.content | newlines_to_br | replace: '<br />', ' ' | strip_html | jsonify }},
+        "excerpt": {{ post.excerpt | newlines_to_br | replace: '<br />', ' ' | strip_html | jsonify }},
         "url": "{{ post.url | xml_escape }}"
       }
       {% unless forloop.last %},{% endunless %}

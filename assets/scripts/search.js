@@ -1,19 +1,19 @@
 (function() {
-  function displaySearchResults(results, store) {
+  function displaySearchResults(searchTerm, results, store) {
     var searchResults = document.getElementById('search-results');
 
     if (results.length) { // Are there any results?
-      var appendString = '';
+      var appendString = '<h2>' + results.length + ' result(s) found for ' + searchTerm + ':</h2>';
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
-        appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
-        appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
+        appendString += '<article><a href="' + item.url + '"><h3>' + item.title + '</h3>';
+        appendString += '<p>' + item.excerpt + '...</p></a></article>';
       }
 
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<li>No results found</li>';
+      searchResults.innerHTML = '<article><h3>No results found.</h3></article>';
     }
   }
 
@@ -50,12 +50,13 @@
           'title': window.store[key].title,
           'author': window.store[key].author,
           'category': window.store[key].category,
-          'content': window.store[key].content
+          'content': window.store[key].content,
+          'excerpt': window.store[key].excerpt
         });
       };
     });
 
     var results = idx.search(searchTerm); // Get lunr to perform a search
-    displaySearchResults(results, window.store); // We'll write this in the next section
+    displaySearchResults(searchTerm, results, window.store); // We'll write this in the next section
   }
 })();

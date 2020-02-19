@@ -14,6 +14,21 @@ $color--bg-post-footer: $offwhite;
 
   .post-content {
     margin-bottom: em(40);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  img {
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: filter 150ms linear;
+    width: 100%;
+
+    &:hover {
+      filter: none;
+    }
   }
 
   footer {

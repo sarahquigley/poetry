@@ -249,6 +249,8 @@ $height--thumbnail: em(275);
   }
 
   &:hover {
+    background-color: $lightsunnyyellow;
+
     footer,
     .post-decorations div {
       background-color: $color--bg-gallery-post-details-hover;

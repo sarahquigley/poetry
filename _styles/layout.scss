@@ -191,6 +191,7 @@ $height--site-nav: em(50);
 // Site Footer
 
 #site-footer {
+  border-top: 1px solid $almostwhite;
   color: $color--text-headline;
   display: flex;
   flex-direction: column;
@@ -234,7 +235,6 @@ $height--site-nav: em(50);
   }
 }
 
-
 // Pagination
 
 .pagination {
@@ -243,9 +243,8 @@ $height--site-nav: em(50);
   display: flex;
   height: em(77);
   justify-content: space-between;
-  //padding: 0 $padding-leftright--default;
 
-  > a, > span {
+  > a {
     align-items: center;
     background-size: 200%;
     display: flex;
@@ -280,6 +279,7 @@ $height--site-nav: em(50);
       }
     }
   }
+
   .pagination-button {
     @include font-dimensions(36, 13, 0);
     font-weight: 700;
@@ -304,7 +304,7 @@ $height--site-nav: em(50);
     vertical-align: middle;
   }
 
-  .disabled span {
+  .disabled > span {
     visibility: hidden;
   }
 }

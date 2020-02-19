@@ -63,9 +63,14 @@ a {
   font-size: inherit;
   text-decoration: none;
   color: inherit;
+}
+
+p > a {
+  color: $almostblack;
+  font-weight: 500;
 
   &:hover {
-
+    color: $tangerineorange;
   }
 
   &:focus {
@@ -75,4 +80,8 @@ a {
   &:visited {
 
   }
+}
+
+.text-center {
+  text-align: center;
 }
